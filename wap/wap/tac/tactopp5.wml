@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>TACTOPP5</b><br/>
+
+
+Fem beste, fem verste, fem sureste, fem kuleste, fem lureste. F&#xE5; v&#xE5;re TAC-Topp 5-lister over hva alt mellom himmel og jord under The Arctic Challenge. 
+Kodeord: TACTOPP5 
+Startdato: Mandag 2. april 
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

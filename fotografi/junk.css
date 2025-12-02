@@ -1,0 +1,13 @@
+// A {text-decoration: none}
+A:link {COLOR: white; font: 8pt Arial, Helvetica, sans-serif; text-decoration: none}
+A:active {COLOR: white; font: 8pt Arial, Helvetica, sans-serif;  text-decoration: none}
+A:visited {COLOR: white; font: 8pt Arial, Helvetica, sans-serif;  text-decoration: none}
+
+
+
+
+body { background-color: #808080; background-attachment: fixed; background-image: url(../november/img/81_bg.gif); COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px}
+
+DIV {
+	COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+} 

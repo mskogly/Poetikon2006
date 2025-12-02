@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+
+ <template> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>SMS-tjenester:</b><br/><br/>
+
+I samarbeid med Djuice kan Upunkt tilby en haug med SMS-tjenester. F&#xE5; siste nytt om Terje &#x26; Daniel, stem fram &#xE5;rets Tacman eller svar p&#xE5; SMS - Quizen og vinn fete premier! <br/><br/>
+
+
+<a href="http://www5.nrk.no/upunkt/wap/tac/tacquiz.wml">TACQUIZ</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/tacman.wml">TACMAN</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/tacalert.wml">TACALERT</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/tacterje.wml">TACTERJE</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/tacdaniel.wml">TACDANIEL</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/tactopp5.wml">TACTOPP5</a><br/><br/>
+
+
+Du kan v&#230;re oppdatert p&#xE5; alt som skjer under &#xE5;rets Arctic Challenge gjennom Djuice og Upunkts SMS-tjenester. Alt du trenger &#xE5; gj&#xF8;re er &#xE5; sende riktig kodeord til 1987, og blodferske nyheter, daglige konkurranser og TAC-avstemminger kommer umiddelbart til en mobiltelefon n&#230;r deg. Meldingene koster kroner 5,- pr. stk.<br/><br/> 
+
+&#216;nsker du &#xE5; stoppe en av tjenestene, skriver du bare riktig KODEORD og deretter STOPP for den tjenesten du ikke lenger &#xF8;nsker.<br/>  
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+
+
+
+</p>
+</card>
+
+</wml>

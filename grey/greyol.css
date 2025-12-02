@@ -1,0 +1,94 @@
+A {text-decoration: none}
+
+body
+	{padding: 5px;
+	background-color: rgb(255,255,255)}
+
+.mailtekst
+{
+  	position:absolute;
+  	top:30px;
+  	left: 50px;
+  	width:395px;
+  	overflow:auto;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 14pt;
+
+}
+
+.mailtekstbk
+{
+  	position:absolute;
+  	top:30px;
+  	left: 50px;
+  	width:395px;
+  	overflow:auto;
+        font-family: times, garamond, serif;
+        font-size: 12pt;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 14pt;
+
+}
+
+#aaa {
+  position:absolute;
+  z-index:1;
+  visibility:show;
+  visibility:visible;
+}
+#bbb {
+  position:absolute;
+  z-index:2;
+  visibility:hide;
+  visibility:hidden;
+}
+#ccc {
+  position:absolute;
+  z-index:3;
+  visibility:hide;
+  visibility:hidden;
+}
+#ddd {
+  position:absolute;
+  z-index:4;
+  visibility:hide;
+  visibility:hidden;
+}
+#eee {
+  position:absolute;
+  z-index:5;
+  visibility:hide;
+  visibility:hidden;
+}
+#fff {
+  position:absolute;
+  z-index:6;
+  visibility:hide;
+  visibility:hidden;
+}
+#ggg {
+  position:absolute;
+  z-index:7;
+  visibility:hide;
+  visibility:hidden;
+}
+#hhh {
+  position:absolute;
+  z-index:8;
+  visibility:hide;
+  visibility:hidden;
+}
+#iii {
+  position:absolute;
+  z-index:9;
+  visibility:hide;
+  visibility:hidden;
+}
+#jjj {
+  position:absolute;
+  z-index:10;
+  visibility:hide;
+  visibility:hidden;
+}

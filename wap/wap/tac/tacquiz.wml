@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>TACQUIZ</b><br/>
+
+Send kodeord TACQUIZ til 1987 og meld deg p&#xE5; konkurransen. Hver dag f&#xE5;r du et SMS-sp&#xF8;rsm&#xE5;l med tre alternative svar. Med riktig svar er du med i trekningen av dr&#xF8;ssevis med t-skjorte signert en av &#xE5;rets TAC-kj&#xF8;rere. I tillegg er alle Quiz-deltakere med i hovedtrekningen av et flunkende nytt snowboard signert TAC-kj&#xF8;rerne.<br/> 
+Kodeord: TACQUIZ <br/>
+Startdato: Tirsdag 3. april<br/> 
+Avsluttes: Onsdag 11. april<br/>
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

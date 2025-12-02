@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+
+ <template> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Kj&#xF8;rere:</b><br/>
+
+<a href="http://www5.nrk.no/upunkt/wap/tac/haakonsen.wml">Terje H&#xE5;konsen</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/franck.wml">Daniel Franck</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/white.wml">Shaun White</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/christiansen.wml">Kim Christiansen</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/marchi.wml">Romain De Marchi</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/leines.wml">Bjorn Leines</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/dillon.wml">Keir Dillon</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/fernandez.wml">Iker Fernandez</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/malmi.wml">Joni Malmi</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/dakides.wml">Tara Dakides</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/backman.wml">Ingemar Backman</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/buaas.wml">Kjersti Østgaard Buaas</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/albin.wml">Michi Albin</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/simmen.wml">Gian Simmen</a><br/> 
+<a href="http://www5.nrk.no/upunkt/wap/tac/andrew.wml">Trevor Andrew</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/sorsa.wml">Heikki Sorsa</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/kass.wml">Danny Kass</a><br/>
+
+<br/>  
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+
+
+
+</p>
+</card>
+
+</wml>

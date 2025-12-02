@@ -1,0 +1,29 @@
+<!--
+
+
+
+body {background-repeat:no-repeat;}
+
+div {font-size: 10px; font-family: verdana, arial, helvetica; color:#FFFFFF;}
+
+font.liten {font-size: 10px; font-family: verdana, arial, helvetica;}
+
+font.cotton {font-size: 10px; font-family: verdana, arial, helvetica;}
+
+A:link {text-decoration:none; color: #333333;}
+
+A:visited {text-decoration:none; color: #333333;}
+
+A:active {text-decoration:none; color: #333333;}
+
+A:hover {text-decoration:none; color: #333333;}
+
+input {font-family:arial,helvetica,verdana; color: #000000; background-color: #eeeeee; font-size: 10px;}
+
+textarea {font-family:arial,helvetica,verdana; color: #000000; background-color: #eeeeee; font-size: 10px;}
+
+div.trans {font-family:arial,helvetica,verdana; font-size: 9px; filter: Alpha(Opacity=75);}
+
+
+
+//-->

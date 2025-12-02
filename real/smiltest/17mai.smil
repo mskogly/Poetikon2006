@@ -1,0 +1,27 @@
+<smil>
+	<head>
+		<meta name="title" content="17. mai " />
+		<meta name="author" content="NRK TV / Inge Eidsvåg / NRK Interaktiv" />
+		<meta name="copyright" content="NRK © 2000" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="robots" content="all" />
+		<meta name="pics-label" content='(PICS-1.1 "http://www.classify.org/safesurf" labels comment "RealSlideshow 6.0.0.550 Windows" ratings (SS~~000 1))'/>
+		<meta name="file_id" content="16df3b0d-8588-7d9b-b49c-fabc00bd738f" />
+		<layout type="text/smil-basic-layout">
+			<root-layout width="316" height="203" background-color="black"/>
+			<region id="title_region" left="0" top="0" width="316" height="203" z-index="2" />
+			<region id="pix_region" left="0" top="0" width="316" height="203" z-index="1" />
+		</layout>
+	</head>
+	<body>
+		<par>
+			<seq>
+				<text src="17mai.rt" region="title_region"/>
+				<img src="17mai.rp" region="pix_region" fill="freeze"/>
+			</seq>
+			<audio src="17mai.rm"/>
+		</par>
+	</body>
+</smil>
+

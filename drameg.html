@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<META NAME="robots" CONTENT="noindex,follow">
+<TITLE></TITLE>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+<!--
+
+if (document.images) {
+poesi_off=new Image();
+poesi_on=new Image();
+poesi_off.src="./_img/meny/poesi.gif";
+poesi_on.src="./_img/meny/poesi_down.gif";
+
+billedserier_off=new Image();
+billedserier_on=new Image();
+billedserier_off.src="./_img/meny/billedserier.gif";
+billedserier_on.src="./_img/meny/billedserier_down.gif";
+
+noveller_off=new Image();
+noveller_on=new Image();
+noveller_off.src="./_img/meny/noveller.gif";
+noveller_on.src="./_img/meny/noveller_down.gif";
+
+musikk_off=new Image();
+musikk_on=new Image();
+musikk_off.src="./_img/meny/musikk.gif";
+musikk_on.src="./_img/meny/musikk_down.gif";
+
+invitasjon_off=new Image();
+invitasjon_on=new Image();
+invitasjon_off.src="./_img/meny/invitasjon.gif";
+invitasjon_on.src="./_img/meny/invitasjon_down.gif";
+}
+
+
+function swap(imgName) {
+
+	if (document.images) {
+	document.poesi.src = poesi_off.src;
+	document.billedserier.src = billedserier_off.src;
+	document.noveller.src = noveller_off.src;
+	document.musikk.src = musikk_off.src;
+	document.invitasjon.src = invitasjon_off.src;
+
+	Img = eval(imgName + "_on.src")
+		document [imgName].src = Img;
+	}
+}
+
+//-->
+
+</SCRIPT>
+
+</HEAD>
+<BODY bgcolor="#672901" text="#FFFFFF" link="#000000" alink="#000000" vlink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+
+<TABLE BORDER="0" cellpadding="0" cellspacing="0" valign="top" width="100%">
+<TR><TD bgcolor="#OOOOOO" height="2"><IMG SRC="_img/lowsrc.gif" WIDTH="25" HEIGHT="2" BORDER="0"></TD></TR>
+<TR><TD valign="top" align="right"><div align="right"><IMG SRC="_img/lowsrc.gif" WIDTH="100" HEIGHT="3" BORDER="0"><BR><a href="poesi.html" target="main" onClick="swap('poesi')"><img name="poesi" src="./_img/meny/poesi.gif" width=44 height=12 alt="poesi" border="0"></a><IMG SRC="./_img/meny/m.gif" WIDTH="20" HEIGHT="12" BORDER="0"><a href="billedserier.html" target="main" onClick="swap('billedserier')"><img name="billedserier" src="./_img/meny/billedserier.gif" width=99 height=12 alt="" border="0"></a><IMG SRC="./_img/meny/m.gif" WIDTH="20" HEIGHT="12" BORDER="0"><a href="noveller.html" target="main" onClick="swap('noveller')"><img name="noveller" src="./_img/meny/noveller.gif" width=69 height=12 alt="" border="0"></a><IMG SRC="./_img/meny/m.gif" WIDTH="20" HEIGHT="12" BORDER="0"><a href="musikk.html" target="main" onClick="swap('musikk')"><img name="musikk" src="./_img/meny/musikk.gif" width=56 height=12 alt="" border="0"></a><IMG SRC="./_img/meny/m.gif" WIDTH="20" HEIGHT="12" BORDER="0"><a href="info.html" target="_top" onClick="swap('invitasjon')"><img name="invitasjon" src="./_img/meny/invitasjon.gif" width=83 height=12 alt="" border="0"></a><IMG SRC="_img/lowsrc.gif" WIDTH="100" HEIGHT="3" BORDER="0"></div></TD></TR></TABLE>
+</TD></TR></TABLE>
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

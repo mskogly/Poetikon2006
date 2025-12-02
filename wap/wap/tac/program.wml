@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+
+ <template> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Program for Hemsedal - Lofoten:</b><br/>
+NB! P&#xE5; grunn av v&#230;rforhold kan programmet bli endret.<br/><br/>
+   
+<b>Mandag 9. april</b><br/> 
+14:00 - 17:00 Halfpipe practice <br/> 
+21:00 - 01:00 After hours med spesialprogram p&#xE5; Hemsedal Café <br/> <br/> 
+   
+<b>Tirsdag 10. april</b><br/> 
+10:00 - 12:00  Warm up - halfpipe<br/> 
+14:00 - 17:00 Kvalifisering halfpipe <br/> 
+21:00 - 01:00 Huge rave party p&#xE5; Hemsen<br/><br/> 
+   
+<b>Onsdag 11. april</b><br/> 
+10:00 - 12:00  Warm up session halfpipe<br/> 
+15:00 - 17:00  Vagle session halfpipe (finale)<br/><br/>
+  
+<b>Torsdag 12. april</b> <br/> 
+10:25 F&#xF8;rste fly til Lofoten<br/> 
+12:00 Andre fly til Lofoten<br/> 
+Ettermiddag Surfing Fiske Skating Paintball Frikj&#xF8;ring<br/> 
+22:00 Minikonsert med Pulp Vixen p&#xE5; Skj&#230;rbrygga i Stamsund<br/><br/> 
+  
+<b>Fredag 13. april</b><br/> 
+12:00 - 19:00 Surfing Frikj&#xF8;ring Skating Fisking Paintball<br/> 
+21:00 - 01:00 Konsert i Vaglebruket - Stort utend&#xF8;rs diskotek Pulp Vixen - Elements - DJ<br/><br/> 
+  
+<b>L&#xF8;rdag 14. april</b> <br/> 
+12:00 - 19:00 Surfing Frikj&#xF8;ring Skating Fiske Paintball<br/> 
+21:00 - 01:00 Konsert i Vaglebruket - Stort utend&#xF8;rs diskotek The Loose Booty Funkateers - Misv&#230;r Ska Forening - DJ<br/> 
+
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/></do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/></do>
+
+
+
+
+
+</p>
+</card>
+
+</wml>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Tara Dakides</b><br/>
+
+Tara vinner gjerne b&#xE5;de slopestyle og bigjump-konkurransen i en X-games event. <br/><br/>
+
+Team: Sims, Vans, Sessions, Dragon og GMC <br/>
+Beinstilling: Goophy <br/>
+Fritid: Surfing, skateboard, motorcross, skuespill og skrive poesi. <br/><br/>
+
+Hun er visstnok alt en gutt ser etter i en jente, men det er jo helt uinteressant. Hun er alt det en jente ser etter i en jente som forbilde: Tara er 25 &#xE5;r og drar bigjumps og rails med samme flyt og fryktl&#xF8;shet som de beste gutta. <br/><br/>
+ 
+Selv sier hun at hun g&#xE5;r for langt noen ganger. -Kj&#230;rester er bare forvirrende for meg. Eksen min p&#xE5; Hawaii fikk meg til &#xE5; begynne med motorcross. Jeg kj&#xF8;rte d&#xE5;rlig, og jeg tror noen ble temmelig grinete fordi jeg dunket borti dem n&#xE5;r jeg kj&#xF8;rte. Det var moro, men jeg kr&#230;sjet i skauen. Dro ut hardt... Du m&#xE5; v&#230;re 100% dedikert, hvis ikke kommer du til &#xE5; kr&#230;sje. 
+
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

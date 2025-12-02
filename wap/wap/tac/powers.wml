@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/>
+
+<b>Ross Powers</b><br/>
+
+Ross Powers har kj&#xF8;rt for Burton 12 vintrer. Han er 21. Han er en av de store halfpipe-kj&#xF8;rerne, noe som ble definert da han vant ISFs verdensmesterskap 2000.<br/><br/>
+
+Team: Burton<br/>
+Beinstilling: Regular<br/>
+Fritid: Motorcross, mountainbiking, surfing, skateboarding, wakeboarding og fotball<br/><br/>
+
+Ross Powers fra Vermont har markert seg h&#xF8;yt p&#xE5; plasseringslistene i en rekke store konkurranser de siste &#xE5;rene, blant annet med andreplass i X-Games og favoritten US Open. Han er kjent som en dynamisk pipekj&#xF8;rer, med clean stil og innovativt grep. <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

@@ -1,0 +1,247 @@
+<HTML>
+<HEAD>
+<TITLE>Planer</TITLE>
+
+<link rel=STYLESHEET href="junk.css" type="text/css">
+
+<style type="text/css">
+#divUp{position:absolute; left:270; top:20}
+#divDown{position:absolute; left:270; top:200}
+#divCont{position:absolute; width:220; height:270; overflow:hidden; top:20; left:20; clip:rect(0,220,270,0); visibility:hidden}
+#divText{position:absolute; top:0; left:0; color:#FFFFFF; text-align:justify}
+</style>
+<script type="text/javascript" language="JavaScript">
+
+/*****************
+This script is stolen from emil@stylelab.nu and used without permission. I hope he forgives me. His pages are totally 100% beautiful.:)
+****************/
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='visible'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+
+<BODY bgcolor="#808080" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" TEXT="#C0C0C0" link="#C0C0C0" vlink="#C0C0C0">
+<div id="divUp">
+
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="img/up.gif" border="0"></a>
+
+</div>
+
+<div id="divDown">
+
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="img/down.gif" border="0"></a>
+
+</div>
+
+<div id="divCont">
+        <div id="divText">
+<font class="liten" color="#cccccc">
+
+<B>Idéer og planer og prosjekter. Sist oppdatert i Moskva
+     9. august 2000</B>
+<br>
+
+<ol><p><li>Researche e-book (linuxbasert norskutviklet styringsprogramvare) basert tjeneste for Hurtigruten, hvor turister kan lese (MYE) mer om kystlandskapet de seiler forbi. De kan etterpå kjøpe hele reisen på cd-rom. (forretningside). Snakke med informasjonsarbeiderne ombord som startsted. Snakke med e-bookprodusent. <p><li>Lage websider for Siljes oversetterfirma.<p><li>Lage en kortfilm under vann. Må finne et basseng hvor man kan senke ned en svær bluescreen.<p><li>Filme No Comment-aktige ting. Feks bilder fra Tokyo. Folk på et gamlehjem.<p><li>Lage fotobøker med følgende temaer: <A HREF="polaroid/siljetsjai.html">Kjærester</A>, <A HREF="polaroid/pap.html">Fedre</A>, Mødre, Søstre, Brødre, <A HREF="polaroid/ego01.html">Selvportretter</A>, og kanskje en med <A HREF="polaroid/frank.html">Venner</A> også.
+<p><li> Finne et hus i skogen og bo i det sammen med Silje og to katter.
+<p><li> Finne noen i Bergen som har lyst til å være med i <A HREF="http://www.katode.org/poetikon/" TARGET="_blank">Poetikon</A>.
+<p><li> Collections. Nye begreper til sitene mine: Real life: True stories, Experiments: our newest ad weirdest stuff, Giggles, Stories, Beats. Loading media modules. Junk drawer. Melonpool
+
+<p><li> Lage en tegning eller en tegneserie med en fyr eller jente med boksehansker.
+<p><li> Lage en fotobok (pluss nettsted selvfølgelig) som heter <I>Kjærester</I>, med bilder av folk som har vært og er noens kjærester (og hvems kjærester de  var og er og kanskje hvor lenge pluss et par ting til)! I tillegg til bildene burde det være tekst av noe slag, bare en kort en kanskje om hvem det er og hvems kjæreste det er, og kanskje litt til, noe om personene kanskje.... må tenke på det ... ideer lønnes med knekkebrød med brunost på.
+
+<p><li> Bygge automatskulpturer og automatskulpturhager.
+<p><li> Starte galleri. Det skal være et walkingalleri.
+<p>Bygge en badepark ved brua i brønnøysund som blir oppvarmet av bioenergi utvunnet fra tang og tare.  <!-- sammen med svein horn -->
+
+<p><li> Starte platesjappe/smalvideo/boksjappe/lokalbibliotek. Den skal ligge ved siden av en branntomt e.l hvor man kan organisere små konserter og vise film på veggen. <!-- sammen med espen  wiik -->.
+
+<p><li> Lære meg å seile / se på seilbåter / kjøpe seilbåt
+
+<p><li> Reise til Japan.
+<p>
+<li> Lage skulpturer av busemenn [<a href="../hybris/skulptur_busemenn.html">les mer</a>]
+<p>
+<li>Lage online vannorgel. [<a href="../hybris/musikk_meteorologisk.html">les mer</a>]
+<p>
+
+<li> Bukke og smile pent. [<a href="../diare/19991014.html">les mer</a>]
+<p>
+<li> Finne ut om noen er interessert i å bruke noen av illustrasjonene og animasjonenene mine til ett eller annet.
+
+
+
+<p><li> Kjøpe en brukt diasprosjektor.
+
+<p><li> Sample triste fløytelyder og lage noe fint av dem. Som i introen til The Icestorm og på Jan Erik Vold-plate "Ingenting".
+
+<p><li> Kjøpe symaskin og lage fine klær til Silje og andre fine folk, og kanskje til og med strikke et langt og fint skjerf.
+
+
+
+<p><li> Finne noen i Moskva som vil være med i <a href="http://www.katode.org/poetikon/" target="_blank">poetikon</a>. Kanskje jeg kan spørre noen gatemusikanter om de kan spille noe trist (det er mange klassiske fiolinister som spiller på gata i <a href="../diare/19991015.html">Moskva</a>).
+
+
+
+
+
+<p><li> Lage ny portfolio m/cd-rom/dvd + glossye prints og foto.
+
+
+
+<p><li> Researche virtuelle 3d verdener og evt. skrive en artikkel med tittelen "Hvor ble de av?" Hva skjedde med hypen. Hva gjør William Gibson i dag?
+
+
+
+<p><li> Make beautiful things. Starte en "powerbook-trio" og opptre på rare steder med rar musikk, for eksempel langt inne i skogen eller i portrom i byen, med et portabelt ly og lysanlegg.
+
+
+
+<p><li> Begynne å samle ordbobler fra tegneserier for å lage "<a href="../dengalemannenogsola/index.html">Den gale mannen og sola</a>".
+
+
+
+
+
+<p><li> Gi engangskamera og penger til tigger hvis han/hun tar bilder fra dagene sine.
+
+
+<p><li> Finne skraphandler som er villig til å la meg rote rundt i noen uker. Planene er å bygge instrumenter som kan spilles av vind og vann.
+
+
+
+<p><li> Ta opp dialogen til en karakter i en såpeopera og klipp opp og analyser enkeltsetninger for å finne setninger som rimer. Lim sammen til surrealistiske dikt som rimer.
+
+
+
+<p><li> Samme som over men i video og klipp kun ut deler av ord og juster pitch, slik at karakteren synes å synge "Love me tender" eller "Bessa me Moucho" :)
+
+
+
+<p><li> Skultpur og billedserie-konsept: drømmer. Ting jeg har lyst på og situasjoner jeg savner. Vanlige ting. Som normal familieidyll, og piknikk i skogen sammen med venner.
+
+
+
+<p><li> Lage Monty Pytonaktige kollager og animasjoner. Begynn med å samle lyder og "kroppsdeler" og sette dem sammen.
+
+<p><li> Bilferie.
+
+
+<p><li> Lage flere bilder og finne noen som kan printe eller trykke opp noen av bildene mine og 8mm film i stort->enormt format.
+
+<p><li> Bli journalist og kanskje utenrikskorrespondent.
+
+<p><li> Selge GSM-info-idéer som "finger 92061880" :)
+
+<p><li> Lage noen skulturer og rom i vrml eller lignende (caloma?).
+
+
+<p><li> Researche neurostrasmitters og forskning på human brain -> machine interfaces. Start med å finne universiteter som driver med forskning på det menneskelige sentralnervesystemet og hjernes tolkninger og generering av elektroniske sigaler. (TV kanalen DW i et program som het Compact gjorde noe på det nylig). [<a href="../hybris/bibliotek_onpupilover.html">les mer</a>]
+
+
+
+<p><li> Researche banebytende nye greier og evt. tv-program/website/tv-kanal ved navn expo-tv. Om vitenskap og oppfinnelser og alt som er nytt (også kunst og kultur). Med grønn ryggrad.
+
+
+
+<p><li> Finne ut hvordan blyanter egentlig lages! [<a href="../diare/19990529.html">les mer</a>]
+
+<p><li>Har tenkt litt på å lage en "webdesigner-hjem-til-deg" - tjeneste, hvor folk fra hvorsomhelst kan invitere meg hjem til seg for å lage websider eller andre fine ting til dem. Jeg jobber gratis, mot at de lar meg sove på sofaen, og kanskje til og med betaler reisen, hvis de har råd til det da. Men egentlig er det jo bare en unnskyldning for å reise rundt og treffe folk :)
+
+<p><li> Sove!
+<p><li> Spise!
+
+<p>
+Så når jeg ikke jobber lager jeg bilder og lydkollager, flikker på Poetikon og diverse idéer, drikker portvin, poffer sigar, knasker sukkererter, tenker rare tanker, spiller gitar, tenker på gulerøtter, og forsøker som alle mennesker å leve et bedagelig liv. Men du vet hvordan det er.
+
+<P align=right>Hvis du mot formodning vil vite mer om hva som surrer rundt oppi skallen min kan du lese litt i <A
+
+      href="http://home.sol.no/~mskogly/diare/index.html"
+
+      target=_top>diaré</A> eller bla litt i <a href="http://home.sol.no/~mskogly/hybris/index.html" target=_top>idébanken</a> min.</P>
+
+      <P>Salig er de mangfoldige. :) </P>
+
+
+
+</font>
+        </div>
+</div>
+
+
+
+
+
+</body></html>

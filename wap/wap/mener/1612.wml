@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- created by WAPtor (http://www.wapdrive.net/) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="prev"><prev/></do> 
+  </template> 
+<!-- THIS IS THE FIRST CARD IN THE DECK -->
+<card id="mm1612" title="nrk">
+<p align="left">
+
+<b>Mujaffa og reklame</b><br/>
+Reklame virker ikke. N&#xE5;r jeg dro p&#xE5; Statoil spurte de om jeg skulle ha bilvask hver gang.
+Jeg pr&#xF8;vde om igjen. Men de spurte hver gang. Jeg har gitt opp. Reklame virker ikke.
+<br/>
+</p>
+<p align="left"><a href="http://upunkt.nrk.no/wap/index.wml#meny">Tilbake til meny!</a></p>
+
+</card>
+
+</wml>

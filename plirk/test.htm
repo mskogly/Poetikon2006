@@ -1,0 +1,1349 @@
+<html>
+
+<head>
+
+<title>49,682,923 stories about</title>
+
+
+
+<script language="JavaScript">
+
+
+
+function level1layout1() {
+
+  this.layitout = onedimension_layitout;
+
+}
+
+
+
+function onedimension_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY BGCOLOR="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><DIV ALIGN="CENTER"><TABLE BORDER="0" height="100%" WIDTH="100%"><TR><TD COLSPAN="2" align="center" valign="middle">');
+
+
+
+  this.fuge1.html = new Array();
+
+
+
+  var maxHeight = Math.round(screenHeight * 0.8) - 100;
+
+
+
+  var myHeight = Math.round(Math.random() * maxHeight) + 100;
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, myHeight, myHeight);
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</TD></TR></TABLE></DIV></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+
+
+function level2layout1() {
+
+  this.layitout = seconddimension_layitout;
+
+}
+
+
+
+function seconddimension_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY BGCOLOR="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><TABLE BORDER="0" height="100%" WIDTH="100%"> <TR> <TD COLSPAN="2" align="center" valign="middle">');
+
+
+
+  var numOfuge = Math.round(Math.random() * 3) + 4;
+
+
+
+  var myWidth = Math.round(screenWidth / (numOfuge + 2));
+
+
+
+  this.fuge1.imageCreate(numOfuge, firstpiece, myWidth, myWidth);
+
+
+
+  parent.frames['writee'].document.writeln('</TD></TR> </TABLE></BODY></HTML>');
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level3layout1() {
+
+  this.layitout = level3layout1_layitout;
+
+}
+
+
+
+function level3layout1_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var bak = daBackground.list[Math.round(Math.random() * (daBackground.list.length - 1))];
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></head><BODY bgcolor="#000000" background="http://static.wired.com/rgb/signal2noise/art/objects/' + bak + '" style="background-position: center; background-repeat: no-repeat" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'">');
+
+
+
+  var g = Math.round(Math.random() * 2);
+
+  if (g == 0) {
+
+    var derAlign = 'center';
+
+  } else if (g == 1) {
+
+    var derAlign = 'right';
+
+  } else {
+
+    var derAlign = 'left';
+
+  }
+
+
+
+  parent.frames['writee'].document.writeln('<table width="100%" height="100%"><tr><td align="' + derAlign + '" valign="center"><table border="0" cellpadding="4" cellspacing="0">');
+
+
+
+  var myHeight = Math.round(screenHeight / 5);
+
+  var myWidth = Math.round(screenWidth / 5);
+
+
+
+  var z = Math.round(Math.random());
+
+  if (z == 0) {
+
+    this.fuge1.HTML = new Array('tr', 'td');
+
+    this.fuge1.imageCreate(4, firstpiece, myHeight, myHeight);
+
+  } else {
+
+    this.fuge1.HTML = new Array('tr', 'td');
+
+    this.fuge1.imageCreate(1, firstpiece, myHeight, myHeight);
+
+
+
+    this.fuge2.HTML = new Array('tr', 'td');
+
+    this.fuge2.imageCreate(1, firstpiece, myHeight, myHeight);
+
+
+
+    this.fuge3.HTML = new Array('tr', 'td');
+
+    this.fuge3.imageCreate(1, firstpiece, myHeight, myHeight);
+
+
+
+    this.fuge4.HTML = new Array('tr', 'td');
+
+    this.fuge4.imageCreate(1, firstpiece, myHeight, myHeight);
+
+  }
+
+
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+
+
+function level3layout2() {
+
+  this.layitout = level3layout2_layitout;
+
+}
+
+
+
+function level3layout2_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table width="100%" height="100%"><tr><td align="center" valign="center" height="357"><table border="0" cellpadding="8" cellspacing="0"><tr><td valign="MIDDLE" align="CENTER">');
+
+
+
+  var fugeNum = Math.round(Math.random() * 2) + 1;
+
+
+
+  myWidth = ((screenWidth / 2) - 120) / fugeNum;
+
+
+
+  if (myWidth > 90) {
+
+    myWidth = 90;
+
+  }
+
+
+
+  this.fuge1.imageCreate(fugeNum, firstpiece, myWidth, myWidth);
+
+
+
+  parent.frames['writee'].document.writeln('</td><td valign="MIDDLE" align="CENTER">');
+
+
+
+  this.fuge2.imageCreate(1, firstpiece, 120, 166);
+
+
+
+  parent.frames['writee'].document.writeln('</td><td valign="MIDDLE" align="CENTER">');
+
+
+
+  this.fuge3.imageCreate(fugeNum, firstpiece, myWidth, myWidth);
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</td></tr></table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+
+
+function level3layout3() {
+
+  this.layitout = level3layout3_layitout;
+
+}
+
+
+
+function level3layout3_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table width="100%" height="100%"><tr><td align="center" valign="center"><table border="0" cellpadding="8" cellspacing="0"><tr><td>');
+
+
+
+  var t = Math.round(Math.random() * ((screenHeight / 2) - 60)) + 40;
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, t, t);
+
+
+
+  parent.frames['writee'].document.writeln('</td><td>');
+
+
+
+  this.fuge2.imageCreate(1, firstpiece, t, t);
+
+
+
+  parent.frames['writee'].document.writeln('</td></tr><tr><td>');
+
+
+
+  this.fuge3.imageCreate(1, firstpiece, t, t);
+
+
+
+  parent.frames['writee'].document.writeln('</td><td>');
+
+
+
+  this.fuge4.imageCreate(1, firstpiece, t, t);
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</td></tr></table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+
+
+function level3layout4() {
+
+  this.layitout = level3layout4_layitout;
+
+}
+
+
+
+function level3layout4_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var nubby = Math.round(Math.random() * 3);
+
+  if (nubby == 0) {
+
+    align = 'center';
+
+    bak = '';
+
+  } else if (nubby == 1) {
+
+    align = 'left';
+
+    bak = ' background="http://static.wired.com/rgb/signal2noise/art/objects/' + daBackground.list[Math.round(Math.random() * (daBackground.list.length - 1))] + '"';
+
+  } else {
+
+    align = 'right';
+
+    bak = ' background="http://static.wired.com/rgb/signal2noise/art/objects/' + daBackground.list[Math.round(Math.random() * (daBackground.list.length - 1))] + '"';
+
+  }
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY bgcolor="#000000"' + bak + ' style="background-position: center; background-repeat: no-repeat" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table width="100%" height="100%"><tr><td align="' + align + '" valign="middle"><table border="0" cellpadding="4"><tr><td colspan="2" align="center" valign="center">');
+
+
+
+  var seed = Math.round(Math.random() * ((screenHeight - 150) / 3));
+
+
+
+  var big = (seed * 2) + 120;
+
+  var small = seed + 45;
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, big, big);
+
+
+
+  parent.frames['writee'].document.writeln('</td></tr><tr><td align="CENTER" valign="MIDDLE">');
+
+
+
+  this.fuge2.imageCreate(1, firstpiece, small, small);
+
+
+
+  parent.frames['writee'].document.writeln('</td><td align="CENTER" valign="MIDDLE">');
+
+
+
+  this.fuge3.imageCreate(1, firstpiece, small, small);
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</td></tr></table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level3layout5() {
+
+  this.layitout = level3layout5_layitout;
+
+}
+
+
+
+function level3layout5_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+  this.fuge5 = new fuge('fuge5');
+
+  this.fuge6 = new fuge('fuge6');
+
+  this.fuge7 = new fuge('fuge7');
+
+  this.fuge8 = new fuge('fuge8');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var layout = Math.round(Math.random());
+
+  if (layout == 1) {
+
+    var leftAlign = 'left';
+
+    var rightAlign = 'right';
+
+  } else {
+
+    var leftAlign = 'right';
+
+    var rightAlign = 'left';
+
+  }
+
+
+
+  var size = Math.round(screenHeight / 5);
+
+
+
+  bak = daBackground.list[Math.round(Math.random() * (daBackground.list.length - 1))];
+
+
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY bgcolor="#000000" background="http://static.wired.com/rgb/signal2noise/art/objects/' + bak + '" style="background-position: center; background-repeat: no-repeat" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table width="100%" height="96%" border="0" cellpadding="8" cellspacing="0"><td align="' + leftAlign  + '" valign="center"><table border="0" width="" cellpadding="4" cellspacing="0">');
+
+
+
+  var z = Math.round(Math.random());
+
+  if (z == 0) {
+
+    this.fuge1.HTML = new Array('tr', 'td');
+
+    this.fuge1.imageCreate(4, firstpiece, size, size);
+
+  } else {
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge1.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge2.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge3.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge4.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+  }
+
+
+
+  parent.frames['writee'].document.writeln('</table></td><td align="' + rightAlign  + '" valign="center"><table border="0" cellpadding="4" cellspacing="0">');
+
+
+
+  var w = Math.round(Math.random());
+
+  if (w == 0) {
+
+    this.fuge5.HTML = new Array('tr', 'td');
+
+    this.fuge5.imageCreate(4, firstpiece, size, size);
+
+  } else {
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge5.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge6.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge7.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+
+
+    parent.frames['writee'].document.writeln('<tr><td>');
+
+    this.fuge8.imageCreate(1, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('</td></tr>');
+
+  }
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+
+
+function level3layout6() {
+
+  this.layitout = level3layout6_layitout;
+
+}
+
+
+
+function level3layout6_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+  this.fuge5 = new fuge('fuge5');
+
+  this.fuge6 = new fuge('fuge6');
+
+  this.fuge7 = new fuge('fuge7');
+
+  this.fuge8 = new fuge('fuge8');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var size = Math.round(screenHeight / 5);
+
+
+
+  var clicks1 = Math.round(Math.random() * 3) + 1;
+
+  var clicks2 = Math.round(Math.random() * 3) + 1;
+
+  var clicks3 = Math.round(Math.random() * 3) + 1;
+
+  var clicks4 = Math.round(Math.random() * 3) + 1;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table border="0" width="100%" height="98%" cellpadding="0" cellspacing="0"><tr><td align="CENTER" valign="TOP"><table border="0">');
+
+
+
+    this.fuge1.HTML = new Array('tr', 'td');
+
+    this.fuge1.imageCreate(clicks1, firstpiece, size, size);
+
+
+
+  parent.frames['writee'].document.writeln('</table></td><td align="CENTER" valign="TOP"><table border="0">');
+
+
+
+    this.fuge2.HTML = new Array('tr', 'td');
+
+    this.fuge2.imageCreate(clicks2, firstpiece, size, size);
+
+
+
+  parent.frames['writee'].document.writeln('</table></td><td align="CENTER" valign="TOP"><table border="0">');
+
+
+
+    this.fuge3.HTML = new Array('tr', 'td');
+
+    this.fuge3.imageCreate(clicks3, firstpiece, size, size);
+
+
+
+  parent.frames['writee'].document.writeln('</table></td><td align="CENTER" valign="TOP"><table border="0" width="0">');
+
+
+
+    this.fuge4.HTML = new Array('tr', 'td');
+
+    this.fuge4.imageCreate(clicks4, firstpiece, size, size);
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</table></td></tr></table></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level3layout7() {
+
+  this.layitout = level3layout7_layitout;
+
+}
+
+
+
+function level3layout7_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+
+
+  var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+
+
+  var size = Math.round(screenHeight / 5);
+
+
+
+  var myAlign = new Array('left', 'center', 'right');
+
+  var derAlign = myAlign[Math.round(Math.random() * (myAlign.length - 1))]
+
+
+
+  var yourAlign = new Array('top', 'middle', 'bottom');
+
+  var verAlign = yourAlign[Math.round(Math.random() * (yourAlign.length - 1))]
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  bak = daBackground.list[Math.round(Math.random() * (daBackground.list.length - 1))];
+
+
+
+  parent.frames['writee'].document.writeln('<html><head><title>' + Math.round(Math.random() * 100000000) + ' stories about</title></head><body bgcolor="#000000" background="http://static.wired.com/rgb/signal2noise/art/objects/' + bak + '" style="background-position: center; background-repeat: no-repeat" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><table border="0" width="100%" height="100%">');
+
+
+
+  var layoutOmeter = Math.round(Math.random());
+
+
+
+  if (layoutOmeter == 0) {
+
+    this.fuge1.HTML = new Array('tr', 'td valign="MIDDLE" align="' + derAlign  + '"');
+
+    this.fuge1.imageCreate(4, firstpiece, size, size);
+
+  } else {
+
+    parent.frames['writee'].document.writeln('<tr><td valign="' + verAlign + '" align="center">');
+
+    this.fuge1.HTML = new Array('img src="objects/spacer.gif" width="40"');
+
+    this.fuge1.imageCreate(4, firstpiece, size, size);
+
+    parent.frames['writee'].document.writeln('<img src="objects/spacer.gif" width="40"></td></tr>');
+
+  }
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</table></body></html>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level4layout1() {
+
+  this.layitout = level4layout1_layitout;
+
+}
+
+
+
+function level4layout1_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+  this.fuge5 = new fuge('fuge5');
+
+  this.fuge6 = new fuge('fuge6');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  var topper = Math.round(Math.random() * 50) + 25;
+
+
+
+  var botWidth = Math.round(screenWidth * .5);
+
+  var botHeight = screenHeight;
+
+  var botTop = Math.round(screenHeight * .05);
+
+  var botLeft = Math.round(screenWidth * .25);
+
+
+
+  var topWidth = Math.round(screenWidth * .12);
+
+  var topTop = Math.round(screenHeight * ((Math.round(Math.random() * 50) + 25) /100));
+
+  var topLeft = Math.round(screenWidth * .2);
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>layoutcss1.html</TITLE><style>#bottom {position: absolute; left: ' + botLeft + '; top: ' + botTop + '; width: ' + botWidth + '; height: ' + screenHeight + '; zindex: 1} #top {position: absolute; left: 20%; top: ' + topTop + 'px; width: 60%; height: 100px; z-index: 2}</style></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><div id="bottom">');
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, '100%', '100%', 100, 'bottom');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="top"><table border="0" cellpadding="4" cellspacing="0" width="60"><tr>');
+
+
+
+  this.fuge2.HTML = new Array('td align="center" valign="center"');
+
+  this.fuge2.imageCreate(5, firstpiece, topWidth, topWidth, 100, 'top');
+
+
+
+
+
+  parent.frames['writee'].document.writeln('</tr></table></div>');
+
+  this.fuge1.insertSound();
+
+  parent.frames['writee'].document.writeln('</BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level4layout2() {
+
+  this.layitout = level4layout2_layitout;
+
+}
+
+
+
+function level4layout2_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+  this.fuge4 = new fuge('fuge4');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var size = Math.round(screenHeight * 0.30);
+
+
+
+  var space = Math.round((((screenWidth - (size * 3)) / 3) / 2) * 0.75) ;
+
+  var firstgap = space + space;
+
+  var secondgap = firstgap + size + space + space;
+
+  var thirdgap = secondgap + size + space + space;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  var botWidth = Math.round(screenWidth * .8);
+
+  var botHeight = Math.round(screenHeight * .8);
+
+  var botLeft = Math.round(screenWidth * .1);
+
+  var botTop = Math.round(screenHeight * .1);
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>title here</TITLE><style>body {margin: 0} #bottom {position: absolute; zindex: 1; width: ' + botWidth +  '; height: ' + botHeight + '; left: ' + botLeft + '; top: ' + botTop + '; margin: 0} .top {top: 20%; zindex: 2} #img1 {position: absolute; left: ' + firstgap + '; zindex: 2} #img2 {position: absolute; left: ' + secondgap + '; zindex: 2} #img3 {position: absolute; left: ' + thirdgap + '; zindex: 2} </style></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><div id="bottom">');
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, '100%', '100%', 100, 'bottom');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="img1" class="top">');
+
+
+
+  this.fuge2.imageCreate(1, firstpiece, size, size, 100, 'img1');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="img2" class="top">');
+
+
+
+  this.fuge3.imageCreate(1, firstpiece, size, size, 100, 'img2');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="img3" class="top">');
+
+
+
+  this.fuge4.imageCreate(1, firstpiece, size, size, 100, 'img3');
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</div></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level4layout3() {
+
+  this.layitout = level4layout3_layitout;
+
+}
+
+
+
+function level4layout3_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+  this.fuge3 = new fuge('fuge3');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  parent.frames['writee'].document.writeln('<HTML><HEAD><TITLE>' + Math.round(Math.random() * 100000000) + ' stories about</TITLE><style>BODY{margin: 0} #bottom{position: absolute; zindex: 1; left: 20%; top: 20%; width: 60%; height: 60%} #img1 {position: absolute; left: 20%; top: 20%; zindex: 2; width: 15%; height: 15%} #img2 {position: absolute; left: 65%; top: 65%; zindex: 2; width: 15%; height: 15%} </style></HEAD><BODY bgcolor="#000000" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><div id="bottom">');
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, '100%', '100%', 100, 'bottom');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="img1">');
+
+
+
+  this.fuge2.imageCreate(1, firstpiece, '100%', '100%', 100, 'img1');
+
+
+
+  parent.frames['writee'].document.writeln('</div><div id="img2">');
+
+
+
+  this.fuge3.imageCreate(1, firstpiece, '100%', '100%', 100, 'img2');
+
+
+
+  this.fuge1.insertSound();
+
+
+
+  parent.frames['writee'].document.writeln('</div></BODY></HTML>');
+
+
+
+  parent.frames['writee'].document.close();
+
+
+
+}
+
+
+
+function level4layout4() {
+
+  this.layitout = level4layout4_layitout;
+
+}
+
+
+
+function level4layout4_layitout() {
+
+  parent.frames['writee'].document.open();
+
+
+
+  this.fuge1 = new fuge('fuge1');
+
+  this.fuge2 = new fuge('fuge2');
+
+
+
+  var firstpiece = choose.all[Math.floor(Math.random() * choose.all.length)].name;
+
+
+
+  var pullMe = Math.round(Math.random() * maxTime) + minTime;
+
+
+
+  var snaLeft = Math.round(screenWidth * 0.3078125);
+
+  var snaTop = Math.round(screenHeight * 0.24375);
+
+  var snaWidth = Math.round(screenWidth * 0.384375);
+
+  var snaHeight = Math.round(screenHeight * 0.5125);
+
+
+
+  //alert(snaLeft + ' ' + screenWidth);
+
+
+
+  parent.frames['writee'].document.writeln('<html><head><title>' + Math.round(Math.random() * 100000000) + ' stories about</title><style>#dafuge201 {position: absolute; left: 0%; top: 0%} #dafuge202 {position: absolute; left: 53%; top: 0%} #dafuge203 {position: absolute; left: 0%; top: 53%} #dafuge204 {position: absolute; left: 53%; top: 53%} </style> </head><body bgcolor="#000000" style="margin: 0" onload="fehID=setTimeout(\'parent.frames[1].layout.newLayout(' + pullDir + ')\', ' + pullMe  +')"><img src="http:/rgb/signal2noise/art/objects/countme.gif?' + pageCount  +'"><div id="bak" style="position: absolute; left: 5%; top: 5%; width: 90%; height: 90%">');
+
+
+
+  this.fuge1.imageCreate(1, firstpiece, '100%', '100%', 2000, 'bak');
+
+
+
+function fuge_Pieces() {
+  this.sounds = new sounds();
+}
+
+
+function sounds() {
+  this.list = new Array('1.au', '2.au');
+  this.bleedInc = 0;
+  this.name = 'sound';
+}
+
+
+
+
+
+
+function fuge(newName) {
+
+  this.loopHandler = fuge_loopHandler;
+
+  this.insertSound = fuge_insertSound;
+
+  this.testForPlugin = fuge_testForPlugin;
+
+}
+
+
+
+function fuge_insertSound() {
+
+  if (navigator.appName == 'Netscape') {
+
+    gotplug = this.testForPlugin('audio/basic');
+
+    if (gotplug == true) {
+
+      daSound = this.pieces.sounds.list[Math.round(Math.random() * (this.pieces.sounds.list.length - 1))];
+
+      var vol1 = Math.round(Math.random() * 50) + 50;
+
+      var vol2 = Math.round(Math.random() * 50) + 50;
+
+      parent.frames['writee'].document.writeln('<EMBED SRC="objects/sound/' + daSound + '" AUTOSTART="TRUE" HIDDEN="TRUE" VOLUME="' + vol1  + '" NAME="sound1" LOOP="TRUE" MASTERSOUND>');
+
+      daSound2 = this.pieces.sounds.list[Math.round(Math.random() * (this.pieces.sounds.list.length - 1))];
+
+      //alert(this.pieces.sounds.list.length + ' ' + daSound + ' ' + daSound2);
+
+      parent.frames['writee'].document.writeln('<EMBED SRC="objects/sound/' + daSound2 + '" AUTOSTART="TRUE" HIDDEN="TRUE" VOLUME="' + vol2  + '" NAME="sound2" LOOP="TRUE" MASTERSOUND>');
+
+    } else {
+
+    }
+
+  } else {
+
+      daSound = this.pieces.sounds.list[Math.round(Math.random() * (this.pieces.sounds.list.length - 1))];
+
+      parent.frames['writee'].document.writeln('<EMBED SRC="objects/sound/' + daSound + '" AUTOSTART="TRUE" HIDDEN="TRUE" VOLUME="100" NAME="sound1" LOOP="TRUE" MASTERSOUND>');
+
+      daSound2 = this.pieces.sounds.list[Math.round(Math.random() * (this.pieces.sounds.list.length - 1))];
+
+      //alert(this.pieces.sounds.length + ' ' + daSound + ' ' + daSound2);
+
+      parent.frames['writee'].document.writeln('<EMBED SRC="objects/sound/' + daSound2 + '" AUTOSTART="TRUE" HIDDEN="TRUE" VOLUME="100" NAME="sound2" LOOP="TRUE" MASTERSOUND>');
+
+  }
+
+}
+
+
+</script>
+
+</head>
+
+
+
+<body bgcolor="#000000" text="#00FFFF" link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF" onload="myLayout = new level1layout1(); myLayout.layitout()" onUnload="exhibit=window.open('http://www.hotwired.com/rgb/signal2noise/art/fin.html', 'exhibit')">
+
+<table width="100%">
+
+    <tr>
+
+	<td align="left" valign="top">
+
+	    <a href="javascript:window.parent.close()"><img src="http://static.wired.com/rgb/signal2noise/art/objects/x.gif" hspace="5" width="25" height="25" border="0" align="left"></a><a href="javascript:window.parent.close()"><img src="http://static.wired.com/rgb/signal2noise/art/objects/quit.gif" border="0" align="left"></a>
+
+	<td align="right">
+
+	<img src="http://static.wired.com/rgb/signal2noise/art/objects/spacer.gif" name="tip" width="155" height="30"><img src="http://static.wired.com/rgb/signal2noise/art/objects/spacer.gif" width="5" height="30"><a href="#" onmouseover="toolTip(1)" onclick="layout.newLayout(1)"><script>
+
+	   var firstpiece = choose.all[Math.round(Math.random() * (choose.all.length - 1))].name;
+
+	   document.write('<img name="complex" border="1" src="http://static.wired.com/rgb/signal2noise/art/'+ 'objects/' + firstpiece + '/' + firstpiece + '005.gif' +'" border="0" width="25" height="25">');
+
+	</script></a><img src="http://static.wired.com/rgb/signal2noise/art/objects/spacer.gif" width="15" height="30">
+
+
+
+
+
+	</td>
+
+    </tr>
+
+</table>
+
+
+
+</body>
+
+</html>
+

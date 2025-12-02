@@ -1,0 +1,57 @@
+
+A:link { FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:active { FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: #CCCCCC; text-decoration: none}
+A:visited { FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: #CCCCCC; text-decoration: none}
+
+body { background-color: rgb(153,204,102); background-attachment: fixed; background-image: url(../_img/tree_004.jpg); COLOR: #CCCCCC; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; margin: 0px;}
+
+TD
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; color: #FFFFFF; 
+}
+
+.tekst
+{
+	z-index:1;
+  	position:absolute;
+  	top:30px;
+  	left: 100px;
+  	width:350px;
+  	overflow:no;
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+PRE
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+.meny
+{
+  	position:absolute;
+  	top:10px;
+  	left: 20px;
+  	width:180px;
+  	overflow:auto;
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+
+.illustrasjon
+{
+
+  	position:absolute;
+  	top:60px;
+  	left: 450px;
+  	width:200px;
+  	overflow:no;
+}
+
+
+.heading
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+
+

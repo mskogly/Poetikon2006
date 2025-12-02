@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- created by WAPtor (http://www.wapdrive.net/) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="prev"><prev/></do> 
+  </template> 
+<!-- THIS IS THE FIRST CARD IN THE DECK -->
+<card id="mm1512" title="nrk">
+<p align="left">
+
+<b>Mujaffa og mobil</b><br/>
+Kontantkort l&#xF8;nner seg ikke. De koster faan meg over 7 kroner hele tia. Det l&#xF8;nner seg ikke. Det l&#xF8;nner bare for de som gjemmer seg. Da l&#xF8;nner det seg. <br/>
+</p>
+<p align="left"><a href="http://nrk.no/upunkt/wap/index.wml#meny">Tilbake til meny!</a>
+</p>
+</card>
+
+</wml>

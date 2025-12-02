@@ -1,0 +1,16 @@
+// A {text-decoration: none}
+A:link {font: 10pt Courier, Helvetica, sans-serif; font-weight: plain; color: #FFFFFF}
+A:active {font: 10pt Courier, Helvetica, sans-serif;  color: #FFFFFF; text-decoration: none}
+A:visited {font: 10pt Courier, Helvetica, sans-serif;  color: #FFFFFF; text-decoration: none}
+
+
+//BODY  {font: 10pt Courier, Helvetica, sans-serif; line-height: 20pt; margin: 0}
+//BODY  {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify}
+body { background-color: rgb(45,27,9); background-attachment: fixed; background-image: url(../_img/bg.gif); COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; margin: 0px;}
+
+
+.tekst
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+
+}

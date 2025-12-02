@@ -1,0 +1,15 @@
+IMPRESSO W@P - O Portal do Seu Celular
+
+O WapMail é um formulário bastante simples de configurar e muito util.
+
+Você deverá incluir seu nome e seu e-mail
+Para incluir seu nome basta alterar a seguinte linha dentro do código wml: <img src="mail.wbmp" alt="e-mail "/><br/><small>Enviar E-mail para SEU NOME</small></p>
+
+Para incluir seu E-mail voce deverá alterar a seguinte linha dentro do código wml: <postfield name="recipient" value="seu@e-mail.com"/>
+
+Atenção transfira para o servidor o código wml e a imagem wbmp.
+
+Obrigado por utilizar nosso formulário,
+
+Luiz Carlos
+Equipe IMPRESSO

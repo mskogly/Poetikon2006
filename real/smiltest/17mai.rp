@@ -1,0 +1,120 @@
+<imfl>
+	<head
+	  title="17. mai "
+	  author="NRK TV / Inge Eidsvåg / NRK Interaktiv"
+	  copyright="NRK © 2000"
+	  timeformat="dd:hh:mm:ss.xyz"
+	  duration="9:29.277"
+	  bitrate="12000"
+	  width="316"
+	  height="203"
+	  preroll="10.0"
+	/>
+
+  <!-- Assign handle numbers to images -->
+  <image handle="1" name="17mai-nrk1_20000517_095319[1].jpg" size="14956" mime="image/jpeg"/>
+  <image handle="2" name="17mai-nrk1_20000517_095334[1].jpg" size="14831" mime="image/jpeg"/>
+  <image handle="3" name="17mai-nrk1_20000517_095339[1].jpg" size="14007" mime="image/jpeg"/>
+  <image handle="4" name="17mai-nrk1_20000517_101036[1].jpg" size="20284" mime="image/jpeg"/>
+  <image handle="5" name="17mai-nrk1_20000517_101041[1].jpg" size="20549" mime="image/jpeg"/>
+  <image handle="6" name="17mai-nrk1_20000517_101341[1].jpg" size="16386" mime="image/jpeg"/>
+  <image handle="7" name="17mai-nrk1_20000517_101701[1].jpg" size="14538" mime="image/jpeg"/>
+  <image handle="8" name="17mai-nrk1_20000517_102412[1].jpg" size="20035" mime="image/jpeg"/>
+  <image handle="9" name="17mai-nrk1_20000517_102637[1].jpg" size="18504" mime="image/jpeg"/>
+  <image handle="10" name="17mai-nrk1_20000517_102832[1].jpg" size="18376" mime="image/jpeg"/>
+  <image handle="11" name="17mai-nrk1_20000517_102952[1].jpg" size="16085" mime="image/jpeg"/>
+  <image handle="12" name="17mai-nrk1_20000517_103022[1].jpg" size="11525" mime="image/jpeg"/>
+  <image handle="13" name="17mai-nrk1_20000517_103112[1].jpg" size="12413" mime="image/jpeg"/>
+  <image handle="14" name="17mai-nrk1_20000517_103237[1].jpg" size="14457" mime="image/jpeg"/>
+  <image handle="15" name="17mai-nrk1_20000517_103527[1].jpg" size="16134" mime="image/jpeg"/>
+  <image handle="16" name="17mai-nrk1_20000517_103842[1].jpg" size="12688" mime="image/jpeg"/>
+  <image handle="17" name="17mai-nrk1_20000517_103857[1].jpg" size="14784" mime="image/jpeg"/>
+  <image handle="18" name="17mai-nrk1_20000517_105752[1].jpg" size="18891" mime="image/jpeg"/>
+  <image handle="19" name="17mai-nrk1_20000517_105807[1].jpg" size="19256" mime="image/jpeg"/>
+  <image handle="20" name="17mai-nrk1_20000517_105847[1].jpg" size="17217" mime="image/jpeg"/>
+  <image handle="21" name="17mai-nrk1_20000517_110547[1].jpg" size="17317" mime="image/jpeg"/>
+  <image handle="22" name="17mai-nrk1_20000517_110552[1].jpg" size="20705" mime="image/jpeg"/>
+  <image handle="23" name="17mai-nrk1_20000517_111047[1].jpg" size="9944" mime="image/jpeg"/>
+  <image handle="24" name="17mai-nrk1_20000517_111432[1].jpg" size="14420" mime="image/jpeg"/>
+  <image handle="25" name="17mai-nrk1_20000517_111527[1].jpg" size="9628" mime="image/jpeg"/>
+  <image handle="26" name="17mai-nrk1_20000517_111612[1].jpg" size="10020" mime="image/jpeg"/>
+  <image handle="27" name="17mai-nrk1_20000517_112017[1].jpg" size="15313" mime="image/jpeg"/>
+  <image handle="28" name="17mai-nrk1_20000517_113952[1].jpg" size="18990" mime="image/jpeg"/>
+  <image handle="29" name="17mai-nrk1_20000517_114252[1].jpg" size="10526" mime="image/jpeg"/>
+  <image handle="30" name="17mai-nrk1_20000517_114837[1].jpg" size="15186" mime="image/jpeg"/>
+  <image handle="31" name="17mai-nrk1_20000517_115057[1].jpg" size="15889" mime="image/jpeg"/>
+  <image handle="32" name="17mai-nrk1_20000517_115732[1].jpg" size="17274" mime="image/jpeg"/>
+  <image handle="33" name="17mai-nrk1_20000517_115737[1].jpg" size="17069" mime="image/jpeg"/>
+  <image handle="34" name="17mai-nrk1_20000517_115752[1].jpg" size="12479" mime="image/jpeg"/>
+  <image handle="35" name="17mai-nrk1_20000517_122023[1].jpg" size="16956" mime="image/jpeg"/>
+  <image handle="36" name="17mai-nrk1_20000517_122213[1].jpg" size="17302" mime="image/jpeg"/>
+  <image handle="37" name="17mai-nrk1_20000517_122938[1].jpg" size="20473" mime="image/jpeg"/>
+  <image handle="38" name="17mai-nrk1_20000517_123228[1].jpg" size="11345" mime="image/jpeg"/>
+  <image handle="39" name="17mai-nrk1_20000517_123453[1].jpg" size="17015" mime="image/jpeg"/>
+  <image handle="40" name="17mai-nrk1_20000517_123738[1].jpg" size="14946" mime="image/jpeg"/>
+  <image handle="41" name="17mai-nrk1_20000517_123813[1].jpg" size="15667" mime="image/jpeg"/>
+  <image handle="42" name="17mai-nrk1_20000517_124508[1].jpg" size="13173" mime="image/jpeg"/>
+  <image handle="43" name="17mai-nrk1_20000517_125043[1].jpg" size="10615" mime="image/jpeg"/>
+  <image handle="44" name="17mai-nrk1_20000517_130349[1].jpg" size="15725" mime="image/jpeg"/>
+  <image handle="45" name="17mai-nrk1_20000517_131019[1].jpg" size="11863" mime="image/jpeg"/>
+  <image handle="46" name="17mai-nrk1_20000517_131024[1].jpg" size="12835" mime="image/jpeg"/>
+  <image handle="47" name="17mai-nrk1_20000517_131029[1].jpg" size="10492" mime="image/jpeg"/>
+  <image handle="48" name="17mai-nrk1_20000517_131124[1].jpg" size="10366" mime="image/jpeg"/>
+  <image handle="49" name="17mai-nrk1_20000517_131129[1].jpg" size="10651" mime="image/jpeg"/>
+  <image handle="50" name="17mai-nrk1_20000517_131624[1].jpg" size="14460" mime="image/jpeg"/>
+  <image handle="51" name="17mai-nrk1_20000517_131629[1].jpg" size="14751" mime="image/jpeg"/>
+
+  <!-- These effects define the timeline of the presentation -->
+  <crossfade start="0.0" duration="1.0" target="1" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="10.330" duration="1.0" target="2" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="20.330" duration="1.0" target="3" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="34.416" duration="1.0" target="4" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="48.705" duration="1.0" target="5" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="1:0.99" duration="1.0" target="6" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="1:10.221" duration="1.0" target="7" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="1:24.141" duration="1.0" target="8" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="1:37.0" duration="1.0" target="9" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="1:49.774" duration="1.0" target="10" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:0.967" duration="1.0" target="11" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:10.967" duration="1.0" target="12" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:20.967" duration="1.0" target="13" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:31.21" duration="1.0" target="14" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:42.233" duration="1.0" target="15" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="2:52.233" duration="1.0" target="16" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="3:2.519" duration="1.0" target="17" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="3:15.649" duration="1.0" target="18" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="3:29.36" duration="1.0" target="19" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="3:41.10" duration="1.0" target="20" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="3:53.51" duration="1.0" target="21" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:7.431" duration="1.0" target="22" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:17.431" duration="1.0" target="23" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:27.474" duration="1.0" target="24" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:37.474" duration="1.0" target="25" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:47.474" duration="1.0" target="26" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="4:58.126" duration="1.0" target="27" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="5:11.322" duration="1.0" target="28" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="5:21.322" duration="1.0" target="29" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="5:31.889" duration="1.0" target="30" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="5:42.938" duration="1.0" target="31" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="5:54.950" duration="1.0" target="32" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="6:6.826" duration="1.0" target="33" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="6:16.826" duration="1.0" target="34" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="6:28.613" duration="1.0" target="35" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="6:40.644" duration="1.0" target="36" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="6:54.869" duration="1.0" target="37" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:4.869" duration="1.0" target="38" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:16.709" duration="1.0" target="39" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:27.116" duration="1.0" target="40" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:38.17" duration="1.0" target="41" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:48.17" duration="1.0" target="42" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="7:58.17" duration="1.0" target="43" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:8.957" duration="1.0" target="44" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:18.957" duration="1.0" target="45" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:28.957" duration="1.0" target="46" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:38.957" duration="1.0" target="47" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:48.957" duration="1.0" target="48" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="8:58.957" duration="1.0" target="49" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="9:9.13" duration="1.0" target="50" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+  <crossfade start="9:19.277" duration="1.0" target="51" dstx="0" dsty="0" dstw="316" dsth="203" aspect="true" />
+
+</imfl>

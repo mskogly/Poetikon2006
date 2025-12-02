@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Poetikon : Poesimeny</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel=STYLESHEET href="./poet.css" type="text/css">
+
+<style type="text/css">
+
+#divUp{position:absolute; left:190; top:30}
+#divDown{position:absolute; left:190; top:80}
+#divCont{position:absolute; width:180; height:270; overflow:hidden; top:20; left:20; clip:rect(0,180,270,0); visibility:hidden}
+#divText{position:absolute; top:0; left:0; color:#CCCCCC; text-align:left}
+</style>
+<script type="text/javascript" language="JavaScript">
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='visible'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+
+<BODY bgcolor="#808080" TEXT="#CCCCCC" link="#CCCCCC" vlink="#CCCCCC" alink="#CCCCCC">
+<IMG SRC="../_img/lowsrc.gif" WIDTH="31" HEIGHT="15" BORDER="0" alt=""><IMG SRC="../_img/h_poesi.gif" ALT="POESI" WIDTH="133" HEIGHT="17" BORDER="0"><br>
+
+<div id="divUp">
+
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="img/up.gif" width="19" height="24" alt="Scroll opp" border="0"></a>
+
+</div>
+
+<div id="divDown">
+
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="img/down.gif" width="19" height="24" border="0" alt="Scroll ned"></a>
+
+</div>
+
+<div id="divCont">
+        <div id="divText">
+<a href="guttormandreasen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Guttorm Andreasen (MP3)</a> <br>
+<a href="tormindreboe.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Tor Mindrebø</a> <br>
+<a href="paalhilmarsollie.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Pål Hilmar Sollie</a> <br>
+<a href="brittkristoffersen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Britt Kristoffersen</a> <br>
+<a href="endreruset.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Endre Ruset</a> <br>
+<a href="marinymoen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Mari Nymoen</a> <br>
+<a href="linncathrinemartinsen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Linn Cathrine Martinsen</a> <br>
+<a href="fredrikoestbye.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Fredrik Østbye</a> <br>
+<a href="mariusjohnsen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Marius Johnsen</a> <br>
+<a href="hansjorgenvarfjell.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Hans Jørgen Varfjell</a> <br>
+<a href="oveeriksen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Ove Eriksen</a> <br>
+<a href="metteeriksen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Mette Eriksen</a> <br>
+<a href="arnestav.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Arne Stav</a> <br>
+<a href="snabeldikt/index.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Silje Strand</a> <br>
+<a href="../etnullnynner/index.htm" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt="">Morten Skogly</a> <br>
+<a href="sebastiantrosh.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Sebastian Trosh</a> <br>
+<a href="aashildosttveitodeen.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Åshild Østtveit Odéen</a> <br>
+<a href="randiumbra.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Randi Umbra Hobøl</a> <br>
+<a href="laestadiushestman.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Læstadius Hestman</a> <br>
+<a href="marinakaldhol.html" target="poesimain"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Marina Kaldhol</a> <br>
+
+ <br>Se også: <a href="../antologier.html" target="main"><IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt="">  <IMG SRC="../_img/bruun.gif" WIDTH="4" HEIGHT="4" BORDER="1" alt=""> Antologier</a>
+ <BR><BR>[ <A HREF="../mail.html" target="main">Send inn tekstene dine</A> ]      </div>
+</div>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,10 @@
+A:link { COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;  text-decoration: none}
+A:active { COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;   text-decoration: none}
+A:visited { COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;  text-decoration: none}
+
+
+body { background-color: rgb(153,204,102); COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; margin: 0px;}
+
+
+DIV { COLOR: white; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 10px;}
+TD { COLOR: white; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 10px;}

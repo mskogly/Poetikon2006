@@ -1,0 +1,90 @@
+<imfl>
+	<head
+	  title="Abstraksjon # 5. Bilder og musikk av Morten Skogly"
+	  author="Morten Skogly / Poetikon.org"
+	  copyright="2000 Morten Skogly"
+	  timeformat="dd:hh:mm:ss.xyz"
+	  duration="5:38.452"
+	  bitrate="12000"
+	  width="500"
+	  height="400"
+	  preroll="10.0"
+	/>
+
+  <!-- Assign handle numbers to images -->
+  <image handle="1" name="ab5-05x0480.jpg" size="8501" mime="image/jpeg"/>
+  <image handle="2" name="ab5-i.png" size="3999" mime="image/png"/>
+  <image handle="3" name="ab5-050000.jpg" size="8896" mime="image/jpeg"/>
+  <image handle="4" name="ab5-1.png" size="2122" mime="image/png"/>
+  <image handle="5" name="ab5-050040.jpg" size="9013" mime="image/jpeg"/>
+  <image handle="6" name="ab5-2.png" size="1970" mime="image/png"/>
+  <image handle="7" name="ab5-050080.jpg" size="8930" mime="image/jpeg"/>
+  <image handle="8" name="ab5-050800.jpg" size="8622" mime="image/jpeg"/>
+  <image handle="9" name="ab5-3.png" size="1627" mime="image/png"/>
+  <image handle="10" name="ab5-050120.jpg" size="8933" mime="image/jpeg"/>
+  <image handle="11" name="ab5-050160.jpg" size="8935" mime="image/jpeg"/>
+  <image handle="12" name="ab5-5.png" size="1700" mime="image/png"/>
+  <image handle="13" name="ab5-050200.jpg" size="8886" mime="image/jpeg"/>
+  <image handle="14" name="ab5-050720.jpg" size="8447" mime="image/jpeg"/>
+  <image handle="15" name="ab5-6.png" size="2064" mime="image/png"/>
+  <image handle="16" name="ab5-050240.jpg" size="8899" mime="image/jpeg"/>
+  <image handle="17" name="ab5-7.png" size="1699" mime="image/png"/>
+  <image handle="18" name="ab5-050640.jpg" size="8730" mime="image/jpeg"/>
+  <image handle="19" name="ab5-050280.jpg" size="9183" mime="image/jpeg"/>
+  <image handle="20" name="ab5-8.png" size="2687" mime="image/png"/>
+  <image handle="21" name="ab5-050320.jpg" size="9194" mime="image/jpeg"/>
+  <image handle="22" name="ab5-9.png" size="2018" mime="image/png"/>
+  <image handle="23" name="ab5-050360.jpg" size="9085" mime="image/jpeg"/>
+  <image handle="24" name="ab5-050760.jpg" size="8488" mime="image/jpeg"/>
+  <image handle="25" name="ab5-10.png" size="1563" mime="image/png"/>
+  <image handle="26" name="ab5-050400.jpg" size="8897" mime="image/jpeg"/>
+  <image handle="27" name="ab5-11.png" size="1858" mime="image/png"/>
+  <image handle="28" name="ab5-050440.jpg" size="8801" mime="image/jpeg"/>
+  <image handle="29" name="ab5-050680.jpg" size="8616" mime="image/jpeg"/>
+  <image handle="30" name="ab5-12.png" size="1696" mime="image/png"/>
+  <image handle="31" name="ab5-050480.jpg" size="8804" mime="image/jpeg"/>
+  <image handle="32" name="ab5-050520.jpg" size="8890" mime="image/jpeg"/>
+  <image handle="33" name="ab5-13.png" size="2678" mime="image/png"/>
+  <image handle="34" name="ab5-050560.jpg" size="8890" mime="image/jpeg"/>
+  <image handle="35" name="ab5-14.png" size="1989" mime="image/png"/>
+  <image handle="36" name="ab5-050600.jpg" size="8804" mime="image/jpeg"/>
+
+  <!-- These effects define the timeline of the presentation -->
+  <crossfade start="0.0" duration="1.0" target="1" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="10.0" duration="1.0" target="2" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="20.0" duration="1.0" target="3" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="30.0" duration="1.0" target="4" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="40.0" duration="1.0" target="5" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="49.100" duration="1.0" target="6" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="57.900" duration="1.0" target="7" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:6.400" duration="1.0" target="8" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:14.450" duration="1.0" target="9" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:21.150" duration="1.0" target="10" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:29.950" duration="1.0" target="11" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:38.900" duration="1.0" target="12" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:47.850" duration="1.0" target="13" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="1:55.750" duration="1.0" target="14" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:3.200" duration="1.0" target="15" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:10.800" duration="1.0" target="16" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:22.900" duration="1.0" target="17" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:30.500" duration="1.0" target="18" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:38.400" duration="1.0" target="19" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:48.400" duration="1.0" target="20" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="2:57.950" duration="1.0" target="21" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:7.950" duration="1.0" target="22" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:17.950" duration="1.0" target="23" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:27.950" duration="1.0" target="24" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:37.950" duration="1.0" target="25" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:47.950" duration="1.0" target="26" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="3:56.450" duration="1.0" target="27" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="4:6.450" duration="1.0" target="28" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="4:19.600" duration="1.0" target="29" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="4:29.600" duration="1.0" target="30" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="4:39.802" duration="1.0" target="31" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="4:48.452" duration="1.0" target="32" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="5:1.2" duration="1.0" target="33" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="5:7.702" duration="1.0" target="34" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="5:17.702" duration="1.0" target="35" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+  <crossfade start="5:28.452" duration="1.0" target="36" dstx="0" dsty="0" dstw="500" dsth="400" aspect="true" />
+
+</imfl>

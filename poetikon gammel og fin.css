@@ -1,0 +1,170 @@
+A:link {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:active {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:visited {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:hover {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: underline}
+
+BODY {
+ margin: 0px;
+ background-color: rgb(153,204,102);
+ COLOR: white;
+ FONT-FAMILY: verdana,arial,helv,helvetica;
+ FONT-SIZE: 10px;
+ SCROLLBAR-BASE-COLOR : #99CC66;
+ SCROLLBAR-FACE-COLOR: #99CC33;
+ SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+ SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+ SCROLLBAR-3DLIGHT-COLOR: #CCCCCC;
+ SCROLLBAR-ARROW-COLOR: #000000;
+ SCROLLBAR-TRACK-COLOR: #CCFF66;
+ SCROLLBAR-DARKSHADOW-COLOR: #CCCCCC
+}
+
+DIV
+{ COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px }
+
+.frameset
+{ border: 0px; margin: 0px; padding: 0px }
+
+.hdots
+{ height: 1; background-image: url(_img/hdots.gif) }
+
+.vdots
+{ width: 1; background-image: url(_img/vdots.gif) }
+
+
+.splashbyline
+{ LEFT: 35px; POSITION: absolute; TOP: 30px;  text-align: justify; WIDTH: 200px; border: dotted 1px rgb(204,255,102) }
+
+.historie
+{ LEFT: 35px; POSITION: absolute; TOP: 30px;  text-align: justify; WIDTH: 270px }
+
+.fotobyline
+{  background-color: rgb(153,204,102); LEFT: 0px; POSITION: absolute; TOP: 0px; WIDTH: 270px }
+
+.bg
+{ background-attachment: fixed; background-image: url(_img/tree_004.jpg) }
+
+
+.input
+{color: #FFFFFF; FONT-FAMILY: verdana; FONT-SIZE: 10px; background-color: transparent;
+border: dotted .5pt rgb(204,255,102)
+}
+
+.inputold
+{ color: #FFFFFF; FONT-FAMILY: verdana; FONT-SIZE: 10px; background-color: transparent; border:dotted windowtext .5pt #ffffff }
+
+.tekst
+{ FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify }
+
+.tekst2
+{ FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify }
+
+.tekst3
+{ FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;}
+
+.plirk
+{ FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify }
+
+
+DIV.Links		A   	       		{color:	#CCFF00; text-decoration:none}
+DIV.Links		A:link			{color:	#CCFF00; text-decoration:none}
+DIV.Links		A:visited		{color:	#CCFF00; text-decoration:none}
+DIV.Links		A:hover 		{color: #FFFFFF; text-decoration:none}
+
+
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+}
+.textBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+}
+.textColor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+
+.textBoldColor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.form
+{color: #FFFFFF; FONT-FAMILY: verdana; FONT-SIZE: 10px; background-color: transparent;
+border: dotted .5pt rgb(204,255,102)
+}
+
+.formold
+{ color: #FFFFFF; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px; background-color: transparent; border:dotted windowtext .5pt #ffffff
+}
+
+
+.button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #003399;
+	font-weight: plain;
+	background-image: url(/poetikon/asp/duportal30/assets/bg_header.gif);
+	border: 1px solid #FFFFFF;
+
+
+.bgTable {
+
+}
+
+
+.bgTableBorder {
+
+}
+
+.bgMouseOver {
+	background-color: #FFFFFF;
+}
+.bgMouseOff {
+}
+.textGrey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #CCCCCC;
+}
+.textRed {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #FF0000;
+}
+
+
+.bgGrey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #666666;
+	background-color: #CCCCCC;
+}
+.bgCurrentDay {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	background-color: #FFCC00;
+}
+.bgDayListing {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #003399;
+	background-color: #66CCFF;
+}
+
+
+.bgWhite{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #666666;
+	background-color: #FFFFFF;
+}

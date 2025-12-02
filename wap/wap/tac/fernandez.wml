@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Iker Fernandez</b><br/>
+
+Spania er ikke bare palmer, sol, og h&#xF8;ye drinker. Det er ogs&#xE5; hjemlandet til noen av verdens beste snowboardkj&#xF8;rere, og best kjent er Fernandez-familien.<br/><br/>
+
+Team: Burton <br/>
+Beinstilling: Regular<br/>
+Fritid: skating, surf<br/><br/>
+
+Iker Fernandez er den yngste av fire br&#xF8;dre som alle kj&#xF8;rer snowboard. De to eldste regnes gjerne som grûndere av sporten i Spania. - Jeg begynte n&#xE5;r jeg var 12, mest fordi de andre kj&#xF8;rte. Jeg begynte &#xE5; surfe samtidig, men ble fortere god i snowboard og satset p&#xE5; det. Det var veldig tilfeldig, sier Iker.<br/><br/>
+
+23-&#xE5;ringen er et yndet fotoobjekt, og stiller gladelig opp i snowboardfilmer. Iker har kj&#xF8;rt for Burton lenge, og regnes blant de beste kj&#xF8;rerne i verden.<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

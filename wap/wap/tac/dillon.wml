@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Keir Dillon</b><br/>
+
+Keir Dillon er mannen som elsker &#xE5; konkurrere. B&#xE5;de i og utenfor pipen.<br/><br/>
+
+Team: Burton, Electric, Gravis, Arnette <br/>
+Beinstilling: Regular. <br/>
+Fritid: Basketball, pusle med computeren, henge ut med kj&#230;resten og sv&#xF8;mme.<br/><br/> 
+
+"Keir pr&#xF8;ver alltid &#xE5; vinne penger av deg i et eller annet veddem&#xE5;l. Han lager konkurranse ut av allting. Det er det jeg digger med ham," sier en av kompisene hans. Keir liker &#xE5; konkurrere og det har han gjordt siden han var en liten kjepp. 23-&#xE5;ringen har brukt mesteparten av de siste tre sesongene til &#xE5; ture rundt.<br/><br/> 
+
+For tre &#xE5;r siden ble han grundig parkert i en konkurranse i Europa. -Det kjentes som de ba meg dra hjem til USA, men jeg ble bare mer ivrig av det. Jeg skj&#xF8;nte at jeg m&#xE5;tte skjerpe deg. Det var den beste konkurransen, ever, for jeg fikk meg et spark i r&#230;vva. Keir g&#xE5;r h&#xF8;yt i pipen, selv n&#xE5;r han spinner. <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

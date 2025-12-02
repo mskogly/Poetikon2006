@@ -1,0 +1,24 @@
+Kommentarfunksjon på poetikon.no
+
+
+
+
+lag ny tabell for comment (id, dataid, kommentar, datetime, eier? sender)
+
+lag ny side som mottar id i lenke og henter innlogget bruker (hvis ikke innlogget ser man ikke knappen evt blir bedt om å registrere seg).
+denne siden lister også ut tidligere kommentarer i synkende rekkefølge
+form, datetime send alt til et insertskript
+
+Sikkerhet
+innlogging
+strippe vekk html i melding (evt gjøre om)
+slettefunksjon
+
+lage ikon for kommentarer eller telleting på datasidene (http://www.katode.org/poetikon/asp/duportal30/home/detail.asp?iData=282&iCat=271&iChannel=3&nChannel=Pictures) 3 kommentarer, klikk
+
+
+
+
+liste ut kommentarene på brukerens side, evt kalle det gjestebok. med referanse til data, slik at man kan klikke inn og se på http://www.katode.org/poetikon/asp/duportal30/home/medlem.asp?iUser=main_offender
+
+liste ut siste gjestebok somewhere

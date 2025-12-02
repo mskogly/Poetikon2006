@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE>mcd-sliced</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (mcd-sliced.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		mcd_sliced_01002 = newImage("images/mcd-sliced_01-02.jpg");
+		mcd_sliced_02004 = newImage("images/mcd-sliced_02-04.jpg");
+		mcd_sliced_03006 = newImage("images/mcd-sliced_03-06.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#333333 ONLOAD="preloadImages();">
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG NAME="mcd_sliced_01" SRC="images/mcd-sliced_01.jpg" WIDTH=179 HEIGHT=299></TD>
+		<TD>
+			<IMG NAME="mcd_sliced_02" SRC="images/mcd-sliced_02.jpg" WIDTH=404 HEIGHT=73></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="#"
+			   ONMOUSEOVER="changeImages('mcd_sliced_01', 'images/mcd-sliced_01-02.jpg', 'mcd_sliced_02', 'images/mcd-sliced_02-04.jpg', 'mcd_sliced_03', 'images/mcd-sliced_03-06.jpg'); return true;"
+			   ONMOUSEOUT="changeImages('mcd_sliced_01', 'images/mcd-sliced_01.jpg', 'mcd_sliced_02', 'images/mcd-sliced_02.jpg', 'mcd_sliced_03', 'images/mcd-sliced_03.jpg'); return true;">
+				<IMG NAME="mcd_sliced_03" SRC="images/mcd-sliced_03.jpg" WIDTH=404 HEIGHT=226 BORDER=0></A></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

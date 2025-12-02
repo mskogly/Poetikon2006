@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- created by WAPtor (http://www.wapdrive.net/) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="prev"><prev/></do> 
+  </template> 
+<!-- THIS IS THE FIRST CARD IN THE DECK -->
+<card id="mm1812" title="nrk">
+<p align="left">
+
+<b>Mujaffa og politikk</b><br/>
+Hvorfor er det s&#xE5; mye damer i politikken. Hvorfor er damer statsminister. B&#xE5;de statsminister Gro Harlem Bruntland og Kaci Kullmann Five, er damer. Hvorfor?  Mora min kunne faan ikke styrt land. Hun vil gj&#xF8;re noe annet.
+
+<br/>
+</p>
+<p align="left"><a href="http://upunkt.nrk.no/wap/index.wml#meny">Tilbake til meny!</a></p>
+
+</card>
+
+</wml>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>TACMAN</b><br/>
+
+Hvem kj&#xF8;rer best, har mest cred eller h&#xF8;yest jump? Du kan v&#230;re med p&#xE5; &#xE5; stemme p&#xE5; TAC 2001s r&#xE5;este kj&#xF8;rer. Uansett om du ser TAC p&#xE5; tv, live p&#xE5; nett eller like ved pipekanten, send en SMS og stem fram "The TACman 2001"! Djuice og NRK lover &#xE5; gj&#xF8;re stas p&#xE5; The TACMAN, men viktigst av alt: alle som er med &#xE5; stemmer deltar i trekningen om et signert brett av kj&#xF8;rerne i TAC! Send kodeord TACMAN med fornavn p&#xE5; den personen du mener b&#xF8;r bli &#xE5;rets TACman. <br/>
+Kodeord: TACMAN<br/> 
+Startdato: Tirsdag 3. april<br/> 
+Avsluttes: S&#xF8;ndag 15. april 
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poetikon — Lister</title>
+  <link rel="stylesheet" href="lister.css" type="text/css">
+  <style>
+    :root {
+      --menu-width: 350px;
+      --menu-bg: #99cc66;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--menu-bg);
+      color: #fff;
+    }
+    .layout {
+      display: flex;
+      min-height: 100vh;
+      width: 100%;
+      background: var(--menu-bg);
+    }
+    .menu-panel {
+      width: var(--menu-width);
+      border-right: 4px solid #7aa53f;
+      overflow-y: auto;
+    }
+    .menu-panel table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .menu-links {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      line-height: 1.6;
+    }
+    .menu-links a {
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .menu-links a:hover,
+    .menu-links a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .content-panel {
+      flex: 1;
+      background: var(--menu-bg);
+      color: #fff;
+      padding: 32px;
+      overflow-y: auto;
+    }
+    .viewer {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .viewer .description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #fff;
+    }
+    .viewer .description p {
+      margin: 0 0 1em;
+    }
+    .viewer .description p.intro {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .viewer .description ul.list-items {
+      margin: 16px 0 0;
+      padding-left: 20px;
+      list-style: disc;
+      color: #fff;
+    }
+    .viewer .description ul.list-items li {
+      margin-bottom: 0.6em;
+    }
+    .status {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .viewer .fallback {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 12px;
+      margin-top: 18px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #fff;
+    }
+    .menu-extra {
+      padding: 12px 18px 24px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.4);
+    }
+    @media (max-width: 900px) {
+      .layout {
+        flex-direction: column;
+      }
+      .menu-panel {
+        width: 100%;
+        border-right: none;
+        border-bottom: 4px solid #7aa53f;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="menu-panel">
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="142">
+            <img src="images/meny_03.gif" alt="" width="142" height="68">
+          </td>
+          <td>
+            <div class="menu-links" id="menu-top">Laster …</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/meny_01.gif" alt="" width="142" height="65">
+          </td>
+          <td valign="top">
+            <div class="menu-links" id="menu-middle"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="images/meny_05.gif" alt="" width="142" height="119">
+          </td>
+          <td valign="top">
+            <div class="menu-links" id="menu-bottom"></div>
+          </td>
+        </tr>
+      </table>
+      <div class="menu-extra" id="menu-extra"></div>
+    </aside>
+    <main class="content-panel">
+      <div class="viewer" id="viewer">
+        <div class="status" id="status" aria-live="polite"></div>
+        <div class="description" id="entry-description"></div>
+        <div class="fallback" id="fallback-note" hidden>
+          Kunne ikke hente beskrivelsen automatisk. Kanskje fila mangler?
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    (function() {
+      const menuContainers = {
+        top: document.getElementById('menu-top'),
+        middle: document.getElementById('menu-middle'),
+        bottom: document.getElementById('menu-bottom'),
+        extra: document.getElementById('menu-extra')
+      };
+
+      const statusEl = document.getElementById('status');
+      const descEl = document.getElementById('entry-description');
+      const fallbackEl = document.getElementById('fallback-note');
+
+      const entryMap = {};
+      let currentSlug = null;
+
+      function groupEntries(entries) {
+        const groups = { top: [], middle: [], bottom: [], extra: [] };
+        entries.forEach((entry) => {
+          const cat = entry.category;
+          if (cat === 'top' || cat === 'middle' || cat === 'bottom') {
+            groups[cat].push(entry);
+          } else {
+            groups.extra.push(entry);
+          }
+          entryMap[entry.slug] = entry;
+        });
+        return groups;
+      }
+
+      function renderGroup(container, items) {
+        container.textContent = '';
+        if (!items.length) {
+          container.parentElement && container.parentElement.classList.add('empty');
+          return;
+        }
+        items.forEach((entry, idx) => {
+          const link = document.createElement('a');
+          link.href = '#' + entry.slug;
+          link.textContent = entry.title;
+          link.dataset.slug = entry.slug;
+          link.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            selectEntry(entry.slug, true);
+          });
+          container.appendChild(link);
+          if (idx < items.length - 1) {
+            container.appendChild(document.createTextNode(' / '));
+          }
+        });
+      }
+
+      function updateActiveLink(slug) {
+        document.querySelectorAll('.menu-links a').forEach((a) => {
+          a.classList.toggle('active', a.dataset.slug === slug);
+        });
+      }
+
+      function normalizePath(path, localPrefix) {
+        if (!path) return null;
+        if (/^(https?:)?\/\//i.test(path)) return path;
+        if (path.startsWith('/') || path.startsWith('../') || path.startsWith('./')) {
+          return path;
+        }
+        return (localPrefix || '') + path;
+      }
+
+      async function decodeResponse(res) {
+        const buffer = await res.arrayBuffer();
+        const utf8Decoder = new TextDecoder('utf-8', { fatal: true });
+        try {
+          return utf8Decoder.decode(buffer);
+        } catch (utfErr) {
+          const latinDecoder = new TextDecoder('iso-8859-1');
+          return latinDecoder.decode(buffer);
+        }
+      }
+
+      async function fetchEntryText(entry) {
+        const tried = new Set();
+        const urls = [];
+
+        function pushCandidate(path) {
+          if (!path || tried.has(path)) return;
+          tried.add(path);
+          urls.push(path);
+        }
+
+        pushCandidate('data/' + entry.slug + '.txt');
+        pushCandidate('../asp/' + entry.slug + '.txt');
+        if (entry.path) {
+          pushCandidate(normalizePath(entry.path, '../lister/'));
+        }
+        pushCandidate('../lister/' + entry.slug + '.txt');
+        pushCandidate('../asp/' + entry.slug + '.txt');
+
+        for (const url of urls) {
+          try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const text = await decodeResponse(res);
+            if (text && text.trim()) return text;
+          } catch (err) {
+            console.warn('Failed to fetch description for', entry.slug, url, err);
+          }
+        }
+        return '';
+      }
+
+      function stripLegacyNotes(text) {
+        if (!text) return '';
+        const lines = text.split(/\r?\n/);
+        const filtered = lines.filter((line) => {
+          const trimmed = line.trim();
+          if (!trimmed) return true;
+          if (/^legg til/i.test(trimmed)) return false;
+          return true;
+        });
+        return filtered.join('\n');
+      }
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      function normalizeBlock(str) {
+        return (str || '').replace(/\s+/g, ' ').trim().toLowerCase();
+      }
+
+      function buildListHtml(entry, text) {
+        if (!text) return '';
+        const clean = stripLegacyNotes(text).trim();
+        if (!clean) return '';
+        let lines = clean.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+        while (lines.length && /^poetikon/i.test(lines[0])) {
+          lines.shift();
+        }
+        const introNorm = normalizeBlock(entry.description || '');
+        if (introNorm) {
+          lines = lines.filter((line) => normalizeBlock(line) !== introNorm);
+        }
+        if (!lines.length) return '';
+        const items = lines.map((line) => '<li>' + escapeHtml(line) + '</li>');
+        return '<ul class="list-items">' + items.join('') + '</ul>';
+      }
+
+      function renderIntroHtml(text) {
+        if (!text) return '';
+        return '<p class="intro">' + escapeHtml(text).replace(/\r?\n/g, '<br>') + '</p>';
+      }
+
+      async function selectEntry(slug, updateHash) {
+        const entry = entryMap[slug];
+        if (!entry) {
+          statusEl.textContent = 'Finner ikke lista «' + slug + '».';
+          return;
+        }
+        if (currentSlug === slug) {
+          if (updateHash) {
+            history.replaceState(null, '', '#' + slug);
+          }
+          return;
+        }
+        currentSlug = slug;
+        updateActiveLink(slug);
+        statusEl.textContent = 'Laster «' + entry.title + '» …';
+        descEl.innerHTML = '';
+        fallbackEl.hidden = true;
+
+        let rawText = await fetchEntryText(entry);
+        if (!rawText) {
+          rawText = entry.description || '';
+        }
+
+        const introHtml = renderIntroHtml(entry.description || '');
+        const listHtml = buildListHtml(entry, rawText);
+        const combined = introHtml + listHtml;
+
+        if (combined) {
+          descEl.innerHTML = combined;
+          statusEl.textContent = 'Viser «' + entry.title + '».';
+        } else {
+          statusEl.textContent = 'Fant ingen beskrivelse.';
+          descEl.innerHTML = '';
+          fallbackEl.hidden = false;
+        }
+        if (updateHash) {
+          history.replaceState(null, '', '#' + slug);
+        }
+      }
+
+      function handleHashChange() {
+        const slug = (location.hash || '').replace(/^#/, '');
+        if (slug && entryMap[slug]) {
+          selectEntry(slug, false);
+        }
+      }
+
+      async function init() {
+        try {
+          statusEl.textContent = 'Laster menyer …';
+          const res = await fetch('index.json');
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          const data = await res.json();
+          const groups = groupEntries(data);
+          renderGroup(menuContainers.top, groups.top);
+          renderGroup(menuContainers.middle, groups.middle);
+          renderGroup(menuContainers.bottom, groups.bottom);
+          if (groups.extra.length) {
+            menuContainers.extra.innerHTML = '<div class="menu-links"></div>';
+            renderGroup(menuContainers.extra.firstElementChild, groups.extra);
+          } else {
+            menuContainers.extra.style.display = 'none';
+          }
+          statusEl.textContent = 'Velg en liste til venstre.';
+          const initial = (location.hash || '').replace(/^#/, '') || (groups.top[0] && groups.top[0].slug);
+          if (initial) {
+            selectEntry(initial, true);
+          }
+        } catch (err) {
+          console.error('Init error', err);
+          statusEl.textContent = 'Klarte ikke å laste index.json';
+          fallbackEl.hidden = false;
+          fallbackEl.textContent = 'Feil: ' + err.message + '.';
+        }
+      }
+
+      window.addEventListener('hashchange', handleHashChange);
+      init();
+    })();
+  </script>
+</body>
+</html>

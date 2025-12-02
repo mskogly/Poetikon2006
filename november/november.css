@@ -1,0 +1,40 @@
+A {text-decoration: none}
+
+body { FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; margin: 0px;}
+
+DIV {
+	FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;
+}
+
+
+
+
+.navigasjon
+{
+
+        FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;
+        text-align: right;
+
+
+}
+
+
+.natten
+{
+  	position:absolute;
+  	top:20px;
+  	left: 160px;
+  	width:250px;
+  	overflow:no;
+        FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;
+        text-align: justify;
+}
+
+
+.tekst
+{
+
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;
+        text-align: justify;
+
+}

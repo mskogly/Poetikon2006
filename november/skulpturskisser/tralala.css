@@ -1,0 +1,24 @@
+// A {font: 8pt Arial; color: #FFFFFF; text-decoration: none}
+
+A:link {font: 8pt Arial; color: #FFFFFF; text-decoration: none}
+A:active {font: 8pt Arial;  color: #000000; text-decoration: none}
+A:visited {font: 8pt Arial;  color: #D1D1D1; text-decoration: none}
+
+BODY  {background-color: #91a1af; margin: 0;  color:#ffffff}
+
+.tekst
+{
+  	position:absolute;
+  	top:0px;
+  	left: 200px;
+  	width:300px;
+  	overflow:no;
+        font-family: Times, Verdana, Arial, Helvetica;
+        font-size: 10pt;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 16pt;
+}
+
+
+

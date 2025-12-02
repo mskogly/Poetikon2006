@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Michi Albin</b><br/>
+
+Michi Albin, alltid med et smil p&#xE5; leppene. 24-&#xE5;ringen fra Sveits er s&#xE5; full av gode vibber at du venter det skal skje noe hele tiden.<br/><br/> 
+
+Team: Burton, Volcom<br/> 
+Beinstilling: Regular<br/> 
+Fritid: Chille og spille.<br/><br/>
+
+Albin kj&#xF8;rer stilsikkert og liker &#xE5; gj&#xF8;re h&#xF8;ye frontside alley-oops i pipen. Han liker ogs&#xE5; &#xE5; farte rundt p&#xE5; sn&#xF8;scooter i fjellene ved Riksgrensen. -Fart er noe du blir vant med, men adrenalinkicket kommer hver gang uansett!. <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

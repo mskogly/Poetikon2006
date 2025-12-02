@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#000000" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<CENTER><IMG NAME="slide" SRC="loading.gif" HSPACE="0" VSPACE="0" border="0" height="19" width="12"></A>
+
+</CENTER>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+
+
+
+img_src=new Array(100);
+
+img_cnt=0;
+
+curr_img=0;
+
+
+
+function addImage(src) {
+
+ img_src[img_cnt]=src;
+
+ img_cnt++;
+
+}
+
+
+
+function slideshow() {
+
+ document.images["slide"].src=img_src[curr_img];
+
+ if(curr_img!=img_cnt) curr_img++; else curr_img=0;
+
+ setTimeout('slideshow();',15);
+
+}
+addImage("hode1.jpg");
+addImage("hode2.jpg");
+addImage("hode3.jpg");
+addImage("hode4.jpg");
+addImage("15-baywatch.jpg");
+addImage("14-rarfranskdame.jpg");
+addImage("13_stalker.jpg");
+addImage("12.jpg");
+addImage("11.jpg");
+addImage("10.jpg");
+addImage("08.jpg");
+addImage("07.jpg");
+addImage("06.jpg");
+addImage("05.jpg");
+addImage("02.jpg");
+
+setTimeout('slideshow();',5);
+
+//-->
+
+</SCRIPT>
+
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+<TITLE>Summer of 2000</TITLE>
+
+<link rel=STYLESHEET href="junk.css" type="text/css">
+
+<style type="text/css">
+#divUp{position:absolute; left:270; top:20}
+#divDown{position:absolute; left:270; top:200}
+#divCont{position:absolute; width:220; height:270; overflow:hidden; top:20; left:20; clip:rect(0,220,270,0); visibility:hidden}
+#divText{position:absolute; top:0; left:0; color:#FFFFFF; text-align:justify}
+</style>
+<script type="text/javascript" language="JavaScript">
+
+/*****************
+This script is stolen from emil@stylelab.nu :)
+****************/
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='visible'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+
+<BODY background="txt2000summer.gif" bgcolor="#99CC00" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" topmargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0">
+<div id="divUp">
+
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="img/up.gif" border="0"></a>
+
+</div>
+
+<div id="divDown">
+
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="img/down.gif" border="0"></a>
+
+</div>
+
+<div id="divCont">
+        <div id="divText">
+<font class="liten" color="#CCFF99">
+
+
+Stockholm,
+  SWEDEN, 18-21. juni 2000. <p>I'm sitting there, in my stuffy Moscow appartment, typing and watching a film about dorothy parker, taking inventory of my recent movements in the land of fart and garbage. What had I done with my life lately? I had traveled a bit, and spent most of what i had earned during the fall on really good food. My travels had brought me to Greece, where I had explored the island Zakynthos on a rented Scooter, and i must admit i was pretty pleased with myself about that. We (my girlfriend and me) had found quite a few hidden pearls on the "other side" of the island, amoung others a tiny familiydriver restaurant, a wonderful litle hotel, and then another restaurant where they served lobster fresh from the ocean (as i said, i HAD spent most of my money on food :). We where on Zakythos for a week, the weather was perfekt, we met som nice people, and had a very pleasant stay, read a little bit, drank a little bit, and swam alot. Perhaps the best thing about Zakynthos was that my brain started being creative again, after the usual spring hardships at work (i had worked my ass off on a new project). I came up with a myrad of new stuff, some very weird, and som just plain beautiful, and i wrote them alle down in my little book, where they probably will stay forever :). And then we went back to Stockholm, Sweden. We had gone to Stockholm with a plan to travel around in the  archipelago for two weeks, but we caught word that it was very hard to find decent accomodation during the high season, so the first morning while eating breakfast and reading the paper i found some adds with dirt cheap tours to everywhere. The next morning we were on a plane to Greece.
+
+On the planeride back I asked Silje if she wanted to go to Trondheim where she grew up. So the first thing we did when we got to Stockholm was rent a WW Lupo and drive out to a very weird town (i can't remeber the name right now). We where incredibly hungry, but had a ridiculously hard time finding a place to eat. During our hunting/gathering cruice around town we found a place that looked promising (it was open, everything else was closed, at 2300!). But when we went in we entered the Middle age, a dungeon filled with raving loonitics and deformed creeps. I have never seen such an appalling collection of human waste gathered in one place all my life, and thats including Fauske. My god, i couldn't believe mye eyes. We stayed long enough to find out that the kitchen was closed, during with i was on my toes and ready to kill. I didn't have to though, and we made it out alive. One of the weirdest of the weirdos came out after us, so drunk that he barely could walk, let alone ride his bike, which he had a go at, and failed totally at, as he probably had failed at everything he had ever tried to accomplish in his life. So he deceided it would be better to just stand in the middle of the road drooling and howling at us, and when i pulled out of the parking lot i had every intention of running over him if he didnt had brains enough to move. He did. Evolution!
+
+
+
+</font>
+        </div>
+</div>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META NAME="robots" CONTENT="noindex,follow">
+<TITLE></TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="../pop.js"type="text/javascript"></script>
+<link rel=STYLESHEET href="../poetikon.css" type="text/css">
+
+</HEAD>
+<BODY bgcolor="#808080" TEXT="#000000" link="#000000" vlink="#000000">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="right">
+<tr><td align="left"><div align="justify">
+
+<div align="center">
+<A HREF="marie/04.html" target=foto><IMG SRC="marie/04.gif" alt="" WIDTH="20" HEIGHT="30" BORDER="1"></A>
+<A HREF="marie/03.html" target=foto><IMG SRC="marie/03.gif" alt="" WIDTH="40" HEIGHT="30" BORDER="1"></A>
+<A HREF="marie/02.html" target=foto><IMG SRC="marie/02.gif" alt="" WIDTH="33" HEIGHT="30" BORDER="1"></A>
+<A HREF="marie/01.html" target=foto><IMG SRC="marie/01.gif" alt="" WIDTH="30" HEIGHT="30" BORDER="1"></A>
+<A HREF="ter/01.html" target=foto><IMG SRC="ter/01.gif" alt="" WIDTH="30" HEIGHT="30" BORDER="1"></A>
+<A HREF="ms/17.html" target=foto><IMG SRC="ms/17.gif" alt="" WIDTH="45" HEIGHT="30" BORDER="1"></A>
+<A HREF="ms/16.html" target=foto><IMG SRC="ms/16.gif" alt="" WIDTH="21" HEIGHT="30" BORDER="1"></A>
+<A HREF="ss/02.html" target=foto><IMG SRC="ss/02.gif" alt="" WIDTH="51" HEIGHT="30" BORDER="1"></A>
+<A HREF="ce/09.html" target=foto><IMG SRC="ce/09.gif" alt="" WIDTH="45" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/06.html" target=foto><IMG SRC="rs/06.gif" alt="" WIDTH="47" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/05.html" target=foto><IMG SRC="rs/05.gif" alt="" WIDTH="45" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/04.html" target=foto><IMG SRC="rs/04.gif" alt="" WIDTH="44" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/03.html" target=foto><IMG SRC="rs/03.gif" alt="" WIDTH="20" HEIGHT="30" BORDER="1"></A>
+<A HREF="javascript:lillesky()"><IMG SRC="ms/lillesky.gif" alt="" WIDTH="44" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/01.html" target=foto><IMG SRC="rs/01.gif" alt="" WIDTH="20" HEIGHT="30" BORDER="1"></A>
+<A HREF="rs/02.html" target=foto><IMG SRC="rs/02.gif" alt="" WIDTH="25" HEIGHT="30" BORDER="1"></A>
+<A HREF="ms/15.html" target=foto><IMG SRC="ms/15.gif" alt="" WIDTH="40" HEIGHT="30" BORDER="1"></A>
+<A HREF="sa/02.html" target=foto><IMG SRC="sa/02.gif" alt="" WIDTH="40" HEIGHT="30" BORDER="1"></A>
+<A HREF="ms/mcdonaldo.html" target=foto><IMG SRC="ms/mcdonaldo.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="kg/01.html" target=foto><IMG SRC="kg/01.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="sa/01.html" target=foto><IMG SRC="sa/01.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ke/08.html" target=foto><IMG SRC="ke/08.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="sv/02.html" target=foto><IMG SRC="sv/02.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/14.html" target=foto><IMG SRC="ms/14.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/13.html" target=foto><IMG SRC="ms/13.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ss/01.html" target=foto><IMG SRC="ss/01.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/12.html" target=foto><IMG SRC="ms/12.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/11.html" target=foto><IMG SRC="ms/11.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/10.html" target=foto><IMG SRC="ms/10.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="mk/04.html" target=foto><IMG SRC="mk/04.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="mk/03.html" target=foto><IMG SRC="mk/03.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="mk/02.html" target=foto><IMG SRC="mk/02.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="mk/01.html" target=foto><IMG SRC="mk/01.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/08.html" target=foto><IMG SRC="ce/08.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/07.html" target=foto><IMG SRC="ce/07.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/06.html" target=foto><IMG SRC="ce/06.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/05.html" target=foto><IMG SRC="ce/05.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/04.html" target=foto><IMG SRC="ce/04.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ce/03.html" target=foto><IMG SRC="ce/03.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/03.html" target=foto><IMG SRC="ms/03.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/01.html" target=foto><IMG SRC="ms/01.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="ms/02.html" target=foto><IMG SRC="ms/02.gif" alt="" WIDTH="22" HEIGHT="22" BORDER="1"></A>
+<A HREF="lb/lenabakke_etsted.html" target=foto><IMG SRC="lb/01.gif" alt="" WIDTH="22" HEIGHT="22" border="1"></A>
+</div><p><div>
+</div>
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>

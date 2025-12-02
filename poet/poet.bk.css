@@ -1,0 +1,55 @@
+
+A:link {font: 8pt Arial; color: #FFFFFF; text-decoration: none}
+A:active {font: 8pt Arial;  color: #FFFFFF; text-decoration: none}
+A:visited {font: 8pt Arial;  color: #FFFFFF; text-decoration: none}
+
+
+BODY { background-color: rgb(45,27,9); background-attachment: fixed; background-image: url(../_img/bg.gif); COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; margin: 0px;}
+
+BODY  {background-color: #91a1af; margin: 0;  color:#FFFFFF; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify}
+
+.tekst
+{
+	z-index:1;
+  	position:absolute;
+  	top:30px;
+  	left: 150px;
+  	width:350px;
+  	overflow:no;
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+PRE
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+.meny
+{
+  	position:absolute;
+  	top:10px;
+  	left: 20px;
+  	width:180px;
+  	overflow:auto;
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+
+.illustrasjon
+{
+
+  	position:absolute;
+  	top:60px;
+  	left: 450px;
+  	width:200px;
+  	overflow:no;
+}
+
+
+.heading
+{
+FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; text-align: justify
+}
+
+
+

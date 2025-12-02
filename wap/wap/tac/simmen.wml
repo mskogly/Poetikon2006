@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/>
+
+<b>Gian Simmens</b><br/>
+
+Gian Simmens (23) fra Sveits er oppvokst p&#xE5; favorittstedet sitt, Arosa. Han er kjent som en av dem som ikke bremser for noe s&#230;rlig.<br/><br/>
+
+Team: Santa Cruz<br/>
+Spesial: Freestyle<br/>
+Fritid: Skate, hiphop, trening, mountainbiking<br/><br/>
+
+Gian befinner seg p&#xE5; toppen av ISF-rankingen denne sesongen. Dette er ogs&#xE5; mannen som vant halfpipe-konkurransen i OL 98, s&#xE5; han har god kontroll p&#xE5; nervene og pusher maks n&#xE5;r det gjelder. Noen er bare s&#xE5;nn. Det skal ogs&#xE5; sies at Gian setter pudderkj&#xF8;ring med venner minst like h&#xF8;yt som OL-gullet. Det skal han ha.<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

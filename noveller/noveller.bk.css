@@ -1,0 +1,18 @@
+// A {text-decoration: none}
+A:link {font: 10pt Courier, Helvetica, sans-serif; font-weight: plain; color: #FFFFFF}
+A:active {font: 10pt Courier, Helvetica, sans-serif;  color: #FFFFFF; text-decoration: none}
+A:visited {font: 10pt Courier, Helvetica, sans-serif;  color: #FFFFFF; text-decoration: none}
+
+
+BODY  {font: 10pt Courier, Helvetica, sans-serif; line-height: 20pt; margin: 0}
+
+
+.tekst
+{
+
+        font-family: Courier, Helvetica, sans-serif;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 13pt;
+
+}

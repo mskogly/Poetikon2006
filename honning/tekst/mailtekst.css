@@ -1,0 +1,49 @@
+body
+	{padding: 5px;
+	background-color: rgb(141,132,127)}
+
+.mailtekst
+{
+  	position:absolute;
+  	top:50px;
+  	left: 50px;
+  	width:395px;
+  	overflow:auto;
+        font-family: times, garamond, serif;
+        font-size: 12pt;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 20pt;
+
+}
+
+#a001 {
+  visibility:show;
+  visibility:visible;
+
+}
+#a002 {
+  visibility:hide;
+  visibility:hidden;
+
+}
+#a003 {
+  visibility:hide;
+  visibility:hidden;
+
+}
+#a004 {
+  visibility:hide;
+  visibility:hidden;
+
+}
+#a005 {
+  visibility:hide;
+  visibility:hidden;
+
+}
+#a006 {
+  visibility:hide;
+  visibility:hidden;
+
+}

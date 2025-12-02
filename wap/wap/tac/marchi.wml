@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Romain De Marchi</b><br/>
+
+Romain utmerket seg i Stamsund i fjor ved &#xE5; skrive Slutt &#xE5; d&#xF8;mme meg. p&#xE5; startnummeret sitt. Han hadde det s&#xE5; morro at han ikke ville kj&#xF8;re for &#xE5; vinne.<br/><br/>
+
+Team: Airwalk, Volcom, Clive.<br/> 
+Beinstilling: Regular<br/> 
+Fritid: Skateboard, surfing og motocross.<br/><br/> 
+
+21 &#xE5;r unge Romain er fra Geneve i Sveits, men har v&#230;rt &#xE5; se p&#xE5; mange av de st&#xF8;rste videoproduksjonene fra bl.a. USA de siste &#xE5;rene. Han hadde over 20 hits p&#xE5; quarteren, hvor en gigantisk indy 540 var det som begeistret dommerne mest.<br/><br/> 
+
+Han vant med dette som beste trick, til tross for at han var alt for opptatt med &#xE5; tenke p&#xE5; resultatene. -Vi brydde oss ikke om resultatene, jeg var alt for opptatt med &#xE5; kj&#xF8;re og henge ut med de lokale damene. Romani satte ogs&#xE5; 5 meter air to fakie, og 6 meter h&#xF8;ye doubles med Terje ble landet st&#xF8;dig. <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

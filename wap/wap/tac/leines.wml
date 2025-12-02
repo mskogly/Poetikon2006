@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Bjorn Leines</b><br/>
+
+24 &#xE5;r gammel og den eneste TAC-deltaker Terje nevnte da han fikk navngi de 10 snowboardere som har inspirert ham. <br/><br/>
+
+Team: Forum, Volcom, Oakley, Diakka og Yride <br/>
+Beinstilling: Regular <br/>
+Fritid: Motorcross, Skateboard, romfart og kampsport <br/><br/>
+
+
+At Bj&#xF8;rn Leines har v&#230;rt en inspirasjon for Terje burde v&#230;re skussm&#xE5;l godt nok for de fleste. I tillegg b&#xF8;r nevnes at han vant leseravstemningen for "Best Video Part" i Transworld Snowboarding Magazine. Han imponerer med andre ord b&#xE5;de i &#xF8;yeblikket og i videotoppen. Det mistenkelig norsklydende navnet fikk han etter oldefaren sin som var Norsk. Selv bor han i Utah i USA, som regnes for &#xE5; ha noen av de feteste heisanleggene i verden.<br/><br/> 
+
+Et sted mange dedikerte snowboardere fra hele verden reiser til om vinteren. P&#xE5; sp&#xF8;rsm&#xE5;l om hva han liker kj&#xF8;re? -Favoritterreng er store fjell, halfpipe og parker, egentlig hva som helst. N&#xE5;r han ikke st&#xE5;r snowboard er han &#xE5;pen for &#xE5; ha det g&#xF8;y p&#xE5; en eller annen m&#xE5;te. Aller helst skal kona v&#230;re med. Fin fyr! <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

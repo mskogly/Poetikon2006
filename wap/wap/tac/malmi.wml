@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Joni Malmi</b><br/>
+
+Joni Malmi, 22 &#xE5;r fra Finland. Kj&#xF8;rer raddis men skadefritt.<br/><br/>
+
+Team: Forum <br/>
+Beinstilling: Regular <br/>
+Motto: Nyte livet mest mulig! <br/>
+
+ 
+ 
+Joni Malmi er f&#xF8;dt i 1979 i Helsinki, Finland. Han begynte &#xE5; skate allerede som seks&#xE5;ring, og har kj&#xF8;rt brett i &#xE5;tte &#xE5;r, de siste tre som proff. <br/><br/><br/>
+
+Joni kj&#xF8;rer radikalt, men n&#230;rmest skadefritt. Han kan bare huske &#xE5; ha f&#xE5;tt noen skrammer fra uhell, og det p&#xE5; skateboard. - Men n&#xE5;r jeg var liten slo jeg hull i hodet hele tiden!<br/>
+
+Joni konkurrerer for det meste i USA, nettopp fordi de fleste konkurransene avholdes der. Han er ogs&#xE5; med i en rekke snowboardfilmer.
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

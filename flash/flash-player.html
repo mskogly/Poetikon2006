@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poetikon — Flash Player</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #flash-root {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+    #flash-player {
+      width: 100%;
+      height: 100%;
+      max-width: 1024px;
+      max-height: 768px;
+      aspect-ratio: 4 / 3;
+      background: #111;
+      border: none;
+    }
+    #message {
+      text-align: center;
+      font-size: 16px;
+      padding: 20px;
+      color: #ddd;
+    }
+  </style>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+  <div id="flash-root">
+    <div id="message">Laster …</div>
+  </div>
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get('file');
+      const root = document.getElementById('flash-root');
+      const msg = document.getElementById('message');
+
+      if (!file) {
+        msg.textContent = 'Ingen SWF angitt. Bruk ?file=sti/til/fil.swf';
+        return;
+      }
+
+      function resolvePath(path) {
+        if (/^https?:\/\//i.test(path)) return path;
+        if (path.startsWith('/')) return path;
+        return '../' + path.replace(/^\.\//, '');
+      }
+
+      const url = resolvePath(file);
+
+      const ruffle = window.RufflePlayer || window.RufflePlayer;
+      if (!ruffle || !ruffle.newest) {
+        msg.textContent = 'Ruffle ble ikke lastet. Sjekk nettverket.';
+        return;
+      }
+
+      const player = ruffle.newest().createPlayer();
+      player.style.width = '100%';
+      player.style.height = '100%';
+      player.id = 'flash-player';
+
+      root.innerHTML = '';
+      root.appendChild(player);
+
+      player.load(url).catch((err) => {
+        console.error('Ruffle load error', err);
+        msg.textContent = 'Kunne ikke laste SWF: ' + err;
+        root.innerHTML = '';
+        root.appendChild(msg);
+      });
+    })();
+  </script>
+</body>
+</html>

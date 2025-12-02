@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- upunkt nrk by mykle) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<!-- Hovedmeny  index-fil  -->
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Terje H&#xE5;konsen</b><br/>
+
+
+Team: Burton, Volcom, Oakley <br/>
+Beinstilling: Regular <br/>
+Fritid: Venner, familie, surf, filming, skate, fotball <br/><br/>
+26-&#xE5;ringen fra &#197;modt i Telemark er utvilsomt den st&#xF8;rste stjernen i snowboard-sirkuset. Han har vunnet det meste av brett-konkurranser p&#xE5; Moder Jord, men er kanskje vel s&#xE5; kjent for &#xE5; kj&#xF8;re sitt eget l&#xF8;p - som da han boikottet OL i Nagano i 1988 som en reaksjon mot IOC og FIS. <br/><br/>
+
+Terje har vunnet alle de mest prestigetunge snowboardkonkurransene. Verdenscupen tre ganger, er to ganger verdensmester og fem ganger europamester. Han ble ikke mindre legendarisk kj&#xF8;rer av &#xE5; vinne det &#xE5;rlige raskeste mann ned rennet i Mt. Baker, p&#xE5; brettet -feil vei-. N&#xE5; h&#xE5;ndplukker han eventer etter hvor det foreg&#xE5;r og hvem som har laget anlegget, i tillegg til &#xE5; kj&#xF8;re tre Burton-renn i &#xE5;ret.<br/><br/>
+
+
+Han er visjon&#230;ren bak The Arctic Challenge sammen med Daniel Franck og er fokusert p&#xE5; &#xE5; vise verden det beste i snowboard. 
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

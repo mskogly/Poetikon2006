@@ -1,0 +1,28 @@
+<?xml version="1.0"?> 
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml"> 
+ 
+<wml> 
+  
+  <template> 
+    <do type="prev" label="Voltar"><prev/></do> 
+  </template> 
+   
+  <card id="wapmail" title="WapMail">     
+    <do type="ajuda" label="Ajuda"><go href="busca.wml#ajuda"/></do>      
+    <p align="center">
+<img src="mail.wbmp" alt="e-mail "/><br/><small>Enviar E-mail para Seu Nome</small></p>
+<p align="left">De:<br/><input name="email" format="*m"/></p> 
+<p>CC:<br/><input name="cc" format="*m"/></p>
+<p>Assunto:<br/><input name="subject" format="*m"/></p>
+<p>Mensagem:<br/><input name="mens" format="*m" emptyok="true"/></p>
+<p><anchor>Enviar<go href="http://www.impresso.com.br/cgi-local/wapmail/wapmail.pl" method="post">
+<postfield name="email" value="$(email)"/>
+<postfield name="recipient" value="seu@e-mail.com"/>
+<postfield name="cc" value="$(cc)"/>
+<postfield name="subject" value="$(subject)"/>
+<postfield name="mens" value="$(mens)"/>
+</go></anchor></p>
+<p><small>Powered IMPRESSO W@P</small></p>
+  </card> 
+   
+</wml> 

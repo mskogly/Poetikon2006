@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>JeffPipas.com Ajax Form Processor Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="../../../blog/wforms/wforms.js"></script>
+<script type="text/javascript" src="sendemail.js"></script>
+<script type="text/javascript" src="../../../blog/prototype/dist/prototype.js"></script>
+<script type="text/javascript" src="../../../blog/scriptaculous/effects.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../blog/wforms/wforms.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="stylesheet" type="text/css" href="../../../blog/styles-site.css">
+</head>
+<body>
+<div id="container">
+
+<div id="banner">
+<object type='application/x-shockwave-flash' data='../../../blog/lines.swf' width='700' height='100'>
+<param name='movie' value='../../../blog/lines.swf' />
+</object>
+<div id="nav">
+<ul>
+<li><a href="../../../blog/home.html">Home</a></li>
+<li><a href="../../../blog/index.html">Blog</a></li>
+<li><a href="../../../gallery2/main.php">Pictures</a></li>
+<li><a href="../../../blog/portfolio.html">Portfolio</a></li>
+<li id="current"><a href="../../../blog/projects.html">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="center">
+<div id="leftCol">
+<fieldset><legend>Ajax Form Processor</legend>
+<p>To your right, is a plain old form... nothing special on the outside.
+But, if you take a closer look you'll notice alot of things! Go ahead and
+try to submit a blank form. A neat validation script called
+<a href="http://www.formassembly.com/">wForms</a>
+handles that. Next is the neat part. Fill out the form with the required
+fields and watch it do its thing! Its all done in less than 20 lines of
+code! Thanks to <a href="http://prototype.conio.net/">Prototype</a>.
+You should see the result below this, and above the explanation box</p>
+</fieldset>
+<fieldset>
+<legend>Explanation</legend>
+<p>An explanation of the project can be viewed</p>
+</fieldset>
+</div>
+<div id="midCol"><br />
+<div id="form">
+<form method="post" name="contact" id="contact_form" action="sendmail.php">
+<input type="hidden" name="post" value=" Send " />
+<label for="author">Name:</label><br />
+<input type="text" id="author" name="author" class="required" /><br />
+<label for="email">Email Address:</label><br />
+<input type="text" id="email" name="email" class="validate-email required" /><br />
+<label for="url">URL:</label><br />
+<input type="text" name="url" id="url" /><br />
+<label for="text">Comments:</label><br />
+<textarea id="text" name="text" rows="6" cols="25" class="required"></textarea>
+<br />
+<input style="font-weight: bold;" type="submit" name="submitbutton" id="submitbutton" value=" Send " />
+<br />
+<img id="progress" style="display:none;" align="middle" src="../../../blog/images/progressbar.gif"
+border="0" alt="Loading..." />
+</form>
+</div>
+</div>
+<div id="result">&nbsp;</div>
+</div>
+</div>
+<div style="clear:left;"></div>
+<div id="footer">
+<center>Copyright &copy;2005 <a href="http://www.jeffpipas.com">JeffPipas.com</a></center>
+</div>
+</div>
+</body>
+</html>

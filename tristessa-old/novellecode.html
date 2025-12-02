@@ -1,0 +1,417 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD>
+<link rel=stylesheet href="../poetikon.css" type="text/css">
+<TITLE>Poetikon</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--- begin script
+
+
+
+function NextRandomNumber()  {
+
+  var hi   = this.seed / this.Q;
+
+  var lo   = this.seed % this.Q;
+
+  var test = this.A * lo - this.R * hi;
+
+  if (test > 0)
+
+    this.seed = test;
+
+  else
+
+    this.seed = test + this.M;
+
+  return (this.seed * this.oneOverM);
+
+}
+
+function RandomNumberGenerator() {
+
+  var d = new Date();
+
+  this.seed = 2345678901 +
+
+    (d.getSeconds() * 0xFFFFFF) +
+
+    (d.getMinutes() * 0xFFFF);
+
+  this.A = 48271;
+
+  this.M = 2147483647;
+
+  this.Q = this.M / this.A;
+
+  this.R = this.M % this.A;
+
+  this.oneOverM = 1.0 / this.M;
+
+  this.next = NextRandomNumber;
+
+  return this;
+
+}
+
+function StoryFramework()
+
+{
+
+this.story='<b>[title]</b><p><div>[paragraf01]<p>Hun sa: "[sitat01]". Jeg svarte, [adjektiv01]: "[sitat02]". [etter01]<p>Jeg sa: "[sitat01]. [sitat02]."!<p>'+
+
+	'[etter02]<p>[sitat03]<br></div><p><div align="center">| <SMALL><A HREF="novellecode.html">fortell mer!</A></SMALL> |</div></font>'
+
+this.title='2:[darkest] [night];[love] , [stars]'
+
+this.darkest='9:Flytende;Brennende;Fast;Sovende;Trist;Håpende;Søt;[night] ;Nesten glemt'
+
+this.night='7:dråpe;kløe;ro;Fremmede;Tristessa;måne;[darkest] [night]'
+
+this.love='6:Savn;Søvn;Håp;Regn;fravær;Tap'
+
+this.stars='7:sol;alt;øyne;frukt;tro;hud;påvirkning'
+
+this.sitat01="22:Sildre sildre, selvets lengsel;"+
+
+	"Er jeg ennå Evrydike på vei opp fra Dødsriket?;"+
+	"Jeg mener bare ...;"+
+	"Denne samtalen kjeder meg ...;"+
+	"Vi har gått langt;"+
+	"Det er ikke tilfeldig at dette skjer meg, skjønner du. Jeg er med på noe viktig;"+
+
+	"Er dette min drøm?;"+
+	"Du vet hva jeg tenker på...;"+
+	"Jeg føler meg litt annerledes...;"+
+
+	"Ser du linen jeg spenner mellom mitt og ditt blikk, og ser du linedanseren?;"+
+
+	"Ikke forlat meg her alene;"+
+
+	"Syng sangen min;"+
+
+	"Jeg er allerede kommet langt;"+
+
+	"Jeg er ikke redd lenger;"+
+
+	"Se deg rundt;"+
+
+	"Se på meg;"+
+
+	"Dette kan være slutten;"+
+
+	"Ja;"+
+
+	"Kan du lese øynene mine?;"+
+
+	"Ristet, berørt;"+
+
+	"Jeg er ensom med lengselen ut.;"+
+
+	"Jeg har drømt, våket, bedt, grått, søkt meg inn til synet av ryggen da du snudde deg og gikk;"+
+
+	"Jeg er ristet, berørt"
+
+this.paragraf01="8:Jeg leter etter mennesker for tiden. De bærer på en liten bit sannhet alle sammen. En dag vil jeg kunne sette alle bitene sammen, og stå der med fortiden min i hendene. Da kan jeg gå videre. Jeg må bli her til da, det er pålagt meg.;"+
+
+	"Jeg har rett og slett sluttet å tro på den harde virkelighet. Jeg tror på virkeligheten bare om den er myk og god.;"+
+
+	"Den gangen hadde Skaperen ennå ikke fått gripe tak i mine  skapende evner, så de svek.;"+
+
+	"Morgenglitteret spiller inn til sølvtråder som svarer regnbueaktig på spede hilsener fra livsreservoarer, skjult under stein, hud stram over skjelett.;"+
+
+	"Skumhvitt på toppene. Sterke understrømmer. Hun jubler vilt. I høye stormbølger under stormskyer ser jeg ikke klar himmel.;"+
+
+	" Jeg møter aldri bakken. Fallet er for langt. Tv-skjermen glitrer mot meg. Det blir mørkere om kvelden. Hun ligger ved siden av meg. Pleier sin kattehale. Slikker pelsen. Legg ord mellom linjene. Så blir ting mer meningsfullt.;"+
+
+	"Aldri mer søvn. Jeg ligger og ser på henne. Stryker henne med blikket. Pust mot pust. Et asynkront hjerteslag. ;"+
+
+	"Vi løper gjennom rosenhagen. Leker vilt og hemningsløst under lav himmel. Velter flasken  med portvin og slikker i oss restene. Ruller rundt i gulrotseng og blomstedbed. Leopard og Jaguar."
+
+this.adjektiv01="14:stillferdig;"+
+
+	"nynnende;"+
+
+	"nølende;"+
+
+	"forelsket;"+
+
+	"undrende;"+
+
+	"beundrende;"+
+
+	"leende;"+
+
+	"forsiktig;"+
+
+	"usikkert;"+
+
+	"nølende;"+
+
+	"nølende;"+
+
+	"nølende;"+
+
+	"nølende;"+
+
+	"nølende"
+
+this.sitat02="17:Pærepulver, søt grøt av venus;"+
+
+	"Jeg greier ikke holde fast ved noe;"+
+	"Jeg ba deg aldri om å vente;"+
+	"Kanskje ...;"+
+	"Hører du verden nynne?;"+
+	"Jeg vil gå inn sammen med deg;"+
+	"Hva er lengselen i deg?;"+
+	"Dette er ingen rosenhage;"+
+
+	"Ikke...;"+
+	"Hvil deg. Du er trygg nå;"+
+	"Jeg er glad for din skyld;"+
+
+	"Du gikk for langt;"+
+
+	"Jeg ba deg om å vente;"+
+
+	"Jeg blør dråper av ulykksalighet.;"+
+
+	"Jeg er berørt av de falske hærskarer;"+
+
+	"Som lukten av nyklippet gress;"+
+
+	"Jeg gir deg mer tid;"+
+
+	"Jeg er litt redd;"+
+
+	"Jeg føler meg fortapt;"+
+
+	"Slipp meg inn;"+
+
+	"Det er ikke tilfeldig at dette skjer deg. Du er med på noe viktig;"+
+
+	"Mitt blikk faller i ditt;"+
+
+	"Hvis bare jeg hadde vært den grønneste;"+
+
+	"Jeg gir deg tid"
+
+this.etter01="14:Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Jeg var litt i tvil, men samtidig var jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+
+	"Jeg smilte forsiktig, forståelsesfullt.;"+
+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+
+	"Og jeg ville så gjerne si mer. Men jeg visste ikke hvordan.;"+
+
+	"Jeg er litt i tvil, men samtidig er jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg ville så gjerne si mer. Men jeg visste ikke hvordan.;"+
+
+	"Jeg hviler på hennes ord.;"+
+
+	"I hundre netter tomme for drømmer. Kattehaler og mykt regn. Jentehud. Stille strømmer fra en sky.;"+
+
+	"Og jeg ville så gjerne fortelle henne mer. Men jeg visste ikke hvordan."
+
+
+
+
+this.etter02="14:Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Jeg var litt i tvil, men samtidig var jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+
+	"Jeg smilte forsiktig, forståelsesfullt.;"+
+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+
+	"Og jeg ville så gjerne si mer. Men jeg visste ikke hvordan.;"+
+
+	"Jeg er litt i tvil, men samtidig er jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+
+	"Og jeg ville så gjerne si mer. Men jeg visste ikke hvordan.;"+
+
+	"Jeg hviler på hennes ord.;"+
+
+	"I hundre netter tomme for drømmer. Kattehaler og mykt regn. Jentehud. Stille strømmer fra en sky.;"+
+
+	"Og jeg ville så gjerne fortelle henne mer. Men jeg visste ikke hvordan."
+
+
+
+this.sitat03="19:Hva mer kunne jeg si?;"+
+
+	"En gang gikk jeg mot en lysning i skogen. Jeg visste det var en bekk der.;"+
+
+	"Jeg vil ikke dele dette med noen.;"+
+
+	"Hennes nærvær polstrer verden.;"+
+
+	"Jeg blør dråper av ulykksalighet.;"+
+
+	"Jeg er visst mitt eget ode til det mundane.;"+
+
+	"Ble vi berørt av falske hærskarer?;"+
+
+	"Hva mer er det vel å si om det?;"+
+
+	"Slik falt mitt blikk i ditt.;"+
+
+	"Slik falt da mitt hjerte i ditt.;"+
+
+	"Slik falt da mitt blikk i ditt.;"+
+
+	"Og jeg har drømt, våket, bedt, grått, søkt meg inn til synet av ryggen da hun snudde og gikk.;"+
+
+	"Slik falt mitt hjerte i ditt.;"+
+
+	"Svaberghjertet svarer. Bølger av blod mot stein. Jeg er nummen. Tomme tanker om en kveld. Jeg er salt.;"+
+
+	"Hun sa det jeg skulle si. Sa ordene i hodet mitt. Hva kunne jeg svare meg selv? ;"+
+
+	"Jeg hviler på hennes ord.;"+
+
+	"Strøm av setninger rundt meg. Hun har en vakker klumsenhet. Som tango i ørkensand. Jeg hviler på hennes ord. Snart sovner jeg.;"+
+
+	"Legg ord mellom linjene. Så blir ting mer meningsfullt.;"+
+
+	"La meg sovne før livet slår inn og drar meg ned."
+
+}
+
+
+
+var rand = new RandomNumberGenerator()
+
+
+
+function ExtractNthSubstring(string, n, delimiter)
+
+{
+
+var a=0, i, j, b=string.length;
+
+	if (n<0) return '##'
+
+  	for (i = 0; i < n; i++) {
+
+  		j = string.indexOf(delimiter, a);
+
+  		if (j==-1)  {return '#' + n} else a=j+1
+
+	}
+
+  	if ((j=string.indexOf(delimiter, a+1))!=-1) b=j
+
+  	return string.substring(a, b)
+
+}
+
+
+
+function ExtractRandomSubstring(s)
+
+{
+
+  	return ExtractNthSubstring(s.substring(s.indexOf(':')+1), Math.floor(rand.next()*parseInt(s)),';')
+
+}
+
+
+
+function ProcessString(s)
+
+{
+
+var a,b
+
+	for (;;) {
+
+		if ((a = s.indexOf('[', 0)) >= 0) {
+
+    			if ((b=s.indexOf(']', ++a)) >= 0) {
+
+      				s=s.substring(0,a-1)+ProcessString(ExtractRandomSubstring(framework[s.substring(a, b)]))+s.substring(b+1)
+
+    			}
+
+			else a=0
+
+		}
+
+		if (a<=0) break
+
+	}
+
+	return s
+
+}
+
+// end script -->
+
+</SCRIPT>
+
+
+
+</HEAD>
+
+
+
+<BODY bgcolor="#000000" background="../_img/arkiv/beigebg.gif" TEXT="#ffffff" LINK="#FFFFFF" VLINK="#FFFFFF" ALINK="#800080">
+<TABLE valign=middle height="100%" width="600" align="center" CELLSPACING=0 CELLPADDING=10 BORDER=0>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--- begin script
+
+document.write('<TR><TD>') //
+
+
+var framework=new StoryFramework
+
+var nPic=Math.floor(rand.next()*14)
+
+var sPic='"img/spain' + '0102030405060708091011121314'.substring(nPic * 2, (nPic + 1) * 2) + '.gif"'
+
+document.write('<a href="novellecode.html"><IMG SRC=' + sPic + ' align=right hspace=12 border="0"></a>');
+
+document.write(ProcessString(framework.story))
+
+// end script -->
+
+</SCRIPT>
+
+<br clear="all">
+
+
+
+
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+
+</HTML>
+

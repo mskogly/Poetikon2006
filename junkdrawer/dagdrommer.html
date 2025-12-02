@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<TITLE>En dum ens dagdrømmer</TITLE>
+
+<link rel=STYLESHEET href="junk.css" type="text/css">
+
+<style type="text/css">
+#divUp{position:absolute; left:270; top:20}
+#divDown{position:absolute; left:270; top:200}
+#divCont{position:absolute; width:220; height:270; overflow:hidden; top:20; left:20; clip:rect(0,220,270,0); visibility:hidden}
+#divText{position:absolute; top:0; left:0; color:#FFFFFF; text-align:justify}
+</style>
+<script type="text/javascript" language="JavaScript">
+
+/*****************
+This script is stolen from emil@stylelab.nu :)
+****************/
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='visible'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+
+<BODY background="dagdrommer.gif" bgcolor="#99CC00" text="#000000" link="#000000" vlink="#000000" alink="#000000" topmargin="0" leftmargin="0" rightmargin="0" marginwidth="0" marginheight="0">
+<div id="divUp">
+
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="img/up.gif" border="0"></a>
+
+</div>
+
+<div id="divDown">
+
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="img/down.gif" border="0"></a>
+
+</div>
+
+<div id="divCont">
+        <div id="divText">
+<font class="liten" color="#000000">
+
+Jeg dagdrømmer veldig mye.
+
+<ol>
+<li>19. september 2000. Trondheim. Jeg og Silje syklet kanksje to mil i dag. Det syntes jeg gikk så lett at å. Vi så en katt, det blåste. Om natta lå jeg og filosoferte over om hvordan det ville være å sykle til feks afrika på en gammal tregirs damesykkel. Utenfor blåste det ganske mye. Jeg så for meg at det feks begynte med at jeg skulle ned på kiosken og kjøpe brus, og så fortsatte jeg bare å sykle. Det fine med å sykle er jo at det går mye raskere enn å gå, pluss at man er i mye nærmere guds frie enn når man tar tog eller kjører bil. Og hvis det er nedoverbakke (og det er det jo endel av nedover kontinentet!) så er det jo bare å trille avgårde og kikke seg rundt, og se om man ser noe man liker. Og kanskje man treffer noen vagabønder som syns jeg er en kjernekar og skikkelig tøff fordi jeg bare forlot alt jeg hadde og syklet avgårde. Kanskje jeg vil og med fikk noen fans som satte inn penger på kontoen min (4534 1601030), sånn helt uten videre. Jeg tok ikke med meg noen ting, feks telt og slikt, kun et visakort, men jeg kan tenke meg at jeg etter hvert ville plukke opp et par ting, feks lappesaker og noen souvenirer, kanskje jeg kunne kjøpe meg danskepølse på danskebåten. Jeg er ikke helt sikker på hvor jeg ville ha syklet etter Danmark, men jeg tror jeg ville ha syklet følgende rute: Først fra Trondheim og til Larvik. Deretter langs Danmarks vestkyst, og så inn i tyskland. Jeg tror faktisk jeg ville fulgt vestkysten av tyskland, frankrike,spania og portugal, og så tatt båt til Marocco. Når jeg først hadde kommet meg helt dit, ville jeg sannsynligvis bare fortsatt, selv om jeg ikke kjenner noen i afrika. Jeg vet heller ikke noe om afrika, jeg tror det kan være derfor jeg har lyst til å sykle dit men jeg er ikke helt sikker.
+<p>
+<li>19. september 2000 (litt senere). Trondheim. Jeg har tenkt ut et helt fabelaktig restaurant/butikkkonsept: Jeg reiste hjem til Brønnøysund og på en to tre hadde jeg ordnet et veldig bra lokale mitt i byen, halvt delikatesse/spesialforretning, og halvt gourmetrestaurant. Jeg forbigikk kjempelett det faktum at den eneste ok restauranten i Brønnøysund gikk i dass. Her skulle det drives butikk! Konseptet er at så mye som mulig av varene og ingrediensene i matrettene skal komme fra lokale fiskere, bønder, jegere og slikt (som det selvfølgelig finnes bøtter av over alt). Butikken skal være en god gammaldags kolonial, hvor jeg kun selger det aller aller beste og ferskeste. I Brønnøysund har alle slike spesialforretninger forsvunnet de siste årene. Meieriets utsalg hvor man kunne kjøpe jummy smør, et fiskeutsalg som solgte blodfersk fisk og skalldyr, de fleste kjøttdiskene har skrumpet inn, og gjevnt over har butikkkjedene med sine pappprodukter spist opp alle markedsandeler. Min teori er at folk ikke nødvendigvis bruker penga sine på papp fordi de vil, men fordi det er enklest, og selvfølgelig fordi man kjøper ting man ikke trenger til en alt for høy pris. Jeg har egentlig ingenting mot slike kjeder, men når de har alle markedsandeler, er en kjede, og mottar alle ferskvarer fra samme sted så går kvaliteten rett vest samtidig som prisen på produktene går rett i taket. Se på prisen på kjøttdeig. Skutt full av is og luft er ikke et halvt kilo kjøttdeig lenger et halvt kilo. Men nok om det. Butikken/restauranten skal selvfølgelig ha websider, og på websidene skal det stå så mye som mulig om de lokale produsentene, med bilder og alle mulige detaljer om produktene. Her kan man også sette seg opp på liste, slik at man får mail eller telefon med en gang man får inn feks hjort eller villlaks eller krabber eller hjemmelagde bestemorsposteier eller kaker eller hjemmebakt brød. :) Her ligger litt av nøkkelen til hvordan en spesialforretning som denne kan fungere i være kjedebutikktid: Hvis man kjenner folks ønsker før man får produktet kan man planlegge driften på en helt annen måte. Kundene kan teste ut ting i restauranten eller butikken, og kan da enten bestille i butikken eller gjøre de hjemmefra. (butikken kjører selvfølgelig også ut)
+<p>
+I tillegg kan man som kunde bli invitert eller spørre om å få være med ut sammen med leverandørene. Man kan feks være med fiskeren ut på sjøen, eller være med på jakt, i fjøsen, eller på kjøkkenet i restauranten. Butikken burde også ha et nært forhold til skoler og barnehager, slik at ungene kan være med rundt omkring og se hvordan ting lages, hvordan ekte brød og smør smaker, osv.
+<p>
+
+Det jeg har mest lyst til å få til er selvfølgelig en fornying av forholdet mellom produsent,utsalg og konsument, som er fullstendig fraværende i dag på alle andre steder enn i veldig spesialiserte platesjapper.<p>Neste steg blir å gå gjennom gule sider for brønnøysunf og omegn for å finne lokale leverandører av råvarer og ingredienser osv. <p>Hørte forresten en lengre debatt om dette på radio nylig, så det virker som det er en aktuell greie.
+<li>23. september på hurtiruta. Jeg var kelner ombord på hurtigruta eller på en fin fransk restaurant (forøvrig overhode uten sammenligning!) og spurte noen amerikanske turister: Vous voudrez voir min petit coule? (vil De se på mitt lille rompehull). Jeg syns noen burde lage en film bare for å få med denne scenen!
+<li>23. september. Jeg er hovmester på min lille gourmetrestaurant og en famile med ganske små unger er gjester. Ungene blir superrastløse slik unger gjerne blir, og siden det irriterer de andre gjestene spør jeg om de vil bli med på kjøkken og se hva som skjer der. De blir med og ser på kokkene som raser rundt og kjefter og styrer. Etterpå blir de med ut i bakgården og røyker. Jeg sier de må blåse, ikke suge røyken ned i lungene. De sier at de trodde det var det som var vitsen. Jeg sier at "Nei, er dere gærne, da begynner man jo bare å hoste! Bare prøv!" Som sagt så gjort. De blir grønne i trynet og jeg sier: "Der ser dere. De voksne bare later som, de blåser egentlig røyken rett ut i lufta." "Utrolig teit", sier de.
+</ol>
+
+
+</font>
+        </div>
+</div>
+
+
+
+
+
+</body></html>

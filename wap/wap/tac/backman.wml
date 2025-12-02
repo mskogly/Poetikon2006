@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Ingemar Backman</b><br/>
+
+Ingemar Backman er 25 &#xE5;r, kommer fra Gällivare i Sverige, og har st&#xE5;tt snowboard i snart 12 &#xE5;r.<br/><br/>
+
+Team: Allain, We.<br/>
+Beinstilling: Regular.<br/>
+Fritid: Skateboard, Golf, tegne, surfe.<br/><br/>
+
+Ingemar begynte med snowboard fordi det var s&#xE5; mye sn&#xF8; i omr&#xE5;det han kommer fra. Han er den som offisielt sett er m&#xE5;lt h&#xF8;yest p&#xE5; en quarter noen gang. Hans 7,5m rekord fra Riksgrensen i Sverige st&#xE5;r visstnok enda. Ingemar har holdt seg unna rampelyset de siste &#xE5;rene, men tok 3 plass i TAC halfpipe-konkurransen i fjor da han bl.a. satte noen ondt h&#xF8;ye BS 540 indy i sine h&#xF8;ye run i superpipen. Han foretrekker klart frikj&#xF8;ring i fjellene fremfor &#xE5; konkurrere. Men konkurranser er likevel g&#xF8;y fordi han f&#xE5;r kj&#xF8;re med venner fra hele verden. En laid back fyr.<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

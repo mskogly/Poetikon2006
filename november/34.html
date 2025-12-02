@@ -1,0 +1,121 @@
+<html>
+<head>
+<TITLE>Poetikon : November | 034</TITLE>
+<LINK REL="stylesheet" HREF="november.css" TYPE="text/css">
+</head>
+<BODY background="img/window.jpg" BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FFFFFF" VLINK="#FFFFFF">
+
+<div align="right" class="navigasjon"> <A HREF="35.html"><IMG SRC="img/tilbake.gif" align="middle" border="0" width="15" height="15" alt="tilbake"></A> <A HREF="oversikt.html#34">034</a> <A HREF="33.html"><IMG SRC="img/bort.gif" align="middle" border="0" width="15" height="15" alt="neste"></A> <IMG SRC="img/lowsrc.gif" width="25" height="15"> </div>
+
+<!--begin java stuff-->
+
+<layer NAME="a" LEFT="25" TOP="25" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="10" height="13" border="0">
+</layer>
+
+<layer NAME="b" LEFT="225" TOP="25" VISIBILITY="SHOW">
+<IMG SRC="../_img/bug4.gif" WIDTH="18" HEIGHT="17" BORDER="1"></layer>
+
+<layer NAME="c" LEFT="125" TOP="125" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="17" height="10" border="1"></layer>
+
+<layer NAME="d" LEFT="125" TOP="225" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="7" height="7" border="1"></layer>
+
+<layer NAME="e" LEFT="355" TOP="125" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="10" height="10" border="1"></layer>
+
+<layer NAME="f" LEFT="425" TOP="125" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="5" height="12" border="1"></layer>
+
+<layer NAME="g" LEFT="425" TOP="125" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="5" height="12" border="1"></layer>
+
+<layer NAME="h" LEFT="425" TOP="125" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="5" height="12" border="1"></layer>
+
+<layer NAME="i" LEFT="25" TOP="25" VISIBILITY="SHOW">
+<img src="../_img/lowsrc.gif" width="5" height="12" border="1"></layer>
+
+<layer NAME="j" LEFT="25" TOP="25" VISIBILITY="SHOW">
+<FONT FACE="Webdings">p</FONT></layer>
+<layer NAME="k" LEFT="25" TOP="25" VISIBILITY="SHOW">
+o</layer>
+<layer NAME="l" LEFT="25" TOP="25" VISIBILITY="SHOW">
+e</layer>
+<layer NAME="m" LEFT="25" TOP="25" VISIBILITY="SHOW">
+t</layer>
+<layer NAME="n" LEFT="25" TOP="25" VISIBILITY="SHOW">
+i</layer>
+<layer NAME="o" LEFT="25" TOP="25" VISIBILITY="SHOW">
+k</layer>
+<layer NAME="p" LEFT="25" TOP="25" VISIBILITY="SHOW">
+o</layer>
+<layer NAME="q" LEFT="25" TOP="25" VISIBILITY="SHOW">
+n</layer>
+
+<script LANGUAGE="JavaScript1.2">
+
+<!--
+
+var userAgent=navigator.appName + " " + navigator.appVersion;
+var agentInfo=userAgent.substring(0, 12);
+
+if(agentInfo >= "Netscape 4.0")
+{
+window.captureEvents(Event.MOUSEMOVE);
+
+// Logo animation
+
+var yBase = window.innerHeight/2;
+var xBase = window.innerWidth/2;
+var delay = 15;
+var yAmpl = 10;
+var yMax = 40;
+var step = .2;
+var ystep = .5;
+var currStep = 0;
+var tAmpl=1;
+var Xpos = 50;
+var Ypos = 50;
+var j = 0;
+
+function MoveHandler(evnt) {
+  Xpos = evnt.pageX ;
+  Ypos = evnt.pageY ;
+}
+
+window.onMouseMove = MoveHandler;
+
+function animateLogo() {
+  yBase = window.innerHeight/4 ;
+  xBase = window.innerWidth/4;
+  for ( j = 0 ; j < 17 ; j++ ) {
+    document.layers[j].top = Ypos +
+
+Math.cos((30*Math.sin(currStep/(20+j)))+j*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+    document.layers[j].left =Xpos +
+
+Math.sin((30*Math.sin(currStep/20))+j*70)*xBase*(Math.sin(10+currStep/(10+j))+0.2)*Math.cos((currStep + j*25)/10);
+  }
+  currStep += step;
+  setTimeout("animateLogo()", delay) ;
+
+}
+animateLogo()
+}
+
+
+
+
+
+// -->
+
+</script>
+
+
+
+<CENTER><IMG SRC="img/ord_etterdeteraltlitttaakete.gif" ALT="Etter det er  alt litt tåkete" ALIGN="left" WIDTH="440" HEIGHT="51" BORDER="0"></CENTER>
+</body>
+
+</html>

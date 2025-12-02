@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- must include xmlns:itunes tag -->
+<rss xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd" version="2.0">
+<channel>
+<description>
+Ingen redigering! Dette er den orginale Dogmeradioen, les de strenge reglene på http://poetikon.no/dogmeradio/. Være med? Send en mail til morten.skogly@gmail.com.
+</description>
+<title>
+Dogmeradio
+</title>
+<itunes:author>
+Poetikon.no
+</itunes:author>
+<link>
+http://poetikon.no/dogmeradio
+</link>
+<itunes:subtitle>
+Dogmefilm er død, lenge leve dogmeradio.
+</itunes:subtitle>
+<itunes:summary>
+Reglene: 
+1. Ingen redigering! 
+2. Ikke bruk musikk med mindre den forekommer naturlig i rommet. 
+3. Ingen avtalte intervjuer. Snakk kun med folk du treffer tilfeldig. 
+4. Ingen voiceover.
+</itunes:summary>
+<language>
+no
+</language>
+<copyright>
+Poetikon &#xA9; 2005
+</copyright>
+<itunes:owner>
+<itunes:name>
+Poetikon.no
+</itunes:name>
+<itunes:email>
+morten.skogly@gmail.com</itunes:email>
+</itunes:owner>
+<!-- iTunes prefers square images 300x300 pixels or larger -->
+<itunes:image href="http://poetikon.no/dogmeradio/ituneslogo.jpg" />
+<!-- iTunes Browse Podcasts Category -->
+<itunes:category text="Audio Blogs"></itunes:category>
+<item>
+<title>Gazoo (kunstpause) (4:29)</title>
+<itunes:author>Poetikon</itunes:author>
+<itunes:subtitle>Improvisasjon</itunes:subtitle>
+<itunes:summary>Satt på soverommet med minidisken min og en billig plastgazoo. Man får ikke mer melankoli enn man lager selv. </itunes:summary>
+<enclosure url="http://www.poetikon.no/dogmeradio/munnorgel.mp3" length="2156672" type="audio/mpeg" />
+<pubDate>Mon, 19 Sept 2005 12:47:00 -0200</pubDate>
+<itunes:category text="Audio Blogs">
+</itunes:category>
+<itunes:duration>4:29</itunes:duration>
+<itunes:keywords>Audio blog</itunes:keywords>
+</item>
+<item>
+<title>På stranda i Barcelona 2 (5:17)</title>
+<itunes:author>Poetikon</itunes:author>
+<itunes:subtitle>Barcelona Beachcombing</itunes:subtitle>
+<itunes:summary>Opptak fra stranda i Barcelona. Ikke mange storbyer kan skryte av å ha en strand midt i sentrum.</itunes:summary>
+<enclosure url="http://www.poetikon.no/dogmeradio/barcelona2.mp3" length="2543616" type="audio/mpeg" />
+<pubDate>Fri, 02 Apr 2005 14:45:00 -0200</pubDate>
+<itunes:category text="Audio Blogs">
+</itunes:category>
+<itunes:duration>5:17</itunes:duration>
+<itunes:keywords>Travel</itunes:keywords>
+</item>
+<item>
+<title>På stranda i Barcelona 1 (2:09)</title>
+<itunes:author>Poetikon</itunes:author>
+<itunes:subtitle>Barcelona Beachcombing</itunes:subtitle>
+<itunes:summary>Opptak fra stranda i Barcelona. Ikke mange storbyer kan skryte av å ha en strand midt i sentrum.</itunes:summary>
+<enclosure url="http://www.poetikon.no/dogmeradio/barcelona1.mp3" length="778240" type="audio/mpeg" />
+<pubDate>Fri, 01 Apr 2005 07:45:00 -0200</pubDate>
+<itunes:category text="Audio Blogs">
+</itunes:category>
+<itunes:duration>2:09</itunes:duration>
+<itunes:keywords>Travel</itunes:keywords>
+</item>
+</channel>
+</rss>

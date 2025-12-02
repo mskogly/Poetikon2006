@@ -1,0 +1,206 @@
+A:link {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+color : #FFF;
+text-decoration : none;
+}
+A:active {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+color : #FFF;
+text-decoration : none;
+}
+A:visited {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+color : #FFF;
+text-decoration : none;
+}
+A:hover {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+color : #FFF;
+text-decoration : underline;
+}
+BODY {
+margin : 0;
+background-color : rgb(153,204,102);
+color : #FFF;
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+}
+DIV {
+color : white;
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+}
+.frameset {
+border : 0;
+margin : 0;
+padding : 0;
+}
+.hdots {
+background-image : url(_img/hdots.gif);
+}
+.vdots {
+background-image : url(_img/vdots.gif);
+}
+.splashbyline {
+left : 35px;
+position : absolute;
+top : 30px;
+text-align : justify;
+width : 200px;
+border : 1px dotted rgb(204,255,102);
+}
+.splashbylineright {
+right : 35px;
+position : absolute;
+top : 30px;
+text-align : justify;
+width : 200px;
+border : 1px dotted rgb(204,255,102);
+}
+
+
+.historie {
+left : 35px;
+position : absolute;
+top : 30px;
+text-align : justify;
+width : 270px;
+}
+.fotobyline {
+background-color : rgb(153,204,102);
+left : 0;
+position : absolute;
+top : 0;
+width : 270px;
+}
+.bg {
+background-attachment : fixed;
+background-image : url(_img/tree_004.jpg);
+}
+.input {
+color : #FFF;
+font-family : verdana, sans-serif;
+font-size : 10px;
+background-color : transparent;
+border : 0.5pt dotted rgb(204,255,102);
+}
+.inputold {
+color : #FFF;
+font-family : verdana, sans-serif;
+font-size : 10px;
+background-color : transparent;
+border : 0.5pt dotted WindowText;
+}
+.tekst {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+text-align : justify;
+}
+.tekst2 {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+text-align : justify;
+}
+.tekst3 {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+}
+.plirk {
+font-family : verdana, arial, helv, helvetica, sans-serif;
+font-size : 10px;
+text-align : justify;
+}
+DIV.Links A {
+color : #ccff00;
+text-decoration : none;
+}
+DIV.Links A:link {
+color : #ccff00;
+text-decoration : none;
+}
+DIV.Links A:visited {
+color : #ccff00;
+text-decoration : none;
+}
+DIV.Links A:hover {
+color : #ffffff;
+text-decoration : none;
+}
+.text {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+}
+.textBold {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+}
+.textColor {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+color : #ffffff;
+}
+.textBoldColor {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+color : #ffffff;
+}
+.form {
+color : #ffffff;
+font-family : verdana, sans-serif;
+font-size : 10px;
+background-color : transparent;
+border : 0.5pt dotted rgb(204,255,102);
+}
+.formold {
+color : #ffffff;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 10px;
+background-color : transparent;
+border : 0.5pt dotted WindowText;
+}
+.bgMouseOver {
+background-color : #ffffff;
+}
+.textGrey {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+color : #cccccc;
+}
+.textRed {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+color : #ff0000;
+}
+.bgGrey {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+color : #666666;
+background-color : #cccccc;
+}
+.bgCurrentDay {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+background-color : #ffcc00;
+}
+.bgDayListing {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+color : #003399;
+background-color : #66ccff;
+}
+.bgWhite {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : xx-small;
+font-weight : bold;
+color : #666666;
+background-color : #ffffff;
+}

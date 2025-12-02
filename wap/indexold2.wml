@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+<do type="Tilbake"><prev/></do> 
+</template> 
+
+<card id="splash" title="Poetikon" ontimer="#meny">
+<timer value="15"/>
+<p align="center">
+Poetikon.org</p>
+</card>
+
+<!-- Hovedmeny  index-fil  -->
+<card id="meny" title="poetikon">
+<p align="left">
+<img src="piece-number-003.wbmp" alt="test"/><br/>
+
+<b>  
+
+<b><a href="http://tagtag.com/pappmaskin/">Murderous Jigsaw pieces</a></b><br/>
+<small>BiIIedserie av Morten Skogly</small><br/><br/>
+
+<b><a href="naermere.wml">N&#230;rmere</a></b><br/>
+<small>En liten historie av Tony Syversen.</small><br/><br/>
+
+<b><a href="setninger.wml">Fine setninger</a></b><br/>
+<small>Liste.</small><br/><br/>
+
+<b><a href="hjerte/12.wml">Hjertesmerte</a></b><br/>
+<small>12 små kj&#230;rlighetsdikt ...</small><br/><br/>
+
+<b><a href="hjerte/test.wml">Hjertesmerte</a></b><br/>
+<small>tesT</small><br/><br/>
+
+<b><a href="../palm/index.html">test palm link</a></b><br/>
+<small>tesT</small><br/><br/>
+
+</b>
+VeIkommen til Poetikons wapsider. Besøk oss på nettet for  mer.  Adressen er www.katode.org/poetikon
+</p>
+</card>
+
+
+
+
+</wml>

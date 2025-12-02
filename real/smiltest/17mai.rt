@@ -1,0 +1,16 @@
+<window
+	type="generic"
+	bgcolor="black"
+	duration="10.414"
+	width="316"
+	height="203"
+	extraspaces="ignore"
+>
+
+<pos y="89"/>
+<font size="+2" color="white">
+<center>
+17. mai 
+</center>
+</font>
+</window>

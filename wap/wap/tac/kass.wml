@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+<do type="Tilbake"><prev/></do> 
+</template>
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Danny Kass </b><br/>
+
+Vant tidligere i &#xE5;r halfpipe-konkurransen i US Open i Vermont. Han er en nykommer det kan v&#230;re verdt &#xE5; merke seg allerede.<br/><br/>
+
+Team: Quicksilver<br/><br/> 
+
+Om sin egen karriere sier han: One aspect of my career that I am most proud of is that I do have a career. 
+<br/>
+
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poetikon Flash Test (Ruffle API)</title>
+  <!-- Load Ruffle first so the global RufflePlayer API is available -->
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  <link rel="stylesheet" href="poetikon.css" type="text/css">
+  <style>
+    body { background:#eee; font-family: Arial, Helvetica, sans-serif; padding:20px; }
+    #container { background:#000; width:760px; margin:10px auto; padding:5px; display:flex; align-items:center; justify-content:center; }
+    #info { max-width:760px; margin:10px auto; color:#333; font-size:14px }
+    .hint { color:#666; font-size:12px }
+  </style>
+</head>
+<body>
+  <h2>Poetikon — Flash Test (Ruffle API)</h2>
+  <div id="info">
+    This page uses the Ruffle JS API to create a player and load one SWF (`flash/potet.swf`).
+    Open DevTools → Network and Console and watch for requests and logs.
+  </div>
+
+  <div id="container">
+    <!-- Ruffle player will be created here by JS -->
+  </div>
+
+  <div id="info" class="hint">
+    If nothing appears, check Console for messages starting with `[flashtest]`.
+  </div>
+
+  <script>
+    console.log('[flashtest] script running, document.readyState=', document.readyState);
+
+    function createRufflePlayerAndLoad(swfPath) {
+      try {
+        var ruffle = window.RufflePlayer && window.RufflePlayer.newest ? window.RufflePlayer.newest() : null;
+        if (!ruffle) {
+          return false;
+        }
+
+        console.log('[flashtest] RufflePlayer available, creating player');
+        var player = ruffle.createPlayer();
+        var container = document.getElementById('container');
+        container.innerHTML = '';
+        container.appendChild(player);
+
+        // Use recommended API to load the SWF
+        if (player.ruffle && typeof player.ruffle === 'function') {
+          player.ruffle().load(swfPath);
+          console.log('[flashtest] called player.ruffle().load(', swfPath, ')');
+        } else if (typeof player.load === 'function') {
+          player.load(swfPath);
+          console.log('[flashtest] called player.load(', swfPath, ')');
+        } else {
+          // Fallback: set src attribute (some builds react to this)
+          try {
+            player.setAttribute && player.setAttribute('src', swfPath);
+            console.log('[flashtest] fallback: set src attribute ->', swfPath);
+          } catch (e) {
+            console.warn('[flashtest] fallback setAttribute failed', e);
+          }
+        }
+
+        return true;
+      } catch (err) {
+        console.error('[flashtest] createRufflePlayerAndLoad error', err);
+        return false;
+      }
+    }
+
+    function waitForRuffleAndLoad(swfPath, attemptsLeft) {
+      attemptsLeft = typeof attemptsLeft === 'number' ? attemptsLeft : 10;
+      if (createRufflePlayerAndLoad(swfPath)) return;
+      if (attemptsLeft <= 0) {
+        console.error('[flashtest] Ruffle failed to initialize after retries');
+        var info = document.getElementById('info');
+        info.innerHTML += '<div class="hint">Ruffle failed to initialize — check network and console.</div>';
+        return;
+      }
+      console.log('[flashtest] Ruffle not ready, retrying in 300ms (attempts left:', attemptsLeft - 1, ')');
+      setTimeout(function() { waitForRuffleAndLoad(swfPath, attemptsLeft - 1); }, 300);
+    }
+
+    // Start loading on window load so network is ready
+    window.addEventListener('load', function() {
+      console.log('[flashtest] window.load — starting');
+      waitForRuffleAndLoad('flash/potet.swf', 12);
+    });
+  </script>
+</body>
+</html>

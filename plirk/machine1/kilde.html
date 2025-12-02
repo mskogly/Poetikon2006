@@ -1,0 +1,219 @@
+http://w3.iprolink.ch/~bevar/java/rapmac/sound.class
+
+// 
+// SourceAgain (TM) v1.10f (C) 1998 Ahpah Software Inc
+// 
+
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Event;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.LayoutManager;
+import java.awt.Panel;
+import java.net.URL;
+
+public class sound extends Applet {
+
+    AudioClip sound1;
+    AudioClip sound2;
+    AudioClip sound3;
+    AudioClip fx1;
+    AudioClip fx2;
+    AudioClip fx3;
+    AudioClip fx4;
+    AudioClip fx5;
+    AudioClip fx6;
+    AudioClip fx7;
+    AudioClip fx8;
+    AudioClip fx9;
+    AudioClip fx10;
+    AudioClip voic1;
+    AudioClip voic2;
+    AudioClip voic3;
+    AudioClip voic4;
+    Button loop1;
+    Button loop2;
+    Button loop3;
+    Button arret1;
+    Button fx11;
+    Button fx12;
+    Button fx13;
+    Button fx14;
+    Button fx15;
+    Button fx16;
+    Button fx17;
+    Button fx18;
+    Button fx19;
+    Button fx20;
+    Button voic11;
+    Button voic12;
+    Button voic13;
+    Button voic14;
+
+    public String getAppletInfo()
+    {
+        return "Rap Machine 0.1, by Daniele Bevar";
+    }
+
+    public boolean action(Event evt, Object what)
+    {
+        if( evt.target == loop1 )
+        {
+            sound2.stop();
+            sound3.stop();
+            sound1.loop();
+        }
+        else if( evt.target == arret1 )
+        {
+            sound1.stop();
+            sound2.stop();
+            sound3.stop();
+        }
+        else if( evt.target == loop2 )
+        {
+            sound1.stop();
+            sound3.stop();
+            sound2.loop();
+        }
+        else if( evt.target == loop3 )
+        {
+            sound1.stop();
+            sound2.stop();
+            sound3.loop();
+        }
+        else if( evt.target == fx11 )
+            fx1.play();
+        else if( evt.target == fx12 )
+            fx2.play();
+        else if( evt.target == fx13 )
+            fx3.play();
+        else if( evt.target == fx14 )
+            fx4.play();
+        else if( evt.target == fx15 )
+            fx5.play();
+        else if( evt.target == fx16 )
+            fx6.play();
+        else if( evt.target == fx17 )
+            fx7.play();
+        else if( evt.target == fx18 )
+            fx8.play();
+        else if( evt.target == fx19 )
+            fx9.play();
+        else if( evt.target == fx20 )
+            fx10.play();
+        else if( evt.target == voic11 )
+            voic1.play();
+        else if( evt.target == voic12 )
+            voic2.play();
+        else if( evt.target == voic13 )
+            voic3.play();
+        else
+        {
+            if( evt.target != voic14 )
+                return false;
+            voic4.play();
+        }
+        return true;
+    }
+
+    public void init()
+    {
+        Color brun = new Color( 204, 51, 0 );
+        Label etiquet;
+        Panel loops;
+        Panel fxs;
+        Panel voics;
+
+        setLayout( new BorderLayout() );
+        setBackground( brun );
+        etiquet = new Label( "Rap machine v 0.1", 1 );
+        add( "North", etiquet );
+        sound1 = getAudioClip( getDocumentBase(), "9br3.au" );
+        sound2 = getAudioClip( getDocumentBase(), "9br.au" );
+        sound3 = getAudioClip( getDocumentBase(), "35ar.au" );
+        fx1 = getAudioClip( getDocumentBase(), "guitrok3.au" );
+        fx2 = getAudioClip( getDocumentBase(), "29afx.au" );
+        fx3 = getAudioClip( getDocumentBase(), "9bfx.au" );
+        fx4 = getAudioClip( getDocumentBase(), "9afx.au" );
+        fx5 = getAudioClip( getDocumentBase(), "23bguit.au" );
+        fx6 = getAudioClip( getDocumentBase(), "8bfx.au" );
+        fx7 = getAudioClip( getDocumentBase(), "deefx.au" );
+        fx8 = getAudioClip( getDocumentBase(), "deefx2.au" );
+        fx9 = getAudioClip( getDocumentBase(), "bdrum.au" );
+        fx10 = getAudioClip( getDocumentBase(), "5bsax.au" );
+        voic1 = getAudioClip( getDocumentBase(), "deepow.au" );
+        voic2 = getAudioClip( getDocumentBase(), "youtze.au" );
+        voic3 = getAudioClip( getDocumentBase(), "4bvoic.au" );
+        voic4 = getAudioClip( getDocumentBase(), "30afx.au" );
+        loops = new Panel();
+        loops.setLayout( new GridLayout( 4, 1 ) );
+        fxs = new Panel();
+        fxs.setLayout( new GridLayout( 10, 1 ) );
+        voics = new Panel();
+        voics.setLayout( new GridLayout( 4, 1 ) );
+        loop1 = new Button( "Loop 1" );
+        arret1 = new Button( "Stop loops" );
+        loop2 = new Button( "Loop 2" );
+        loop3 = new Button( "Loop 3" );
+        fx11 = new Button( "Fx 1" );
+        fx12 = new Button( "Fx 2" );
+        fx13 = new Button( "Fx 3" );
+        fx14 = new Button( "Fx 4" );
+        fx15 = new Button( "Fx 5" );
+        fx16 = new Button( "Fx 6" );
+        fx17 = new Button( "Fx 7" );
+        fx18 = new Button( "Fx 8" );
+        fx19 = new Button( "Fx 9" );
+        fx20 = new Button( "Fx 10" );
+        voic11 = new Button( "Voice 1" );
+        voic12 = new Button( "Voice 2" );
+        voic13 = new Button( "Voice 3" );
+        voic14 = new Button( "Voice 4" );
+        loops.add( loop1 );
+        loops.add( loop2 );
+        loops.add( loop3 );
+        loops.add( arret1 );
+        add( "West", loops );
+        fxs.add( fx11 );
+        fxs.add( fx12 );
+        fxs.add( fx13 );
+        fxs.add( fx14 );
+        fxs.add( fx15 );
+        fxs.add( fx16 );
+        fxs.add( fx17 );
+        fxs.add( fx18 );
+        fxs.add( fx19 );
+        fxs.add( fx20 );
+        add( "Center", fxs );
+        voics.add( voic11 );
+        voics.add( voic12 );
+        voics.add( voic13 );
+        voics.add( voic14 );
+        add( "East", voics );
+    }
+
+    public boolean handleEvent(Event evt)
+    {
+        switch( evt.id )
+        {
+            case 504:
+                showStatus( getAppletInfo() );
+                return true;
+            case 505:
+                showStatus( "" );
+                return true;
+            case 404:
+            case 402:
+            case 403:
+                return true;
+            default:
+                return super.handleEvent( evt );
+        }
+    }
+}

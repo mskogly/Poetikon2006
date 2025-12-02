@@ -1,0 +1,110 @@
+Favorittfunksjon på poetikon.no
+
+Bilde med lenke som sender dataid til et skript (pluss channel og categori?), dette skriptet sjekker om brukeren er logga inn, og hvis ikke så står det lenke til bli medlem, hvis brukeren er logga inn så sendes dataid og brukerid til databasen
+
+Utlisting:
+På brukerens egen side først. Når han er logga inn bør hun ha mulighet til å slette favoritter
+
+På sikt, en liste over mest populære ting, og et eget skript som presenterer alle favorittene som et slideshow, dvs som en bok, men minst mulig stuff rundt.
+Legge brukere til i favoritter
+Sjekke på dat approved etc ved utlisting
+Sjekke om man har lagt inn denne dataiden allerede!
+
+
+Rydding
+Hva skjer hvis en bruker sletter et bilde feks. Da vil jo favorittlenka også dø. Trenger en cleanup og sjekk på dette i sletteskriptene....
+
+
+
+FAVORITES
+FAV_ID auto
+FAV_DAT (dataiden)
+FAV_OWNER
+
+fav channel og cat osv bør hentes fra DATAS?
+
+DATAS
+DAT_ID
+DAT_CATEGORY
+DAT_NAME
+DAT_ACTIVE
+
+
+
+
+
+<%
+fnask=Request.QueryString("iUser")
+%>
+<%
+set rsNewDatas = Server.CreateObject("ADODB.Recordset")
+rsNewDatas.ActiveConnection = MM_connDUportal_STRING
+rsNewDatas.Source = "SELECT * FROM DATAS, CATEGORIES WHERE DAT_CATEGORY = CAT_ID AND DAT_APPROVED=1 AND DAT_EXPIRED > DATE()  AND DAT_PARENT=0  AND DAT_USER = '"+ fnask +"' ORDER BY DAT_DATED DESC"
+rsNewDatas.CursorType = 0
+rsNewDatas.CursorLocation = 2
+rsNewDatas.LockType = 3
+rsNewDatas.Open()
+rsNewDatas_numRows = 0
+%>
+
+
+MM_editQuery = "insert into " & MM_editTable & " (" & MM_tableValues & ") values (" & MM_dbValues & ")"
+
+
+INSERT INTO table_name (column1, column2,...)
+VALUES (value1, value2,....)
+
+INSERT INTO FAVORITES 
+VALUES ('Hetland', 'Camilla', 'Hagabakka 24', 'Sandnes')
+
+INSERT INTO FAVORITES (FAV_DAT, FAV_OWNER)
+VALUES ('210', 'mskogly')
+
+INSERT INTO FAVORITES (FAV_DAT, FAV_OWNER)
+VALUES ('210', 'mskogly')
+
+http://www.katode.org/poetikon/asp/duportal30/home/detail.asp?iData=210&iCat=276&iChannel=3&nChannel=Pictures
+
+http://www.katode.org/poetikon/asp/duportal30/home/medlem.asp?iUser=mskogly
+
+FAVORITES
+FAV_ID auto
+FAV_DAT (dataiden)
+FAV_OWNER
+
+U_ID
+
+
+
+
+ <%=UCASE(rsUsers.Fields.Item("U_FIRST").Value)%>&nbsp;
+ <%=UCASE(rsUsers.Fields.Item("U_LAST").Value)%>
+
+
+
+denne skal sjekke om det er lagt inn en fav hvor FAV_OWNER = iUser and FAV_DATA != iData
+
+select count(*) from FAVORITES where FAV_OWNER = 'mskogly' and FAV_DAT = '210'
+<%
+
+Dim rsSjekk
+Dim rsSjekk_numRows
+
+Set rsSjekk = Server.CreateObject("ADODB.Recordset")
+rsSjekk.ActiveConnection = MM_connDUportal_STRING
+rsSjekk.Source = "select count(*) from FAVORITES where FAV_OWNER = " & iUser
+rsSjekk.CursorType = 0
+rsSjekk.CursorLocation = 2
+rsSjekk.LockType = 1
+rsSjekk.Open()
+
+rsSjekk_numRows = 0
+
+%>
+
+<%
+rsSjekk.Close()
+Set rsSjekk = Nothing
+%>
+
+

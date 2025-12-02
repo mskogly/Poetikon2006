@@ -1,0 +1,3 @@
+poet2 = "<div class=meny><b>De siste:</b><br><a href=fredrikoestbye.html>Fredrik Østbye</a><br><a href=oveeriksen.html>Ove Eriksen</a><br><a href=laestadiushestman.html>Læstadius Hestman</a><br><a href=jannemoen.html>Janne Moen</a><br><a href=aastaegelandsa.html>Åsta Egelandsa</a><br><a href=ciamariagiske.html>Cia Maria Giske</a><br><a href=metteeriksen.html>Mette Eriksen</a><br><a href=arnestav.html>Arne Stav</a><br><a href=x.html>Silje Lærk</a><br><br><b>De første:</b><br><a href=marinakaldhol.html>Marina Kaldhol</a><br><a href=sigridmarierefsum.html>Sigrid Marie Refsum</a><br><a href=siljestrand.html>Silje Strand</a><br><a href=mortenskogly.html>Morten Skogly</a></div>";
+
+poet = "";

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>poetikon | honningbilder</title>
+	<script language="javascript">
+
+	<!--
+
+//      code by www.ziggen.com
+
+	ns = (document.layers) ? true:false
+
+	ie = (document.all) ? true:false
+
+
+
+	var showing = "1";
+
+
+
+	img1 = new Image();
+
+	img1.src = "images/img_1.jpg";
+
+	img2 = new Image();
+
+	img2.src = "images/img_2.jpg";
+
+	img3 = new Image();
+
+	img3.src = "images/img_3.gif";
+
+	img4 = new Image();
+
+	img4.src = "images/img_4.jpg";
+
+	img5 = new Image();
+
+	img5.src = "images/img_5.jpg";
+
+	img6 = new Image();
+
+	img6.src = "images/img_6.jpg";
+
+
+
+	m_0 = new Image();
+
+	m_0.src = "images/m_off.gif";
+
+	m_1 = new Image();
+
+	m_1.src = "images/m_on.gif";
+
+	m_2 = new Image();
+
+	m_2.src = "images/m_selected.gif";
+
+
+
+	function img_swap(num) {
+
+		if (num != showing) {
+
+			document.img.src = eval("img" + num + ".src");
+
+			document["m" + num].src = m_2.src;
+
+			document["m" + showing].src = m_0.src;
+
+			showing = num;
+
+		}
+
+	}
+
+
+
+	function img_on(num) {
+
+		if (num != showing) {
+
+			document["m" + num].src = m_1.src;
+
+		}
+
+	}
+
+
+
+	function img_off(num) {
+
+		if (num != showing) {
+
+			document["m" + num].src = m_0.src;
+
+		}
+
+	}
+
+
+
+	function init() {
+
+		if (ns) document.loader.visibility = "hide";
+
+		else if (ie) document.all("loader").style.visibility = "hidden";
+
+	}
+
+
+
+	//-->
+
+	</script>
+
+	<style type="text/css">
+
+	<!--
+
+	#loader {
+
+		position: absolute;
+
+		top: 0px;
+
+		left: 0px;
+
+		height: 400px;
+
+		width: 500px;
+
+		background-color: black;
+
+		layer-background-color: black;
+
+	}
+
+	-->
+
+	</style>
+
+</head>
+
+
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" onLoad="init()" text="#ffffff" link="#FFFFFF" vlink="#FFFFFF">
+
+<div id="loader">
+
+<font size="-2" face="verdana,arial,helv,helvetica">Loading...</font>
+
+</div>
+
+<table cellpadding="0" cellspacing="0" border="0">
+
+	<tr>
+
+		<td colspan="2"><img src="images/img_1.jpg" width=500 height=400 alt="image loads here" border="0" name="img"></td>
+
+	</tr>
+
+	<tr>
+
+		<td bgcolor="#808080"><img src="images/spacer.gif" width=5 height=27 alt="" border="0" align="top"><img src="images/bilder.gif" width=50 height=19 alt="bilder" border="0"><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('1')" onMouseOver="img_on('1')" onMouseOut="img_off('1')"><img src="images/m_selected.gif" width=12 height=19 alt="image.one" border="0" name="m1"></a><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('2')" onMouseOver="img_on('2')" onMouseOut="img_off('2')"><img src="images/m_off.gif" width=12 height=19 alt="image.two" border="0" name="m2"></a><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('3')" onMouseOver="img_on('3')" onMouseOut="img_off('3')"><img src="images/m_off.gif" width=12 height=19 alt="image.three" border="0" name="m3"></a><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('4')" onMouseOver="img_on('4')" onMouseOut="img_off('4')"><img src="images/m_off.gif" width=12 height=19 alt="image.four" border="0" name="m4"></a><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('5')" onMouseOver="img_on('5')" onMouseOut="img_off('5')"><img src="images/m_off.gif" width=12 height=19 alt="image.five" border="0" name="m5"></a><img src="images/spacer.gif" width=20 height=1 alt="" border="0"><a href="javascript:img_swap('6')" onMouseOver="img_on('6')" onMouseOut="img_off('6')"><img src="images/m_off.gif" width=12 height=19 alt="image.six" border="0" name="m6"></a></td><td bgcolor="#808080" align="right" valign="top">
+
+
+<!img src="images/spacer.gif" width=50 height=1 border="0"><a href="index.html" target="_parent"><img src="images/bilder.gif" width=35 height=19 alt="bilder" border="0"></a><img src="images/spacer.gif" width=10 height=27 border="0" align="top"><a href="flash.html" target="_parent"><img src="images/flash.gif" width=29 height=19 alt="flash" border="0"></a><img src="images/spacer.gif" width=10 height=27 border="0" align="top"><a href="tekst.html" target="_parent"><img src="images/tekst.gif" width=29 height=19 alt="tekst" border="0"></a><img src="images/spacer.gif" width=10 height=27 border="0" align="top"><a href="info.html" target="_parent"><img src="images/info.gif" width=23 height=19 alt="info" border="0"></a>
+</td>
+
+	</tr>
+
+</table>
+
+
+
+
+
+</body>
+
+</html>
+

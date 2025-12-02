@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Poetikon Random Flash</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  <link rel="stylesheet" href="poetikon.css" type="text/css">
+  <style>
+    body {
+      background: #99cc66;
+      color: #000;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    #flash-container {
+      background: #000;
+      border: 2px solid #333;
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 800px;
+      min-height: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #flash-title {
+      background: #666;
+      color: #fff;
+      padding: 10px;
+      margin: -20px -20px 20px -20px;
+      font-weight: bold;
+    }
+    #controls {
+      margin: 20px 0;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      border: 1px solid #666;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+      margin: 5px;
+    }
+    button:hover {
+      background: #555;
+    }
+    .description {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="flash-title">Poetikon Random Flash Experience</div>
+  
+  <div id="controls">
+    <button onclick="loadNextFlash()">Load Another Flash</button>
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <div id="flash-container">
+    <!-- Ruffle embed will be inserted here -->
+  </div>
+
+  <div class="description">
+    <p>Every time you visit, a random Flash animation loads. Click "Load Another Flash" to see something different.<br>
+    These are archival Flash files from the early 2000s, now playable via <a href="https://ruffle.rs/">Ruffle</a>.</p>
+  </div>
+
+  <script>
+    // List of available SWFs
+    var flashFiles = [
+      "01.swf", "02.swf", "03.swf", "04.swf", "05.swf", "06.swf", "07.swf", "9.swf",
+      "abs01.swf", "avoid1.swf", "bg1.swf", "blaasnakkendefisk.swf", "blackdot.swf",
+      "blad.swf", "blomster.swf", "bokstavlek.swf", "ching.swf", "cubes.swf", "dill.swf",
+      "drummer.swf", "easysketch.swf", "evillotus.swf", "fineord.swf", "finfigur.swf",
+      "fingerinavlen.swf", "flashteroids.swf", "flowergirl.swf", "flymetothemoon.swf",
+      "fogcrows.swf", "foodispoetry.swf", "fot_og_dikt.swf", "goa.swf", "goforit.swf",
+      "gs.swf", "kjaerlighetens_dyp.swf", "landskap.swf", "lemonboy.swf", "lemonde.swf",
+      "lines.swf", "luv.swf", "mandala1.swf", "mandala_2.swf", "moff.swf", "neseblod.swf",
+      "nibbles.swf", "ok.swf", "panorama360-facesfromtempfolder.swf", "particles2a.swf",
+      "platespillerting.swf", "poetikonfineordfractal.swf", "potet.swf", "puppedame.swf",
+      "pupperadar.swf", "push.swf", "pxlppl.swf", "red.swf", "rosa.swf", "rustvegg.swf",
+      "shape2b.swf", "sne.swf", "snurrig.swf", "togvindu.swf", "trafikkstor.swf",
+      "tyggistyggendedame.swf", "univers.swf", "waterfallEngine.swf"
+    ];
+
+    function getRandomFlash() {
+      var randomIndex = Math.floor(Math.random() * flashFiles.length);
+      return flashFiles[randomIndex];
+    }
+
+    // Robust loader: create the element programmatically and wait for
+    // the 'ruffle-embed' custom element to be defined before setting src.
+    function loadFlash(filename) {
+      console.log('[random-flash] loadFlash()', filename);
+      var container = document.getElementById('flash-container');
+      container.innerHTML = ''; // clear previous content
+
+      // Create the element without src first
+      var embed = document.createElement('ruffle-embed');
+      embed.setAttribute('width', '750');
+      embed.setAttribute('height', '550');
+
+      container.appendChild(embed);
+
+      // Helper to set src once custom element is ready
+      function trySetSrc(attemptsLeft) {
+        attemptsLeft = attemptsLeft || 10;
+        if (customElements && customElements.get && customElements.get('ruffle-embed')) {
+          try {
+            embed.setAttribute('src', 'flash/' + filename);
+            console.log('[random-flash] src set ->', 'flash/' + filename);
+          } catch (e) {
+            console.error('[random-flash] error setting src', e);
+          }
+        } else if (attemptsLeft > 0) {
+          console.log('[random-flash] ruffle-embed not defined yet, retrying...', attemptsLeft);
+          setTimeout(function() { trySetSrc(attemptsLeft - 1); }, 300);
+        } else {
+          console.warn('[random-flash] ruffle-embed not defined after retries. Check console/network.');
+          // Show helpful message in UI
+          var msg = document.createElement('div');
+          msg.style.color = '#fff';
+          msg.style.padding = '10px';
+          msg.textContent = 'Ruffle not initialized yet. Open console for details.';
+          container.appendChild(msg);
+        }
+      }
+
+      trySetSrc(12);
+    }
+
+    function initRandomFlash() {
+      console.log('[random-flash] initRandomFlash');
+      var randomFile = getRandomFlash();
+      loadFlash(randomFile);
+    }
+
+    function loadNextFlash() {
+      console.log('[random-flash] loadNextFlash');
+      var randomFile = getRandomFlash();
+      loadFlash(randomFile);
+    }
+
+    function goHome() {
+      if (parent && parent.main) {
+        parent.main.location.href = 'info.html';
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+
+    // Initialize on page load with a small delay to give the Ruffle script a chance
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('[random-flash] DOMContentLoaded');
+        setTimeout(initRandomFlash, 500);
+      });
+    } else {
+      console.log('[random-flash] document ready');
+      setTimeout(initRandomFlash, 500);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+<TITLE>Planer</TITLE>
+
+<link rel=STYLESHEET href="../junk.css" type="text/css">
+
+<style type="text/css">
+#divUp{position:absolute; left:370; top:20}
+#divDown{position:absolute; left:370; top:250}
+#divCont{position:absolute; width:300; height:260; overflow:hidden; top:20; left:40; clip:rect(0,300,260,0); visibility:hidden}
+#divText{position:absolute; top:0; left:0; color:#FFFFFF; text-align:justify}
+</style>
+<script type="text/javascript" language="JavaScript">
+
+/*****************
+This script is stolen from emil@stylelab.nu and used without permission. I hope he forgives me. His pages are totally 100% beautiful.:)
+****************/
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='visible'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+
+<BODY bgcolor="#808080" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" TEXT="#C0C0C0" link="#C0C0C0" vlink="#C0C0C0">
+<div id="divUp">
+
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="../img/up.gif" border="0"></a>
+
+</div>
+
+<div id="divDown">
+
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="../img/down.gif" border="0"></a>
+
+</div>
+
+<div id="divCont">
+        <div id="divText">
+<font class="liten" color="#cccccc">
+
+<B>Pærepulver t-skjortefabrikk</B>
+<br>
+Har lyst til å få trykket opp dikt og ting i fra <A HREF="http://www.katode.org/poetikon/" target="_new">poetikon</A>s lister på høykvalitets t-skjorter og andre plagg.<p>
+
+<B>Verdt å leve for:</B><br>
+<ol>
+<li>døsige søndager med gult sollys i gardinene
+<li>soloppganger som hadde vært vulgære om noen hadde malt dem
+<li>stjernehimmel
+<li>vakre øyne
+<li>løpe i regnet
+<li>vasse i fontener
+<li>lage snø-engler
+<li>syndeflod og elg, malurt foran vinduet, røde poser under øynene. gamle menneskers sanger.
+<li>snakke om viktige ting
+<li>Bølger over rullestein ved havet
+<li>Når man sitter under et epletre om sommeren og venter på at de eplesugne sommerfuglene skal komme og sette seg i håret ditt.
+<li>sitte i et tre
+<li>myke lepper
+<li>ekorn som klatrer opp i trær
+
+
+</ol>
+
+<B>Biter av poetikon:</B><br>
+
+<ol>
+<li>Vinden blåser. Bladene faller som kjærlighet fra trærne.
+<li>Det går nok bedre etter hvert.
+<li>Nå sover jeg
+</ol>
+
+<p>
+
+<!--Den gale mannen-sitater og tegninger.
+Klosteret pensionat bergen 55 90 2158. 500 kroner. -->
+
+<B>Aktuelle trykkerier?</B><br>
+<ol>
+<li>http://www.flocksy.no/ mailto:flocksy@online.no
+"Høy kvalitets hvite skorter brodert med din firmalogo"
+<li>http://www.mamut.com/reklametrykk/ mailto:telindbl@online.no
+har veldig mange farger på skjortene
+<li>http://www.ja-reklametrykk.no/skjorter.htm
+<li>http://home.sol.no/~nortech/om_nortech.html
+mailto:nortech@sn.no
+<li>http://www.logo.no/
+<li>http://www.reflexpromotion.com/
+</ol>
+<p>
+
+
+
+<p>
+Distribusjon: Internett -> </div><br>
+
+
+
+</font>
+        </div>
+</div>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- upunkt nrk by mykle) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<!-- Hovedmeny  index-fil  -->
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Daniel Franck</b><br/>
+
+
+Team: Salamon, Arnette, Vans, Volcom<br/> 
+Beinstilling: Regular <br/>
+Idoler: Elvis Presley, Frank Sinatra, Kjell Inge R&#xF8;kke, 
+Al Pacino, Larry Flynt, Gary Oldman og Bj&#xF8;rg Franck <br/><br/>
+
+Daniel Franck, en av verdens absolutte beste halpipe-kj&#xF8;rere, stod for f&#xF8;rste gang p&#xE5; snowboard i 1991. Fem &#xE5;r senere var L&#xF8;renskog-karen for alvor i verdenstoppen da han blant annet vant halfpipe-konkurransen under Winter X-Games i California og Big Bear Mountain. <br/><br/>
+
+Siden dengang har Daniel Franck sikret seg haugevis med medaljer og titler fra b&#xE5;de OL, VM, verdenscup og diverse andre renn verden rundt, og han er utvilsomt en av de st&#xF8;rste stjernene i snowboard-milj&#xF8;et ved siden av kamerat og TAC-arrang&#xF8;r Terje H&#xE5;konsen. <br/><br/>
+
+Daniel Franck en fyr som trives i rampelyset. Han mener mye om det meste, og sier ofte det som andre ikke v&#xE5;ger &#xE5; tenke. Ellers bor Daniel Franck i Oslo, er samboer med Vibeke - som han ogs&#xE5; har en datter sammen med.<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

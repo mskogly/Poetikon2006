@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- created by WAPtor (http://www.wapdrive.net/) -->
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+<!-- tilbakeknapp. --> 
+ <template> 
+    <!-- Template implementation here. --> 
+    <do type="prev"><prev/></do> 
+  </template> 
+<!-- THIS IS THE FIRST CARD IN THE DECK -->
+<card id="mm1912" title="nrk">
+<p align="left">
+
+<b>Mujaffa og feil folk</b><br/>
+Hvorfor jobber ikke Tore p&#xE5; Sporet i politiet. Han hadde funni alle.
+
+<br/>
+</p>
+<p align="left"><a href="http://nrk.no/upunkt/wap/index.wml#meny">Tilbake til meny!</a></p>
+
+</card>
+
+</wml>

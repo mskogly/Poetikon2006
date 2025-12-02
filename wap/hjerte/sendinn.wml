@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="Main" title="Kontakt oss/send inn">
+    <do type="prev"><prev/></do>
+    <p>
+<small>Akk ja sann ... kjærligheten. Har du noen historier du vil dele med oss?<p>Poetikon tar imot bidrag på e-post, sms, mms og snailmail. Vi er interessert i tekster, musikk/lyder, fotografi, animasjoner, dokumentarer, kortfilmer og gode idéer, om hva som helst, fra hvem som helst.</small></p>
+
+<p><small>E-post: <a href="mailto:mskogly@start.no">mskogly@start.no</a></br>
+Sms/tlf/mms: 41545931</br>
+Snail: Poetikon, c/o Morten Skogly, Hesttrøa 7, 7550 Hommelvik
+</small></p>
+<p><small><a href="../index.wml">&lt;&lt;&lt; (forsiden)</a></small>
+</p>
+  </card>
+</wml>

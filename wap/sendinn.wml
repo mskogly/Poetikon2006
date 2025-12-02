@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="Main" title="Kontakt oss/send inn">
+    <do type="prev"><prev/></do>
+    <p>
+<small>Poetikon tar imot bidrag på e-post, sms og snailmail. Vi er interessert i tekster, musikk/lyder, fotografi, animasjoner, dokumentarer, kortfilmer og gode idéer.
+
+<p>E-post: <a href="mailto:red@poetikon.org">red@poetikon.org</a></br>
+Sms/tlf: 92061880</br>
+Snail: Poetikon, c/o Morten Skogly, Tangen Terasse 15a, 1450 Nesoddtangen
+</p>
+<p>Vi er selvfølgelig også interessert i alle mulige slags samarbeid, og har allerede laget vakre ting for Dagbladet, NRK, og Chello. Vi er proppfulle av gode idéer! 
+</br></br>
+<a href="index.wml">&lt;&lt;&lt; </a> |
+</p>
+</small>
+  </card>
+</wml>

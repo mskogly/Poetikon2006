@@ -1,0 +1,46 @@
+A:link {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:active {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+A:visited {FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px; COLOR: white; text-decoration: none}
+
+body { background-color: rgb(153,204,102); COLOR: #ffffff; FONT-FAMILY: arial,san-serif; FONT-SIZE: 11px; font-weight: plain; line-height: 13pt; margin: 0
+
+     SCROLLBAR-FACE-COLOR: #99CC66;
+     SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;  
+     SCROLLBAR-SHADOW-COLOR: #FFFFFF; 			
+     SCROLLBAR-3DLIGHT-COLOR: #CCCCCC;
+     SCROLLBAR-ARROW-COLOR:  #000000;
+     SCROLLBAR-TRACK-COLOR: #99CC99; 
+     SCROLLBAR-DARKSHADOW-COLOR: #CCCCCC;
+
+
+}
+
+DIV {
+	COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px;  text-align: justify;
+}
+
+
+.tekst
+{
+
+        COLOR: #ffffff; FONT-FAMILY: arial,san-serif; FONT-SIZE: 11px;
+        font-weight: plain;
+        text-align: justify;
+        line-height: 13pt;
+
+}
+
+OL {
+	COLOR: #ffffff; FONT-FAMILY: arial,san-serif; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+
+
+.swnu {
+	COLOR: #ffffff; FONT-FAMILY: arial,san-serif; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+
+.s {
+	FONT-FAMILY: arial,san-serif; FONT-SIZE: 11px
+}
+: arial,san-serif; FONT-SIZE: 11px
+}

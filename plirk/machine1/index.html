@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Plirk Machine 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background: url('bg.gif') repeat #000;
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      text-align: right;
+      padding: 16px;
+      font-weight: bold;
+    }
+    section {
+      padding: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffc;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+    }
+    button {
+      padding: 10px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: rgba(0,0,0,0.6);
+      color: #eee;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    button:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    #status {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+    audio { display:none; }
+  </style>
+</head>
+<body>
+  <header>plirkmachine</header>
+  <div id="status">Klikk på en knapp for å spille en lyd.</div>
+
+  <section>
+    <h2>Loops</h2>
+    <div class="grid" id="loopGrid"></div>
+    <button id="stopLoops" style="margin-top:10px;">Stop</button>
+  </section>
+
+  <section>
+    <h2>FX</h2>
+    <div class="grid" id="fxGrid"></div>
+  </section>
+
+  <section>
+    <h2>Voices</h2>
+    <div class="grid" id="voiceGrid"></div>
+  </section>
+
+  <audio id="loopPlayer" preload="auto" loop></audio>
+  <audio id="fxPlayer" preload="auto"></audio>
+
+  <script>
+    const loops = [
+      { label: 'Loop 1', file: '9br3.m4a' },
+      { label: 'Loop 2', file: '9br.m4a' },
+      { label: 'Loop 3', file: '35ar.m4a' }
+    ];
+
+    const fx = [
+      { label: 'Guit Rok', file: 'guitrok3.m4a' },
+      { label: '29afx', file: '29afx.m4a' },
+      { label: '9bfx', file: '9bfx.m4a' },
+      { label: '5bsax', file: '5bsax.m4a' },
+      { label: '8bfx', file: '8bfx.m4a' },
+      { label: 'deefx', file: 'deefx.m4a' },
+      { label: 'deefx2', file: 'deefx2.m4a' }
+    ];
+
+    const voices = [
+      { label: 'Deepow', file: 'deepow.m4a' },
+      { label: 'Youtze', file: 'youtze.m4a' },
+      { label: '4bvoic', file: '4bvoic.m4a' },
+      { label: '30afx', file: '30afx.m4a' }
+    ];
+
+    const status = document.getElementById('status');
+    const loopPlayer = document.getElementById('loopPlayer');
+    const fxPlayer = document.getElementById('fxPlayer');
+
+    function setStatus(text) {
+      status.textContent = text;
+    }
+
+    function createButtons(containerId, items, handler) {
+      const grid = document.getElementById(containerId);
+      items.forEach(item => {
+        const btn = document.createElement('button');
+        btn.textContent = item.label;
+        btn.addEventListener('click', () => handler(item));
+        grid.appendChild(btn);
+      });
+    }
+
+    createButtons('loopGrid', loops, ({ file, label }) => {
+      loopPlayer.src = file;
+      loopPlayer.currentTime = 0;
+      loopPlayer.play();
+      setStatus('Looping: ' + label);
+    });
+
+    createButtons('fxGrid', fx, ({ file, label }) => {
+      fxPlayer.src = file;
+      fxPlayer.currentTime = 0;
+      fxPlayer.play();
+      setStatus('FX: ' + label);
+    });
+
+    createButtons('voiceGrid', voices, ({ file, label }) => {
+      fxPlayer.src = file;
+      fxPlayer.currentTime = 0;
+      fxPlayer.play();
+      setStatus('Voice: ' + label);
+    });
+
+    document.getElementById('stopLoops').addEventListener('click', () => {
+      loopPlayer.pause();
+      loopPlayer.currentTime = 0;
+      setStatus('Loops stopped.');
+    });
+
+    fxPlayer.addEventListener('ended', () => {
+      setStatus('Klar for neste lyd.');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Kim Christiansen</b><br/>
+
+Kim er en sv&#230;rt dyktig all-around snowboarder som liker seg best p&#xE5; fjellet med pudder og bratte fjellsider, eller nettopp i en superpipe. <br/><br/>
+
+Team: Elan, Quicksilver, Arnette<br/>
+Beinstilling: Regular<br/>
+Fritid: Skateboard, Motorcross og kj&#230;resten.<br/><br/>
+
+Kim Christiansen fra Drammen er 24 &#xE5;r og var en av de aller f&#xF8;rste i den nye generasjonen snowboardere som dukket opp tidlig p&#xE5; 1990 tallet. Han har jevlig hatt bilder og sekvenser i de beste snowboardmagasinene i Europa. Kim var med i verdens st&#xF8;rste konkurranse; OL i Nagano i ´98, hvor han endte p&#xE5; en 20 plass. <br/>
+-Det var j&#230;vla g&#xF8;y &#xE5; v&#230;re med i OL i Nagano men jeg har ikke helt bestemt meg om jeg vil v&#230;re med igjen. Det er i alle fall ikke slik at jeg blir lei meg dersom jeg ikke f&#xE5;r v&#230;re med. Jeg har veldig lyst til &#xE5; v&#230;re med i Arctic Challenge, men blir ikke deppa om Mr. Haaken sier at noen andre skal kj&#xF8;re i stedet. Jeg digger store piper, det er det som er meg - helst s&#xE5; store som mulig. I &#xE5;r er han den eneste norske mannlige kj&#xF8;rer i TAC bortsett fra arrang&#xF8;rene Terje og Daniel selv. Tror du Kim er stoka n&#xE5;? <br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

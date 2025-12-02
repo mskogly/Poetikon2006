@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+ <template> 
+    <do type="Tilbake"><prev/></do> 
+  </template> 
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>The Arctic Challenge</b><br/>
+<small>Holmenkollen - Hemsedal - Lofoten</small><br/><br/>
+
+
+<a href="http://www2.nrk.no/wap/dsk_magasin.asp?folderid=4483&amp;p_datetype=mnd&amp;foldername=nrk">Siste fra bakken</a><br/>
+
+<a href="http://www5.nrk.no/upunkt/wap/tac/kjorere.wml">Profiler</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/program.wml">Program</a><br/>
+<a href="http://www5.nrk.no/upunkt/wap/tac/sms.wml">SMS-tjenester</a><br/>
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="UPUNKT"> 
+<go href="http://www5.nrk.no/upunkt/wap/index.wml"/> </do>
+
+
+
+
+
+</p>
+</card>
+
+</wml>

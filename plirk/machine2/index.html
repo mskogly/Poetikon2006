@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Plirk Machine 2</title>
+  <style>
+    body { font-family: 'Courier New'; background:#000; color:#eee; margin:0; min-height:100vh; display:flex; flex-direction:column; }
+    header { text-align:right; padding:16px; font-weight:bold; }
+    .player-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; padding:20px; }
+    button { background:#111; color:#eee; border:1px solid rgba(255,255,255,0.3); padding:10px; cursor:pointer; }
+    button:hover { background:#222; }
+  </style>
+</head>
+<body>
+  <header>plirkmachine 2</header>
+  <div class="player-grid" id="grid"></div>
+  <audio id="player" preload="auto"></audio>
+  <script>
+    const samples = ['29afx.m4a','9bfx.m4a','9br3.m4a','guitrok3.m4a'];
+    const grid = document.getElementById('grid');
+    const player = document.getElementById('player');
+    samples.forEach(name => {
+      const btn = document.createElement('button');
+      btn.textContent = name;
+      btn.onclick = () => { player.src = name; player.play(); };
+      grid.appendChild(btn);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="Main" title="Poetikon.org - Info">
+    <do type="prev"><prev/></do>
+    <p><img src="potet.wbmp" alt="dots"/>
+
+<small>Velkommen til poetikons teite wap-tjeneste. Som du sikkert har oppdaga er wap skikkelig teit og alt for dyrt, og det er kun folk med får telefonregninga si betalt av jobben, men ikke har noe mer fornuftig å gjøre i arbeidstida,  som surfer på wap, but what the heck. Vi har i hverfall utgitt noen kjærelighetsdikt her, i et vagt håp om at du kan bli pittelitt glad, melankolsk og/eller få følelsen av at det kommer til å gå bra til slutt. Egentlig syns vi du burde legge telefonen din på bakken og hoppe på den, og heller gå og tagge eller spise en is. :)  -red  <br/><br/>
+
+<a href="index.wml">&lt;&lt;&lt;</a> |
+
+</small>
+    </p>
+  </card>
+
+</wml>

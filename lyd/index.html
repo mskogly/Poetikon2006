@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>poetikon : lyd</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<script language="JavaScript" src="div_on.js"></script>
+
+<STYLE type=text/css>
+BODY {
+	COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px
+}
+DIV {
+	COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px
+}
+
+.txt { COLOR: white; FONT-FAMILY: verdana,arial,helv,helvetica; FONT-SIZE: 10px}
+#blank { position: absolute;  visibility: hidden; text-align: justify }
+
+
+
+#divUp{position:absolute; left:260; top:3; visibility: inherit"}
+#divDown{position:absolute; left:280; top:250; visibility: inherit"}
+#divCont{
+LEFT: 0px; POSITION: absolute; TOP: 0px;  width:300; height:320; VISIBILITY: hidden; overflow:hidden; clip:rect(0,300,320,0); Z-INDEX: 1}
+#divText{position:relative; top:0; left:0;
+}
+</style>
+
+
+
+<script type="text/javascript" language="JavaScript">
+/*****************
+emil@stylelab.nu
+****************/
+
+function checkBrowser(){
+        this.ver=navigator.appVersion
+        this.dom=document.getElementById?1:0
+        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+        this.ie4=(document.all && !this.dom)?1:0;
+        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+        this.ns4=(document.layers && !this.dom)?1:0;
+        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5)
+        return this
+}
+bw=new checkBrowser()
+
+var loop, timer
+
+var speed=50
+
+function makeObj(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+        this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0;
+        this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0;
+        this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight
+        this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight
+        this.up=goUp;this.down=goDown;
+        this.moveIt=moveIt; this.x; this.y;
+    this.obj = obj + "Object"
+    eval(this.obj + "=this")
+    return this
+}
+function moveIt(x,y){
+        this.x=x;this.y=y
+        this.css.left=this.x
+        this.css.top=this.y
+}
+
+function goDown(move){
+        if(this.y>-this.scrollHeight+oCont.clipHeight){
+                this.moveIt(0,this.y-move)
+                        if(loop) setTimeout(this.obj+".down("+move+")",speed)
+        }
+}
+
+function goUp(move){
+        if(this.y<0){
+                this.moveIt(0,this.y-move)
+                if(loop) setTimeout(this.obj+".up("+move+")",speed)
+        }
+}
+
+function scroll(speed){
+        if(loaded){
+                loop=true;
+                if(speed>0) oScroll.down(speed)
+                else oScroll.up(speed)
+        }
+}
+
+
+function noScroll(){
+        loop=false
+        if(timer) clearTimeout(timer)
+}
+
+var loaded;
+function scrollInit(){
+        oCont=new makeObj('divCont')
+        oScroll=new makeObj('divText','divCont')
+        oScroll.moveIt(0,0)
+        oCont.css.visibility='hidden'
+        loaded=true;
+}
+
+onload=scrollInit;
+
+</script>
+
+</HEAD>
+<BODY aLink=#405970 background="bg.jpg"
+bgColor=#330000 bottomMargin=0 leftMargin=0 link=#405970
+rightMargin=0 topMargin=0 vLink=#405970 marginheight="0" marginwidth="0">
+<DIV id=meny
+style="HEIGHT: 30px; LEFT: 350px; POSITION: absolute; TOP: 0px; WIDTH: 374px"><IMG
+alt="" border=0 height=308
+src="meny.gif" width=374 usemap="#Map"><map name="Map"><area shape="rect" coords="251,32,301,40"  href="#" onMouseover="show_div('pir1'); return true;" onClick="show_div('pir1'); return true;"><area shape="rect" coords="251,42,301,50" href="#" onMouseover="show_div('pir2'); return true;" onClick="show_div('pir2'); return true;"><area shape="rect" coords="251,50,301,58"  href="#" onMouseover="show_div('divCont'); return true;" onClick="show_div('divCont'); return true;"><area shape="rect" coords="251,58,299,68" href="4"><area shape="rect" coords="251,68,301,78" href="5"><area shape="rect" coords="251,78,299,86" href="6"><area shape="rect" coords="251,86,299,94" href="7"><area shape="rect" coords="251,94,301,104" href="#" onMouseover="show_div('pir8'); return true;" onClick="show_div('pir8'); return true;"><area shape="rect" coords="251,104,301,116" href="9"><area shape="rect" coords="251,116,301,126" href="10"><area shape="rect" coords="251,126,301,134" href="11"><area shape="rect" coords="251,134,301,144" href="12"><area shape="rect" coords="251,144,301,152" href="13"><area shape="rect" coords="93,0,109,12" href="t"><area shape="rect" coords="157,18,167,28" href="e"></map></DIV>
+
+<DIV name="blank" ID="blank">&nbsp;</DIV>
+
+
+
+<DIV name="pir1" ID="pir1" style="LEFT: 0px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden; WIDTH: 256px; Z-INDEX:1">
+<P align=justify>Vi har aldri kyssa<BR><BR>
+                Vi har aldri kyssa<BR>
+                i ein tom nedlagt silo<BR>
+                Full av leikne kattungar<BR>
+                og gammalt høy<BR><BR>
+                Med ekko i den grå murveggen<BR>
+                og klamme regnjakker på<BR>
+                I ung løyndom<BR>
+                og med trommeregn på taket<BR><BR>
+                Aldri igjen<BR><BR>
+                Sendt inn av: Mona Vetrhus<BR>
+                E-post: monavetrhus@hotmail.com<p>
+</p>
+</DIV>
+
+<DIV name="pir2" ID="pir2" style="LEFT: 0px; POSITION: absolute; TOP: 0px; WIDTH: 256px; VISIBILITY: hidden;  Z-INDEX: 1">
+
+
+<P align=justify><B>Tre klipp. En novelle av Ylajali</B><BR><BR>
+
+ <a href="ring/index.html"><img src="../_img/arkiv/ring.jpg" alt="a ring thing" width="137" height="103" border="0" vspace="0" hspace="0"></a><br>
+      <nobr>a Ring-thing <br>
+      3 nye spor i real + mp3<br>
+      <br>
+      <a href="http://go.to/ring/" target="_blank">http://go.to/ring/</a></nobr>
+ </P>
+</div>
+
+
+<DIV name="divCont" ID="divCont">
+
+
+<div id="divDown" style="LEFT: 270px; POSITION: relative; TOP: 0px; Z-INDEX: 2; visibility: inherit">
+        <a href="#" onmouseover="scroll(7)" onmouseout="noScroll()"><img src="images/down.gif" border="0"></a>
+        <a href="#" onmouseover="scroll(-7)" onmouseout="noScroll()"><img src="images/up.gif" border="0"></a>
+</div>
+        <div id="divText" style="width:260;">
+
+<P align=justify><B>Tre klipp. En novelle av Ylajali</B><BR><BR>
+
+Han:<br>
+De digre puppene hennes er et par overmodne frukter der de dingler over ansiktet mitt.
+Slike frukter man ved et uhell stikker fingern inn i når man prøver å gripe om dem.  Ikke råtne enda, men en dag til så...
+Litt bløte, varme, og jeg er ikke sikker på om det er mest deilig eller ekkelt å ta på dem.
+Jeg prøver å tenke på noe annet.  For guds skyld.  Kan ikke miste ereksjonen nå.  Lukk øynene, da mann -
+tenk på hun andre, tenk på porno, tenk på mora di, tenk på hva faen som kan tenne deg.  Men det
+eneste bildet som sitter klistret på netthinnen er av de ekle kjempepuppene som humper opp og ned i takt med bevegelsene
+hennes....og jeg merker det holder på å skje....penisen min begynner å bli litt bløt, litt varm...
+<br><br>
+Hun:<br>
+Hva er galt med ham?  Han har aldri vært noen superelsker, men når ereksjonen ikke holder mer enn et par minutter
+er vel kanskje ikke dette forholdet noe særlig?<br>
+Kler på meg, han ser litt uvel, litt sjenert og redd ut der han ligger...skammer seg vel, tenker jeg.
+Bestiller drosje, går ut på gaten, faen jeg glemte igjen sigarettene hos ham. Vel han får beholde dem, gidder ikke se ham nå
+Kommer hjem, leiligheten ser for jævlig ut.  Orker ikke rydde, finner en halv sigarett liggende i askebegeret, tenner den.
+Hva er forresten poenget med en mann hvis han ikke duger til mer?  Denne fyren var et dårlig kjøp.  Bare vente til han går ut,
+så jeg kan legge igjen beskjed om at det er slutt på svareren hans.
+<br><br>
+Den gamle damen:<br>
+Han ligger igjen alene nå.  Burde han ikke være på jobb?   Ser han gå mot telefonen naken.  Han stanser.
+Skjønner meg ikke på gamle folk som klager over ensomhet.  De har tydeligvis ikke kikkert.  Får notere det ned
+i blokken min:  Han er alene. Naken. Sur. Røker. Penisen hans ligner en miniatyrbanan.
+ <BR><BR><I>-- ylajali</I> </P>
+
+        </div><BR>
+</div>
+
+<script>
+show_div('blank');
+</script>
+
+
+
+<NOSCRIPT><IMG alt="" height=1 src="images/0.gif"
+width=1></NOSCRIPT> </DIV></DIV></BODY></HTML>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+<do type="Tilbake"><prev/></do> 
+</template>
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Heikki Sorsa</b><br/>
+
+Heikki Sorsa hoppet h&#xF8;yest av dem alle! Under &#xE5;pningen av The Artic Challenge i Holmenkollen imponerte han med sine 9 meter til v&#230;rs.<br/><br/>
+
+Team: Burton <br/>
+Beinstilling: Regular<br/> 
+Fritid: Skating og golf<br/><br/> 
+
+ 
+Heikki Sorsa; 19-&#xE5;ringen fra Helsinki i Finland m&#xE5;lbandt b&#xE5;de tilskuere og de andre tac-deltagerene med sitt kjempehopp i kollen. Det er imidlertid ikke f&#xF8;rste gangen finnen gj&#xF8;r det bra, tidligere i &#xE5;r vant han et FIS world Cup renn i Park City, Utah. Heikki er nok en nykommer vi kommer til &#xE5; se mye til i framtiden
+<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

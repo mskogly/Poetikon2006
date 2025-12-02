@@ -1,0 +1,310 @@
+[
+  {
+    "slug": "kjedelig",
+    "title": "kjedelig",
+    "category": "top",
+    "description": "Poetikon : Lister : Kjedelige ting.",
+    "path": "data/kjedelig.txt"
+  },
+  {
+    "slug": "musikk",
+    "title": "fin musikk",
+    "category": "top",
+    "description": "Poetikon : Lister : Fin musikk.",
+    "path": "data/musikk.txt"
+  },
+  {
+    "slug": "film",
+    "title": "fine filmer",
+    "category": "top",
+    "description": "Poetikon : Lister : Fine filmer",
+    "path": "data/film.txt"
+  },
+  {
+    "slug": "sex",
+    "title": "sex",
+    "category": "top",
+    "description": "Poetikon : Lister : Steder noen har hatt sex",
+    "path": "data/sex.txt"
+  },
+  {
+    "slug": "handleliste",
+    "title": "handleliste",
+    "category": "top",
+    "description": "Poetikon : Lister : Handleliste",
+    "path": "data/handleliste.txt"
+  },
+  {
+    "slug": "lukter",
+    "title": "deilige lukter",
+    "category": "top",
+    "description": "Poetikon : Lister : En liste over deilige lukter",
+    "path": "../lister/lukter.txt"
+  },
+  {
+    "slug": "steder",
+    "title": "bra steder",
+    "category": "top",
+    "description": "Poetikon : Lister : Steder man har lyst til å dra",
+    "path": "data/steder.txt"
+  },
+  {
+    "slug": "skjorter",
+    "title": "t-skjorter",
+    "category": "top",
+    "description": "Poetikon : Lister : Fete ting og tekster å ha på en t-skjorte",
+    "path": "data/skjorter.txt"
+  },
+  {
+    "slug": "du",
+    "title": "du",
+    "category": "top",
+    "description": "Poetikon : Lister : Hvem er du?",
+    "path": "data/du.txt"
+  },
+  {
+    "slug": "verdt_aa_leve_for",
+    "title": "verdt å leve for",
+    "category": "middle",
+    "description": "Poetikon : Lister : Ting som er verdt å leve for",
+    "path": "data/verdt_aa_leve_for.txt"
+  },
+  {
+    "slug": "bli",
+    "title": "når du blir stor",
+    "category": "middle",
+    "description": "Poetikon : Lister : Når jeg blir stor.",
+    "path": "data/bli.txt"
+  },
+  {
+    "slug": "fine_ord",
+    "title": "fine ord",
+    "category": "middle",
+    "description": "Poetikon : Lister : Liste over fine enkeltord som kanskje egentlig ikke finnes",
+    "path": "data/fine_ord.txt"
+  },
+  {
+    "slug": "caro_rarenavn",
+    "title": "fine og rare navn",
+    "category": "middle",
+    "description": "Poetikon : Lister : fine og rare navn ...",
+    "path": "data/caro_rarenavn.txt"
+  },
+  {
+    "slug": "vakreste",
+    "title": "det vakreste du noen gang har sett",
+    "category": "middle",
+    "description": "Poetikon : Lister : Hva er det vakreste du noen gang har sett? (det er forhåpentligvis mer enn en ting!)",
+    "path": "data/vakreste.txt"
+  },
+  {
+    "slug": "finesetninger",
+    "title": "fine setninger",
+    "category": "middle",
+    "description": "Poetikon : Lister : liste over fine setninger",
+    "path": "data/finesetninger.txt"
+  },
+  {
+    "slug": "boeker_man_burde_lese",
+    "title": "bøker",
+    "category": "middle",
+    "description": "Poetikon : Lister : Bøker man burde lese",
+    "path": "data/boeker_man_burde_lese.txt"
+  },
+  {
+    "slug": "doede",
+    "title": "folk du har kjent som er borte nå",
+    "category": "middle",
+    "description": "Poetikon : Lister : En liste over folk du har kjent som er døde nå.",
+    "path": "data/doede.txt"
+  },
+  {
+    "slug": "blakk",
+    "title": "når man er blakk",
+    "category": "middle",
+    "description": "Poetikon : Lister : Ting man kan gjøre når man er blakk",
+    "path": "data/blakk.txt"
+  },
+  {
+    "slug": "oenskeliste",
+    "title": "ønskeliste",
+    "category": "middle",
+    "description": "Poetikon : Lister : Ønskeliste",
+    "path": "data/oenskeliste.txt"
+  },
+  {
+    "slug": "sjekketriks",
+    "title": "sjekketriks",
+    "category": "middle",
+    "description": "Poetikon : Lister : sjekketriks",
+    "path": "data/sjekketriks.txt"
+  },
+  {
+    "slug": "gode_raad",
+    "title": "gode råd",
+    "category": "middle",
+    "description": "Poetikon : Lister : Gode råd",
+    "path": "data/gode_raad.txt"
+  },
+  {
+    "slug": "finedyr",
+    "title": "dyr du har tatt på",
+    "category": "middle",
+    "description": "Poetikon : Lister : Dyr du har tatt på.",
+    "path": "data/finedyr.txt"
+  },
+  {
+    "slug": "caro_tomdag",
+    "title": "når dagen er tom",
+    "category": "bottom",
+    "description": "Poetikon : Lister : ting man kan gjøre når dagen er tom",
+    "path": "data/caro_tomdag.txt"
+  },
+  {
+    "slug": "tysta_leken",
+    "title": "tysta leken",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Når jeg blir stor.",
+    "path": "data/tysta_leken.txt"
+  },
+  {
+    "slug": "caro_graatesang",
+    "title": "en sang du har grått til",
+    "category": "bottom",
+    "description": "Poetikon : Lister : en sang du har grått tell ...",
+    "path": "data/caro_graatesang.txt"
+  },
+  {
+    "slug": "caro_noesomirriterer",
+    "title": "irriterende",
+    "category": "bottom",
+    "description": "Poetikon : Lister : oe som irriterer ...",
+    "path": "data/caro_noesomirriterer.txt"
+  },
+  {
+    "slug": "caro_verdenburdevite",
+    "title": "propaganda",
+    "category": "bottom",
+    "description": "Poetikon : Lister : nåkka som værdn burde vite ...",
+    "path": "data/caro_verdenburdevite.txt"
+  },
+  {
+    "slug": "caro_minne",
+    "title": "minner",
+    "category": "bottom",
+    "description": "Poetikon : Lister : et bittelite minne som sitt hardt fast ...",
+    "path": "data/caro_minne.txt"
+  },
+  {
+    "slug": "caro_poesi",
+    "title": "poesi",
+    "category": "bottom",
+    "description": "Poetikon : Lister : p o e s i / om du vil",
+    "path": "data/caro_poesi.txt"
+  },
+  {
+    "slug": "caro_beundrer",
+    "title": "en person du beundrer",
+    "category": "bottom",
+    "description": "Poetikon : Lister : en pærson du beundre og koffør",
+    "path": "data/caro_beundrer.txt"
+  },
+  {
+    "slug": "caro_te",
+    "title": "te",
+    "category": "bottom",
+    "description": "Poetikon : Lister : te",
+    "path": "data/caro_te.txt"
+  },
+  {
+    "slug": "nyttaar",
+    "title": "nyttårsforsetter",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Dyr du har tatt på.",
+    "path": "data/nyttaar.txt"
+  },
+  {
+    "slug": "hosten_fint",
+    "title": "fine ting ved høsten",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Liste over ting som er fint med høsten",
+    "path": "data/hosten_fint.txt"
+  },
+  {
+    "slug": "fine_lyder",
+    "title": "fine lyder",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Fine lyder",
+    "path": "data/fine_lyder.txt"
+  },
+  {
+    "slug": "huskeliste",
+    "title": "huskeliste",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Huskeliste",
+    "path": "data/huskeliste.txt"
+  },
+  {
+    "slug": "dagdrommer",
+    "title": "dagdrømmer",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Dagdrømmer.",
+    "path": "data/dagdrommer.txt"
+  },
+  {
+    "slug": "hermetisere",
+    "title": "hermetiserbart",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Ting man kan hermetisere!",
+    "path": "data/hermetisere.txt"
+  },
+  {
+    "slug": "skumle_lyder",
+    "title": "skumle lyder",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Skumle lyder!",
+    "path": "data/skumle_lyder.txt"
+  },
+  {
+    "slug": "mitt_skip_er_lastet_med",
+    "title": "mitt skip",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Mitt skip er lastet med ...",
+    "path": "data/mitt_skip_er_lastet_med.txt"
+  },
+  {
+    "slug": "liste_over_lister",
+    "title": "forslag",
+    "category": "bottom",
+    "description": "Poetikon : Lister : Liste over lister man burde lage",
+    "path": "data/liste_over_lister.txt"
+  },
+  {
+    "slug": "antologier",
+    "title": "foreslå ting til poetikon",
+    "category": "section4",
+    "description": "Poetikon : Lister : En liste over antologier poetikon burde lage",
+    "path": "data/antologier.txt"
+  },
+  {
+    "slug": "caro_fineord",
+    "title": "noen fine ord du fikk en gang",
+    "category": "section4",
+    "description": "Poetikon : Lister : nån fine ord du fikk en gang",
+    "path": "data/caro_fineord.txt"
+  },
+  {
+    "slug": "caro_ordoguttrykk",
+    "title": "ord og uttrykk",
+    "category": "section4",
+    "description": "Poetikon : Lister : ord og uttrykk som du liker ...",
+    "path": "data/caro_ordoguttrykk.txt"
+  },
+  {
+    "slug": "caro_etsitat",
+    "title": "sitater",
+    "category": "section4",
+    "description": "Poetikon : Lister : et sitat ...",
+    "path": "data/caro_etsitat.txt"
+  }
+]

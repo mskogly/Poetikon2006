@@ -1,0 +1,28 @@
+<?xml:namespace ns="rn" prefix="rn"?>
+<smil>
+	<head>
+		<meta name="title" content="Abstraksjon # 5. Bilder og musikk av Morten Skogly" />
+		<meta name="author" content="Morten Skogly / Poetikon.org" />
+		<meta name="copyright" content="2000 Morten Skogly" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="robots" content="all" />
+		<meta name="file_id" content="bbc75f9c-9652-f82a-c07b-86f2981edfb3" />
+		<layout type="text/smil-basic-layout">
+			<root-layout width="500" height="400" background-color="black"/>
+			<region id="pix_region" left="0" top="0" width="500" height="400" z-index="1" />
+		</layout>
+
+	</head>
+	<body>
+		<par>
+			<seq>
+				<img src="ab5.rp" region="pix_region" fill="freeze"/>
+			</seq>
+			<audio src="ab5.rm"/>
+		</par>
+	</body>
+</smil>
+
+
+

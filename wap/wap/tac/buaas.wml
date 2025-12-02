@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+
+<template> 
+    <do type="Tilbake"><prev/></do> 
+</template> 
+
+
+<card id="meny" title="Upunkt TAC">
+<p align="left">
+<img src="http://www5.nrk.no/upunkt/wap/upunkt.wbmp" alt=".UPUNKT."/><br/> 
+
+<b>Kjersti Østgaard Buaas</b><br/>
+
+Kjersti har fylt 18 vintrer, og er i l&#xF8;pet av sesongen blitt en hissig pallklatrer. <br/><br/>
+
+Team: Burton, Oakley, Firesafe og Vassfjellet. <br/>
+Beinstilling: Regular. <br/>
+Fritid: Dansing, venner, gutter, disco og alt som er g&#xF8;y.<br/><br/> 
+ 
+Tr&#xF8;nderjenta har rukket bli junior verdensmester, b&#xE5;de i FIS i ISF. I Kongsberg snappet Britney Buaas kongepokalen foran selveste Stine Bruun Kjeldaas. Kjersti er som eneste norske jente invitert av Daniel og Terje til &#xE5; v&#230;re med i TAC.<br/>
+
+
+<do type="prev" name="Tilbake" label="Tilbake"><prev/> </do>
+<do type="accept" name="MainMenu" label="TAC"> 
+<go href="http://www5.nrk.no/upunkt/wap/tac/index.wml"/> </do>
+
+
+</p>
+</card>
+
+</wml>

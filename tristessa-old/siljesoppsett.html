@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+
+<HEAD>
+<TITLE>Poetikon</TITLE>
+<META NAME="Generator" CONTENT="HTMLed32 Version 2.0d">
+<META NAME="Author" CONTENT="Unknown">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--- begin script
+//*********************************************
+// Park-Miller Pseudo-Random Number Generator
+// Original JavaScript implementation by David N. Smith
+// of IBM's T J Watson Research Center
+// new storyline by Morten Skogly
+// textcutupsource: http://home.sol.no/~mskogly/poetikon/
+//*********************************************
+function NextRandomNumber()  {
+  var hi   = this.seed / this.Q;
+  var lo   = this.seed % this.Q;
+  var test = this.A * lo - this.R * hi;
+  if (test > 0)
+    this.seed = test;
+  else
+    this.seed = test + this.M;
+  return (this.seed * this.oneOverM);
+}
+function RandomNumberGenerator() {
+  var d = new Date();
+  this.seed = 2345678901 +
+    (d.getSeconds() * 0xFFFFFF) +
+    (d.getMinutes() * 0xFFFF);
+  this.A = 48271;
+  this.M = 2147483647;
+  this.Q = this.M / this.A;
+  this.R = this.M % this.A;
+  this.oneOverM = 1.0 / this.M;
+  this.next = NextRandomNumber;
+  return this;
+}
+function StoryFramework()
+{
+this.story='<H1>[title]</H1><P><FONT SIZE="+1">[paragraf01] [paragraf02]<P>Hun [verb01]: "[sitat01]". Jeg [verb01], [adjektiv01]: "[sitat02]". "[sitat02]", [verb01] hun.<P>[etter01]<P>Jeg [verb03]: "[sitat02]" [sitat02]<P>'+
+	'Jeg sa:"[sitat01]"<P>[sitat03] [sitat03]<P>[paragraf01]<P>[moral]<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>'+
+	'Then came [signal], and she [reaction]. He was here! "[fond_remark], [pet_name]!" he [said], [embrace], '+
+	'and as [finale], she [denouement].</font>'
+this.title='4:[darkest] [NIGHT];[love] og [stars];[love] i [stars];[hopes];[star]'
+this.darkest='10:Flytende;Sødmefylt;Søkende;Underlig;Såret;Forgjengelig;Håpefull;Søt;[night] av;Forbudt'
+this.night='4:Morgen;Lengsel;Uro;Forandring;[darkest][night]'
+this.love='5:Savnet;Linen;Boblen;Venus;Hornbilla'
+this.hopes='4:Savnets;Hornbillas;Regnets;Pianoets'
+this.star='6:bekjennelse;stjerne;øyne;frukt;poesi;uro'
+this.stars='5:stjernene;trærne;øynene;støvet;evigheten'
+this.sitat01="14:Sildre sildre, selvets lengsel;"+
+	"Er jeg ennå Evrydike på vei opp fra Dødsriket?;"+
+	"Det er ikke tilfeldig at dette skjer meg, skjønner du. Jeg er med på noe viktig;"+
+	"Er dette min drøm?;"+
+	"Ser du linen jeg spenner mellom mitt og ditt blikk, og ser du linedanseren?;"+
+	"Ikke forlat meg her alene;"+
+	"Syng sangen min;"+
+	"Se deg rundt;"+
+	"Dette kan være slutten;"+
+	"Kan du lese øynene mine?;"+
+	"Ristet, berørt;"+
+	"Jeg er ensom med lengselen ut.;"+
+	"Jeg har drømt, våket, bedt, grått, søkt meg inn til synet av ryggen da han snudde og gikk;"+
+	"Ristet, berørt"
+this.paragraf01="8:Jeg leter etter mennesker for tiden. De bærer på en liten bit sannhet alle sammen. En dag vil jeg kunne sette alle bitene sammen, og stå der med fortiden min i hendene. Da kan jeg gå videre. Jeg må bli her til da, det er pålagt meg.;"+
+	"Jeg har rett og slett sluttet å tro på den harde virkelighet. Jeg tror på virkeligheten bare om den er myk og god.;"+
+	"Morgenglitteret spiller inn til sølvtråder som svarer regnbueaktig på spede hilsener fra livsreservoarer, skjult under stein, hud stram over skjelett.;"+
+	"Vi løper gjennom rosenhagen. Leker vilt og hemningsløst under lav himmel. Velter flasken  med portvin og slikker i oss restene. Ruller rundt i gulrotseng og blomstedbed. Leopard og Jaguar.;"+
+	"Jeg leter etter mennesker for tiden. De bærer på en liten bit sannhet alle sammen. En dag vil jeg kunne sette alle bitene sammen, og stå der med fortiden min i hendene. Da kan jeg gå videre. Jeg må bli her til da, det er pålagt meg.;"+
+	"Morgenglitteret spiller inn til sølvtråder som svarer regnbueaktig på spede hilsener fra livsreservoarer, skjult under stein, hud stram over skjelett.;"+
+	"Jeg leter etter mennesker for tiden. Jeg er med på noe viktig.;"+
+	"Jeg skriver deg inn i et svalt rom. Ute er det tidlig sommer, og vinden rører ved gardinene. Du sitter ved pianoet, med høyre arm lagt utstrakt over tangentene. Du puster inn-ut og lar en finger finne toner. Det er alt."
+this.paragraf02="6:Jeg husker det slik.;"+
+	"Her inne i boblen skinner stjernene.;"+
+	"Jeg blør dråper av ulykksalighet.;"+
+	"Men det er mer;"+
+	"Flytende håpefulle dager.;"+
+	"Jeg er ensom med lengselen ut."
+this.adjektiv01="14:stillferdig;"+
+	"nynnende;"+
+	"nølende;"+
+	"forelsket;"+
+	"undrende;"+
+	"beundrende;"+
+	"leende;"+
+	"forsiktig;"+
+	"ubehjelpelig;"+
+	"nølende;"+
+	"tåpelig;"+
+	"beende;"+
+	"nølende;"+
+	"vemodig"
+this.sitat02="14:Pærepulver, søt grøt av venus;"+
+	"Klyng deg fast til løgnen som din tilflukt. Det er mitt råd;"+
+	"Hører du verden nynne.;"+
+	"En gang gikk jeg mot en lysning i skogen. Jeg visste det var en bekk der.;"+
+	"Ristet, berørt;"+
+	"Ble du berørt av de falske hærskarer?;"+
+	"Lukten av nyklippet gress;"+
+	"Forventninger forplikter;"+
+	"Fortapt fristerinne;"+
+	"Jeg føler meg fortapt;"+
+	"Slipp meg inn;"+
+	"Det er ikke tilfeldig at dette skjer deg, skjønner du. Du er med på noe viktig.;"+
+	"Frukthagens søte duft.;"+
+	"Jeg gir deg tid."
+this.verb01="4:sa;"+
+	"nynnet;"+
+	"hvisket;"+
+	"mumlet"
+this.verb02="3:gråt;"+
+	"hutret;"+
+	"raset"
+this.verb03="tenkte;"+
+	"funderte;"+
+	"grublet"
+this.akt="5:berørte;"+
+	"kysset;"+
+	"strøk;"+
+	"trøstet;"+
+	"killet"
+this.etter01="9:Jeg husker det slik;"+
+	"Jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+	"Jeg var litt i tvil, men samtidig var jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+	"Jeg smilte forsiktig, forståelsesfullt.;"+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+	"Jeg var litt i tvil, men samtidig var jeg overbevist om at jeg hadde hørt dette bli sagt.;"+
+	"Jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+	"Og jeg så på henne. Jeg så at det surret et dikt like ved øret hennes. Det var der bare et sekund, så fløy det videre.;"+
+	"Men jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen."
+this.sitat03="13:Hva mer kunne jeg si?;"+
+	"Hennes nærvær polstrer verden.;"+
+	"Jeg blør dråper av ulykksalighet.;"+
+	"Og jeg ville så gjerne fortelle henne mer. Men jeg visste ikke hvordan.;"+
+	"Jeg så en hornbille som satt helt inne på trestammen, på barken under en gren, og forsøkte overbevise meg om at jeg ikke kunne se den;"+
+	"Syrinene skriker, fulle av nektar.;"+
+	"Sommerfuglen flyr vilt?;"+
+	"Ikke se ned. Ikke nå.;"+
+	"Hva mer kunne jeg si?;"+
+	"Hva mer kunne jeg si?;"+
+	"Hva mer kunne jeg si?;"+
+	"Hva mer kunne jeg si?;"+
+	"Hva mer kunne jeg si?"
+this.moral="7:Og jeg ville så gjerne fortelle henne dette. Men jeg visste ikke hvordan.;"+
+	"Øyne, øyne. Sjøer for flyktninger.;"+
+	"Våger ikke nærme meg, våger ikke gå, våger ikke la meg berøre;"+
+	"Lyse vinduer i natta;"+
+	"Det vibrerte rundt meg der jeg gikk;"+
+	"Og jeg kan ikke la være å stirre på henne, den bleke huden, bikinistroppene hennes som spiser seg forsiktig inn i ryggen.;"+
+	"Kan jeg skrive bort det som skader meg?"
+this.hero="14:Edwin;"+
+	"Long John;"+
+	"Lyle 'Sneaky Legs' Malone;"+
+	"Doctor Ken;"+
+	"former U.S. President Jimmy Carter;"+
+	"Reginald Fortescue;"+
+	"Baron Otto;"+
+	"the Chief's handsome son;"+
+	"young Simon;"+
+	"the fearless Francisco;"+
+	"tall Trader Tom;"+
+	"the 'Parisian Pirate', Pierre;"+
+	"Senator Sam;"+
+	"dashing David DeFoe"
+this.hero_desc="12:only man she had ever really loved;"+
+	"mysterious stranger with the large dog;"+
+	"one person left who could help her;"+
+	"'hooded visitor' in her recurring dream;"+
+	"man who had taught her how to feel;"+
+	"masterful tutor who had transformed her from a mere girl into a real woman;"+
+	"loving suitor she had turned so thoughtlessly away;"+
+	"man she had belonged to so completely;"+
+	"bold bandito who had been so gentle in her arms;"+
+	"sensitive genius who had known her in ways even she did not suspect;"+
+	"brilliant scholar who had wanted to make her his life's work;"+
+	"soldier-lover of her youthful imaginings"
+this.informant="14:father;"+
+	"Brother Boris;"+
+	"The Times;"+
+	"persistent rumours;"+
+	"Countess Genevieve;"+
+	"the gypsy woman;"+
+	"the best salon gossip;"+
+	"his scheming partner, Reg;"+
+	"that television program;"+
+	"three independent witnesses;"+
+	"her horoscope;"+
+	"the letter on the bureau;"+
+	"the message on the dagger;"+
+	"Roger's shocking revelation"
+this.hero_activity="14:lost forever in the wilds of the Amazon;"+
+	"struggling for life in the intensive care ward;"+
+	"in the clutches of Cesar Marquez and his gang of cutthroats;"+
+	"dancing away the hot Rio nights with the sultry Sophia;"+
+	"prospecting for silver in the Andes;"+
+	"away again on safari;"+
+	"the hapless captive of mind-devouring space aliens;"+
+	"marooned by his own crew on the Isle of Retribution;"+
+	"a prisoner in the very castle he had once owned;"+
+	"starring in yet another film with Félice Contraire;"+
+	"recklessly endangering her life as well as his own;"+
+	"drinking himself to death in the company of the hateful Luiz;"+
+	"on a collision course with the High Council itself;"+
+	"seeking a new life as a Foreign Legionnaire"
+this.signal="12:a knock at the door;"+
+	"a sudden clatter of hooves;"+
+	"an abrupt fanfare from the long-silent trumpets;"+
+	"a peal of mighty bells;"+
+	"the sound she had been longing to hear;"+
+	"a confused chorus of greetings from the courtyard;"+
+	"a flurry of activity;"+
+	"the sound of her own name being called;"+
+	"a sudden commotion, heavy footsteps in the hall;"+
+	"an inrush of cool air as the door was flung open;"+
+	"an eerie chill of premonition;"+
+	"the thud of fists, a muffled cry, fighting on the stairway"
+this.reaction="12:whirled around;"+
+	"gasped;"+
+	"nearly swooned;"+
+	"dropped the brimming wine glass heedlessly on the rug;"+
+	"felt her heart suddenly beat with a new, wild rhythm;"+
+	"somehow knew that her heart had been right all along;"+
+	"shut her eyes tight for one moment of silent prayer;"+
+	"leapt to her feet with hope - and alarm - in her eyes;"+
+	"instinctively checked her fingernails;"+
+	"struggled in vain with her sudden panic;"+
+	"rose to face the inevitable;"+
+	"realized, in a single instant, what was now to happen"
+this.fond_remark="12:Kiss me;"+
+	"Come to me;"+
+	"I couldn't stay away;"+
+	"I've thought of you every minute I've been away;"+
+	"Our love will outlast eternity;"+
+	"There's only ever been you;"+
+	"We marry tonight;"+
+	"I worship you;"+
+	"Without you I am nothing;"+
+	"I tried to forget you, but I couldn't;"+
+	"All I have is yours;"+
+	"Even the crafty Luiz couldn't keep me from you"
+this.pet_name="13:my darling;"+
+	"you little fool;"+
+	"sweetheart;"+
+	"my angel - my porcelain angel;"+
+	"beloved;"+
+	"you sweet little morsel of girl-flesh;"+
+	"my perfect little carrot;"+
+	"baby doll;"+
+	"my dewy, doll-faced delight;"+
+	"honey bun;"+
+	"my Oriental pearl;"+
+	"Adored One;"+
+	"my giddy little goose"
+this.said="12:chuckled;"+
+	"breathed;"+
+	"said with his eyes (for his voice was now silent for ever);"+
+	"said in his halting Spanish;"+
+	"boomed;"+
+	"intoned;"+
+	"blurted;"+
+	"husked;"+
+	"murmured in that unforgettable hypnotic drawl;"+
+	"said simply;"+
+	"said quietly;"+
+	"stammered"
+this.embrace="12:sweeping her into his arms;"+
+	"pressing his lips to hers;"+
+	"flexing his sweaty biceps;"+
+	"blowing a perfect smoke ring in her direction;"+
+	"nervously adjusting his artificial leg;"+
+	"signalling his porters to withdraw;"+
+	"his eyes alive in the slanting light;"+
+	"oblivious of the lava-red eyes at the window;"+
+	"tilting her oval face up to meet his lips;"+
+	"passion igniting his strong features;"+
+	"drawing her to him as a moth to a lantern wick;"+
+	"setting her aglow with the heat of his passion"
+this.finale="11:the band began to play;"+
+	"the music in her heart rose to a new crescendo of happiness;"+
+	"the horror of these last months vanished in a blaze of joy;"+
+	"the glow of renewed love gradually overcame her mounting desire for dinner;"+
+	"he slid the little ring onto her finger;"+
+	"he went down on his knees and implored her to forgive him;"+
+	"it dawned on her that her days of loneliness were over;"+
+	"the truth - the whole truth - slowly came home to her;"+
+	"he dabbed at her tears with the handkerchief she herself had made for him;"+
+	"he excitedly began to show her his plans for the villa they were to share;"+
+	"he once again began to woo her with the sensual voice of his Stradivarius"
+this.denouement="11:knew that at last he was hers - and that only death could part them;"+
+	"began to wonder how she would explain all this to Colin;"+
+	"started to think about what they would call their children;"+
+	"made a mental note to call Mitzi later and tell her all about it;"+
+	"wordlessly let her body melt against his own;"+
+	"woke up. Incredibly enough, it had all been a dream;"+
+	"took a moment to plan some of the details of their pre-nuptial agreement;"+
+	"wondered if this would be a good time to remind him about the books he had borrowed;"+
+	"allowed her willing mind to sink into a rose-colored maelstrom of bliss;"+
+	"vowed never again to do anything spiteful, foolish or immature;"+
+	"realized thankfully that, in the end, things always work out really, really well;"+
+	"at last understood that for the two of them, life was only now really beginning"
+}
+
+var rand = new RandomNumberGenerator()
+
+function ExtractNthSubstring(string, n, delimiter)
+{
+var a=0, i, j, b=string.length;
+	if (n<0) return '##'
+  	for (i = 0; i < n; i++) {
+  		j = string.indexOf(delimiter, a);
+  		if (j==-1)  {return '#' + n} else a=j+1
+	}
+  	if ((j=string.indexOf(delimiter, a+1))!=-1) b=j
+  	return string.substring(a, b)
+}
+
+function ExtractRandomSubstring(s)
+{
+  	return ExtractNthSubstring(s.substring(s.indexOf(':')+1), Math.floor(rand.next()*parseInt(s)),';')
+}
+
+function ProcessString(s)
+{
+var a,b
+	for (;;) {
+		if ((a = s.indexOf('[', 0)) >= 0) {
+    			if ((b=s.indexOf(']', ++a)) >= 0) {
+      				s=s.substring(0,a-1)+ProcessString(ExtractRandomSubstring(framework[s.substring(a, b)]))+s.substring(b+1)
+    			}
+			else a=0
+		}
+		if (a<=0) break
+	}
+	return s
+}
+// end script -->
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="#A8AC00" LINK="#2030C0" VLINK="#800000" ALINK="#800080">
+<ul>
+<CENTER>
+</CENTER><br>
+<TABLE CELLSPACING=0 CELLPADDING=30 BORDER=0>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--- begin script
+document.write('<TR><TD>') //
+
+var framework=new StoryFramework
+var nPic=Math.floor(rand.next()*14)
+var sPic='"img/spain' + '0102030405060708091011121314'.substring(nPic * 2, (nPic + 1) * 2) + '.gif"'
+document.write('<IMG SRC=' + sPic + ' align=right hspace=12>');
+document.write(ProcessString(framework.story))
+// end script -->
+</SCRIPT>
+
+<BR CLEAR="both">
+
+
+
+</TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
