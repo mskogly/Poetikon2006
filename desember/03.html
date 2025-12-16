@@ -2,19 +2,39 @@
 <HEAD>
 <TITLE>fineord.n</TITLE>
 <link rel="stylesheet" href="../poetikon.css" type="text/css">
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+#flash-container {
+  width: 220px;
+  height: 185px;
+}
+</style>
 </HEAD>
 <BODY marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" bgcolor="#663300" text="#FFFFFF" link="#000000" alink="#000000" vlink="#808080">
 
+<div id="flash-container"></div>
 
-<DIV style="LEFT: 370px; POSITION: absolute; TOP: 10px; VISIBILITY: inherit; WIDTH: 220px; Z-INDEX: 2">
-<!-- URL's used in the movie-->
-<!-- text used in the movie-->
-<!--Loading 200k ... --><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
- codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
- WIDTH=220 HEIGHT=185>
- <PARAM NAME=movie VALUE="fineord.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#663300> <EMBED src="fineord.swf" quality=high bgcolor=#663300  WIDTH=220 HEIGHT=185 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
-</OBJECT>
-</div>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "autoplay": "on",
+  "backgroundColor": "#663300"
+};
+
+window.addEventListener("load", () => {
+  const ruffle = window.RufflePlayer.newest();
+  const player = ruffle.createPlayer();
+  const container = document.getElementById("flash-container");
+  container.appendChild(player);
+  player.load("../flash/fineord.swf");
+});
+</script>
 
 </BODY>
 </HTML>

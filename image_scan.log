@@ -1,0 +1,62 @@
+IMAGE SOURCE SCAN REPORT
+================================================================================
+
+STATISTICS:
+  Total HTML files scanned: 1115
+  Total image references: 3283
+  External images (skipped): 35
+  Existing images: 3230
+  Dead/missing images: 18
+
+================================================================================
+
+DEAD IMAGE REFERENCES:
+
+
+plirk/test.htm
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+  src: http:/rgb/signal2noise/art/objects/countme.gif?
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/plirk/http:/rgb/signal2noise/art/objects/countme.gif
+
+tristessa-old/novellecode.bk.html
+  src:  + sPic + 
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/tristessa-old/ + sPic + 
+
+tristessa-old/novellecode.html
+  src:  + sPic + 
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/tristessa-old/ + sPic + 
+
+tristessa-old/novellecode2.html
+  src:  + sPic + 
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/tristessa-old/ + sPic + 
+
+tristessa-old/siljesoppsett.html
+  src:  + sPic + 
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/tristessa-old/ + sPic + 
+
+tristessa-old/test.html
+  src:  + sPic + 
+  resolved: /Users/morten.skogly/Dropbox/Projects/Poetikon-ASP-to-Static-2025-1/poetikon.no/tristessa-old/ + sPic + 
